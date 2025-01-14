@@ -77,7 +77,6 @@
 					'user_1.1.js',
 					'reciente.js',
 					'user_apps.js',
-					'../sistema/js/administracion.js'
 				));
 			} else{
 				$this->minify->js(array(

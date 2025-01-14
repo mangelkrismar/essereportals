@@ -28,18 +28,26 @@
 
 .p_footer {
     color: white;
-    font-size: 1.5rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+.p_footerin {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer .p_footerdatos{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 .p_footerdatosbox2 {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;

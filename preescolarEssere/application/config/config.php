@@ -3,8 +3,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 $config['krismar_apps_url'] = 'http://localhost/KrismarApps/';
-$config['base_url']         = 'http://localhost/preescolar/';
+$config['base_url']         = 'http://localhost/preescolarEssere/';
 
+$config['event_name'] = 'EDU FEST 2025';
 
 
 

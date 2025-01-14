@@ -1212,3 +1212,13 @@ $(document).ready(function(){
 		});
     });
 });
+
+$(document).ready(function () {
+	const parentDiv = document.querySelector('.p_navsupin');
+	const children = parentDiv.children;
+	if (children.length % 2 === 0) {
+		parentDiv.classList.add('even-children');
+	} else {
+		parentDiv.classList.add('odd-children');
+	}
+});

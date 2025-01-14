@@ -9,9 +9,10 @@ class Js_config extends CI_Controller {
 	{
 		// Valores por defecto
 		$js_config = array(
-			'id_curso'              => $this->config->item('id_curso'),
+			'id_curso'              => 0,
 			'base_url'              => $this->config->item('base_url'),
 			'krismar_apps_url'      => $this->config->item('krismar_apps_url'),
+			'event_name'		=> $this->config->item('event_name'),
 			
 			'logged_in'             => FALSE,
 			'username'              => '',

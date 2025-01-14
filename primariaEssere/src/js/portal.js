@@ -1097,7 +1097,6 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-	console.log("checking");
 	const parentDiv = document.querySelector('.p_navsupin');
 	const children = parentDiv.children;
 	if (children.length % 2 === 0) {

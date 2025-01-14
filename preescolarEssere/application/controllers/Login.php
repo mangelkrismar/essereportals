@@ -10,7 +10,7 @@ class Login extends MY_Controller{
 	public function checkUser(){
 		$diasR = 'Licencia permanente';
 		$data = array(
-			'nombre' => 'Feria Internacional del Libro 2024',
+			'nombre' => $this->config->item('event_name'),
 			'log_in'=> true,
 			'user_id' => 0,
 			'diasR' => $diasR,

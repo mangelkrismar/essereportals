@@ -36,16 +36,20 @@
 	<link rel="shortcut icon" href="<?= base_url(); ?>src/img/web_krismarlogo_favicon.png">
 	<link href="<?= base_url() ?>src/img/web_krismarlogo.png" rel="icon"/>
 	<link href="<?= base_url() ?>src/img/web_krismarlogo.png" rel="apple-touch-icon"/>
+	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
 	<script>
 		var IP    = "<?php echo $this->config->item('base_url'); ?>";
 		var IPSRC = "<?php echo $this->config->item('krismar_apps_url'); ?>";
 		var qES = "<?echo($this->session->userdata('qEmp'));?>";     //Para saber si es de LG	
 		var curl = "<?echo($site);?>";     //para saber de donde viene, mx, lat
+		var event_name = "<? echo ((null !== $this->config->item('event_name'))?$this->config->item('event_name'):''); ?>";event_name = (event_name && event_name.length > 0) ? event_name : null;
+
 	</script>
 	<?//echo("La session es = ".$this->session->userdata('qEmp'));		$qval = $this->session->userdata('qEmp');	?>		
 	
-	<title>Krismar - Portal Bachillerato</title>
+	<title>Portal Bachillerato - Essere</title>
 	<?
 		$auxName = "usuario";
 		if(!$this->session->userdata('log_in')){
@@ -61,12 +65,14 @@
 					'fonts'.$this->device.'.css',
 					'primaria_diseno_chat.css',
 					'primaria_user'.$this->device.'.css',
+					'essere.css',
 				));
 			}else{
 				$this->minify->css(array(
 					'fonts'.$this->device.'.css',
 					'primaria_diseno_chat.css',
 					'primaria_guest'.$this->device.'.css',
+					'essere.css',
 				));
 			}
 			echo $this->minify->deploy_css(FALSE, $minCssFileName);

@@ -30,15 +30,21 @@
     color: white;
 }
 
+.p_footerin {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 footer .p_footerdatos{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 .p_footerdatosbox2 {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;

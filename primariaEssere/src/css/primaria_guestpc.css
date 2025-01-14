@@ -4249,11 +4249,6 @@ aqua
     background-color:#c2a78e !important;
 }
 
-.p_navsupinbtn {
-    background-image: none;
-}
-
-
 /* dinamic navbtn css */
 .p_navsupin {
     display: flex;
@@ -4297,7 +4292,7 @@ aqua
     .p_navsupinbtn {
         flex: 1 1 50%;
     }
-    
+
     .p_navsupinbtn:last-child {
         background-image: url(../img/p_headermenu.png);
         background-repeat: repeat-y;
@@ -4305,10 +4300,31 @@ aqua
         background-size: contain;
     }
 
-    .p_navsupinbtn:nth-child(odd) {
+    .p_navsupin.even-children .p_navsupinbtn:nth-child(odd) {
         background-image: none;
     }
-    .p_navsupinbtn:nth-child(even) {
+
+    .p_navsupin.even-children .p_navsupinbtn:nth-child(even) {
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        border-color: rgba(242, 242, 242, .5);
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+
+    .p_navsupin.odd-children .p_navsupinbtn:nth-child(3) {
+        flex: 1 1 100%;
+    }
+
+    .p_navsupin.odd-children .p_navsupinbtn:nth-child(1),
+    .p_navsupin.odd-children .p_navsupinbtn:nth-child(3),
+    .p_navsupin.odd-children .p_navsupinbtn:nth-child(2n+4) {
+        background-image: none;
+    }
+
+    .p_navsupin.odd-children .p_navsupinbtn:nth-child(2),
+    .p_navsupin.odd-children .p_navsupinbtn:nth-child(2n+5) {
         border-width: 0px 0px 1px 0px;
         border-style: solid;
         border-color: rgba(242, 242, 242, .5);

@@ -81,8 +81,7 @@
 					'portal.js',
 					'user_1.1.js',
 					'reciente.js',
-					'user_apps.js',
-					'../sistema/js/administracion.js'
+					'user_apps.js'
 				));
 			} else{
 				$this->minify->js(array(

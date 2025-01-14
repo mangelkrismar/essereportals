@@ -5727,3 +5727,88 @@ CSS MEDIA QUERIES MAX-WIDTH 520px PORTRAIT
         padding-top: 2%;
     }
 }
+
+/* dinamic navbtn css */
+.p_navsupin {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.p_navsupinbtn {
+    width: auto;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.p_navsupinbtn {
+    background-image: url(../img/p_headermenu.png);
+    background-repeat: repeat-y;
+    background-position: left;
+    background-size: contain;
+}
+
+.p_navsupinbtn:last-child {
+    background-image: url(../img/p_headermenu.png),
+    url(../img/p_headermenu.png);
+    background-repeat: repeat-y, repeat-y;
+    background-position: left, right;
+    background-size: contain, contain;
+}
+
+@media screen and (max-width: 1024px) {
+    .p_navsupinbtn:first-child {
+        background-image: none;
+    }
+     
+    .p_navsupinbtn:last-child {
+        background-repeat: repeat-y;
+        background-position: left;
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .p_navsupinbtn {
+        flex: 1 1 50%;
+    }
+
+    .p_navsupinbtn:last-child {
+        background-image: url(../img/p_headermenu.png);
+        background-repeat: repeat-y;
+        background-position: left;
+        background-size: contain;
+    }
+
+    .p_navsupin.even-children .p_navsupinbtn:nth-child(odd) {
+        background-image: none;
+    }
+
+    .p_navsupin.even-children .p_navsupinbtn:nth-child(even) {
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        border-color: rgba(242, 242, 242, .5);
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+
+    .p_navsupin.odd-children .p_navsupinbtn:nth-child(3) {
+        flex: 1 1 100%;
+    }
+
+    .p_navsupin.odd-children .p_navsupinbtn:nth-child(1),
+    .p_navsupin.odd-children .p_navsupinbtn:nth-child(3),
+    .p_navsupin.odd-children .p_navsupinbtn:nth-child(2n+4) {
+        background-image: none;
+    }
+
+    .p_navsupin.odd-children .p_navsupinbtn:nth-child(2),
+    .p_navsupin.odd-children .p_navsupinbtn:nth-child(2n+5) {
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        border-color: rgba(242, 242, 242, .5);
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+}

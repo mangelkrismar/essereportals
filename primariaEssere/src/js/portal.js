@@ -20,8 +20,8 @@ var altoNavegacion;
 *																	FUNCIONES Y PROCEDIMIENTOS
 *
 ********************************************************************************************************************************************************************************/
-$(document).ready(function() {
-	$.get(IP+"js_config", function(data){
+$(document).ready(function () {
+	$.get(IP + "js_config", function (data) {
 		data = JSON.parse(data);
 		IPSRC = data.krismar_apps_url;
 		IP = data.base_url;
@@ -30,54 +30,54 @@ $(document).ready(function() {
 
 
 
-function cargaBodyListo(){
+function cargaBodyListo() {
 
-	
+
 	/*if($("html body").scrollTop()>50){
 		//irArriba(1000);
 	}
 	*/
-	
+
 	verBtnArriba();
 	obtenDisp();
-	altoNavegacion = $(".p_navsup").height()+50;//Altura de la barra de navegación mas 50 de p_headersmall.
-	
+	altoNavegacion = $(".p_navsup").height() + 50;//Altura de la barra de navegación mas 50 de p_headersmall.
+
 }
 
-function regresarLibros(){
+function regresarLibros() {
 
 	$("#iconregresarlibro, #libros_sep, #clasicos, #GRcontainer").hide();
 	$("#lista2").removeClass("catalogosBackground");
-    $("#lista2").removeClass("librosNEMBackground");
+	$("#lista2").removeClass("librosNEMBackground");
 	irArriba();
 
 }
 
-function verSeccionGuest(objeto){
+function verSeccionGuest(objeto) {
 
 	/*Transición entre las principales secciones de la pagina*/
 	seccion = $("#" + objeto.attr("name"));
-	
-	if(objeto.attr("name") == 'clasicos'){
+
+	if (objeto.attr("name") == 'clasicos') {
 		$("#libros_sep, #clasicos").hide();
-		
-	}
-	
-	if(!seccion.is(":visible")){
-		
-		seccion.show();
-		
-	}
-	
-	ocultaMenuAnimado(function(){$("body").stop().animate({scrollTop: seccion.offset().top - (altoNavegacion + 20)},500, "linear")});
-	
-	
-	if($("#libros_sep").css("display") == "block" || $("#clasicos").css("display") == "block"){
-		$("#iconregresarlibro").show();
-		
 
 	}
-	
+
+	if (!seccion.is(":visible")) {
+
+		seccion.show();
+
+	}
+
+	ocultaMenuAnimado(function () { $("body").stop().animate({ scrollTop: seccion.offset().top - (altoNavegacion + 20) }, 500, "linear") });
+
+
+	if ($("#libros_sep").css("display") == "block" || $("#clasicos").css("display") == "block") {
+		$("#iconregresarlibro").show();
+
+
+	}
+
 }
 /*function muestraLibros(){
 	$("#libros_sep, #clasicos").hide();
@@ -135,43 +135,43 @@ function verSeccionGuest(objeto){
 	});
 }
 */
-function muestraLibros(){
+function muestraLibros() {
 	$("#libros_sep, #clasicos, #GRcontainer").hide();
 	$("#lista2").removeClass("catalogosBackground");
-    $("#lista2").removeClass("librosNEMBackground");
+	$("#lista2").removeClass("librosNEMBackground");
 	$("#libros_sep").find(".p_articletitle").text("Libros SEP");
 	insertaLogLink('Libros SEP');
 	$.post(
-		IP+"Libros",
-		function(data){
+		IP + "Libros",
+		function (data) {
 			var result = JSON.parse(data);
 			$("#lista2").empty();
-			$.each(result, function(grado, libros){
+			$.each(result, function (grado, libros) {
 				lista = "<li><ol>";
 				minilista = "<ul onclick = 'toggleLibros2(this)'><span>La entidad donde vivo +</span><div id='LibrosLaEntidadDondeVivo'>";
 				marcado = false;
 				re = new RegExp("La entidad donde vivo: ");
-				$.each(libros,function(n,libro){
-					if(libro.isArray){
+				$.each(libros, function (n, libro) {
+					if (libro.isArray) {
 
-					} else{
-						if(!re.test(libro.titulo)){
-							lista +='<a onclick = "insertaLogLink('+"'"+libro.titulo+"'"+')" target = "_blank" href = "'+libro.url+'"><ul>'+libro.titulo+'</ul></a>';
-						}else{
-							if(!marcado){
+					} else {
+						if (!re.test(libro.titulo)) {
+							lista += '<a onclick = "insertaLogLink(' + "'" + libro.titulo + "'" + ')" target = "_blank" href = "' + libro.url + '"><ul>' + libro.titulo + '</ul></a>';
+						} else {
+							if (!marcado) {
 								lista += "MarcaEspecificaDeLibrosLaEntidadDondeVivo";
 								marcado = true;
 							}
-							minilista += '<a onclick = "insertaLogLink('+"'"+libro.titulo.replace('La entidad donde vivo: ','')+"'"+')" target = "_blank" href = "'+libro.url+'"><ul>'+libro.titulo.replace('La entidad donde vivo: ','')+'</ul></a>';
+							minilista += '<a onclick = "insertaLogLink(' + "'" + libro.titulo.replace('La entidad donde vivo: ', '') + "'" + ')" target = "_blank" href = "' + libro.url + '"><ul>' + libro.titulo.replace('La entidad donde vivo: ', '') + '</ul></a>';
 						}
 					}
 				});
 				minilista += "</div></ul>";
 				lista += "</ol></li>";
-				$("#lista2").append(lista.replace('MarcaEspecificaDeLibrosLaEntidadDondeVivo',minilista));
+				$("#lista2").append(lista.replace('MarcaEspecificaDeLibrosLaEntidadDondeVivo', minilista));
 			});
-			if($("#libros_sep").css("display") == "none"){
-				$("#libros_sep").css("display","table");
+			if ($("#libros_sep").css("display") == "none") {
+				$("#libros_sep").css("display", "table");
 			}
 			$("body").stop().animate(
 				{
@@ -179,7 +179,7 @@ function muestraLibros(){
 				},
 				500,
 				"linear",
-				function(){
+				function () {
 					ocultaMenuAnimado();
 					$("#iconregresarlibro").show();
 				}
@@ -187,27 +187,27 @@ function muestraLibros(){
 		}
 	);
 }
-function muestraLibrosNme(){
+function muestraLibrosNme() {
 	$("#libros_sep, #clasicos, #GRcontainer").hide();
 	$("#lista2").removeClass("catalogosBackground");
-    $("#lista2").addClass("librosNEMBackground");
+	$("#lista2").addClass("librosNEMBackground");
 	$("#libros_sep").find(".p_articletitle").text("Libros SEP NEM 2023");
 	$.post(
-		IP+"LibrosNme",
-		function(data){
+		IP + "LibrosNme",
+		function (data) {
 			var result = JSON.parse(data);
 			$("#lista2").empty();
 
-			$.each(result, function(grado, libros){
+			$.each(result, function (grado, libros) {
 				lista = "<li><ol>";
-				$.each(libros,function(n,libro){
-					lista +='<a onclick = "insertaLogLink('+"'"+libro.titulo+"'"+')" target = "_blank" href = "'+libro.url+'"><ul>'+libro.titulo+'</ul></a>';
+				$.each(libros, function (n, libro) {
+					lista += '<a onclick = "insertaLogLink(' + "'" + libro.titulo + "'" + ')" target = "_blank" href = "' + libro.url + '"><ul>' + libro.titulo + '</ul></a>';
 				});
 				lista += "</ol></li>";
 				$("#lista2").append(lista);
 			});
-			if($("#libros_sep").css("display") == "none"){
-				$("#libros_sep").css("display","table");
+			if ($("#libros_sep").css("display") == "none") {
+				$("#libros_sep").css("display", "table");
 			}
 			$("body").stop().animate(
 				{
@@ -215,7 +215,7 @@ function muestraLibrosNme(){
 				},
 				500,
 				"linear",
-				function(){
+				function () {
 					ocultaMenuAnimado();
 					$("#iconregresarlibro").show();
 				}
@@ -223,26 +223,26 @@ function muestraLibrosNme(){
 		}
 	);
 }
-function muestraLibrosGuia(){
+function muestraLibrosGuia() {
 	$("#libros_sep, #clasicos, #GRcontainer").hide();
-    $("#lista2").removeClass("librosNEMBackground");
+	$("#lista2").removeClass("librosNEMBackground");
 	$("#lista2").addClass("catalogosBackground");
 	$("#libros_sep").find(".p_articletitle").text("Catálogos de aplicaciones");
 	$.post(
-		IP+"LibrosGuias",
-		function(data){
+		IP + "LibrosGuias",
+		function (data) {
 			var result = JSON.parse(data);
 			$("#lista2").empty();
-			$.each(result, function(grado, libros){
+			$.each(result, function (grado, libros) {
 				lista = "<li><ol>";
-				$.each(libros,function(n,libro){
-					lista +='<a target = "_blank" href = "'+libro.url+'"><ul>'+libro.titulo+'</ul></a>';
+				$.each(libros, function (n, libro) {
+					lista += '<a target = "_blank" href = "' + libro.url + '"><ul>' + libro.titulo + '</ul></a>';
 				});
 				lista += "</ol></li>";
 				$("#lista2").append(lista);
 			});
-			if($("#libros_sep").css("display") == "none"){
-				$("#libros_sep").css("display","table");
+			if ($("#libros_sep").css("display") == "none") {
+				$("#libros_sep").css("display", "table");
 			}
 			$("body").stop().animate(
 				{
@@ -250,7 +250,7 @@ function muestraLibrosGuia(){
 				},
 				500,
 				"linear",
-				function(){
+				function () {
 					ocultaMenuAnimado();
 					$("#iconregresarlibro").show();
 				}
@@ -259,26 +259,26 @@ function muestraLibrosGuia(){
 	);
 }
 
-function muestraLibrosGuiaProf(){
+function muestraLibrosGuiaProf() {
 	$("#libros_sep, #clasicos, #GRcontainer").hide();
 	$("#lista2").removeClass("catalogosBackground");
-    $("#lista2").removeClass("librosNEMBackground");
+	$("#lista2").removeClass("librosNEMBackground");
 	$("#libros_sep").find(".p_articletitle").text("Guías para docentes");
 	$.post(
-		IP+"LibrosGuiasProf",
-		function(data){
+		IP + "LibrosGuiasProf",
+		function (data) {
 			var result = JSON.parse(data);
 			$("#lista2").empty();
-			$.each(result, function(grado, libros){
+			$.each(result, function (grado, libros) {
 				lista = "<li><ol>";
-				$.each(libros,function(n,libro){
-					lista +='<a target = "_blank" href = "'+libro.url+'"><ul>'+libro.titulo+'</ul></a>';
+				$.each(libros, function (n, libro) {
+					lista += '<a target = "_blank" href = "' + libro.url + '"><ul>' + libro.titulo + '</ul></a>';
 				});
 				lista += "</ol></li>";
 				$("#lista2").append(lista);
 			});
-			if($("#libros_sep").css("display") == "none"){
-				$("#libros_sep").css("display","table");
+			if ($("#libros_sep").css("display") == "none") {
+				$("#libros_sep").css("display", "table");
 			}
 			$("body").stop().animate(
 				{
@@ -286,7 +286,7 @@ function muestraLibrosGuiaProf(){
 				},
 				500,
 				"linear",
-				function(){
+				function () {
 					ocultaMenuAnimado();
 					$("#iconregresarlibro").show();
 				}
@@ -295,27 +295,27 @@ function muestraLibrosGuiaProf(){
 	);
 }
 
-function muestraTutoriales(){
+function muestraTutoriales() {
 	$("#libros_sep, #clasicos, #GRcontainer").hide();
 	$("#lista2").removeClass("catalogosBackground");
-    $("#lista2").removeClass("librosNEMBackground");
+	$("#lista2").removeClass("librosNEMBackground");
 	$("#libros_sep").find(".p_articletitle").text("Tutoriales de Novaschool");
 	$.post(
-		IP+"tutoriales",
-		function(data){
+		IP + "tutoriales",
+		function (data) {
 			var result = JSON.parse(data);
 			$("#lista2").empty();
-			$.each(result, function(grado, libros){
+			$.each(result, function (grado, libros) {
 				lista = "<li><ol>";
-				$.each(libros,function(n,libro){
-					lista +='<a target = "_blank" href = "'+libro.url+'"><ul>'+libro.titulo+'</ul></a>';
+				$.each(libros, function (n, libro) {
+					lista += '<a target = "_blank" href = "' + libro.url + '"><ul>' + libro.titulo + '</ul></a>';
 				});
 				lista += "</ol></li>";
 				$("#lista2").append(lista);
 			});
-			$("#lista2 > li:nth-child(1)").attr("id","gclasstuto");
-			if($("#libros_sep").css("display") == "none"){
-				$("#libros_sep").css("display","table");
+			$("#lista2 > li:nth-child(1)").attr("id", "gclasstuto");
+			if ($("#libros_sep").css("display") == "none") {
+				$("#libros_sep").css("display", "table");
 			}
 			$("body").stop().animate(
 				{
@@ -323,7 +323,7 @@ function muestraTutoriales(){
 				},
 				500,
 				"linear",
-				function(){
+				function () {
 					ocultaMenuAnimado();
 					$("#iconregresarlibro").show();
 				}
@@ -332,27 +332,27 @@ function muestraTutoriales(){
 	);
 }
 
-function toggleLibros(obj){
-	$(obj).find("a").toggle(500,function(){
-		$(this).css("display",($(this).css("display")!="none")?"block":"none");
-		$("#sum").html($($(obj).find("a")[0]).css("display") == "none"?"+":"-")
+function toggleLibros(obj) {
+	$(obj).find("a").toggle(500, function () {
+		$(this).css("display", ($(this).css("display") != "none") ? "block" : "none");
+		$("#sum").html($($(obj).find("a")[0]).css("display") == "none" ? "+" : "-")
 	});
 }
 
-function toggleLibros2(obj1){
+function toggleLibros2(obj1) {
 	var obj = $(obj1).children()[0]
 	var txtTema = $(obj).text();
-	var signoReplace = (txtTema.indexOf("+") != -1)?"-":"+";
-	var signoActual = (txtTema.indexOf("+") != -1)?"+":"-";
-	$(obj).html(txtTema.replace(signoActual,signoReplace));
+	var signoReplace = (txtTema.indexOf("+") != -1) ? "-" : "+";
+	var signoActual = (txtTema.indexOf("+") != -1) ? "+" : "-";
+	$(obj).html(txtTema.replace(signoActual, signoReplace));
 
-	$(obj).parent().find("div").toggle("slow",function(){
+	$(obj).parent().find("div").toggle("slow", function () {
 	});
 }
 
 
 /******************************************/
-function cargaImgs(obj){
+function cargaImgs(obj) {
 	/*
 	* NOMBRE: cargaImgs
 	* UTILIDAD: Descarga imágenes de manera asincrona.
@@ -360,39 +360,39 @@ function cargaImgs(obj){
 	* SALIDAS: Ninguna.
 	* VARIABLES: Ninguna.
 	*/
-	if(Array.isArray(obj)){//Lo que se recibe es un array
-		for(var indx in obj){
+	if (Array.isArray(obj)) {//Lo que se recibe es un array
+		for (var indx in obj) {
 			loadImage(obj[indx], indx);
 		}
-	}else{
+	} else {
 		loadImage(obj);
 	}
-	
 
-	function loadImage(objInd, indx){
+
+	function loadImage(objInd, indx) {
 		indx = indx || null;
 
-		if(indx != null){
+		if (indx != null) {
 			url = objInd.url || "src/img/" + objInd.nombre;
 
 			var cdn = "$.get("
-			+	"'"+ url +"'"
-			+ ").done(function(){"
-				+'$("'+objInd.selector+'").transition({"background-image": "url('+url+')"});'
-			+"});"
+				+ "'" + url + "'"
+				+ ").done(function(){"
+				+ '$("' + objInd.selector + '").transition({"background-image": "url(' + url + ')"});'
+				+ "});"
 
 			eval(cdn);
-			
+
 			return false;
 		}
 		//Solo fondo de imágen
 		url = objInd.url || "src/img/" + objInd.nombre;
-		
+
 		$.get(
 			url
-		).done(function(){
-		
-			$(objInd.selector).transition({"background-image": "url("+url+")"});
+		).done(function () {
+
+			$(objInd.selector).transition({ "background-image": "url(" + url + ")" });
 
 		});
 	}
@@ -403,35 +403,35 @@ function cargaImgs(obj){
 
 
 
-function imgTransition(){
-    /*
+function imgTransition() {
+	/*
 	* NOMBRE: imgTransition.
 	* UTILIDAD: Transición de las imagenes del header.
 	* ENTRADAS: Ninguna.
 	* SALIDAS: Ninguna.
-    * VARIABLES****/
-    var numImg = 0;//Contador de el número de imagen.
+	* VARIABLES****/
+	var numImg = 0;//Contador de el número de imagen.
 	/**************/
 	//Cuando no sea movil se cargarán imágenes adicionales
-	if(disp != "movil"){
+	if (disp != "movil") {
 		/*cargaImgs([
 			{'nombre':'p_headerimg1.png', 'selector': '.p_headerImg1'},
 			{'nombre':'p_headerimg2.png', 'selector': '.p_headerImg2'},
 			{'nombre':'p_headerimg3.png', 'selector': '.p_headerImg3'}
 		]);*/
-		$('.p_headerImg1').css('background-image', 'url('+IP+'src/img/p_headerimg1.png)');
-		$('.p_headerImg2').css('background-image', 'url('+IP+'src/img/p_headerimg2.png)');
-		$('.p_headerImg3').css('background-image', 'url('+IP+'src/img/p_headerimg3.png)');
-		setInterval(function(){
+		$('.p_headerImg1').css('background-image', 'url(' + IP + 'src/img/p_headerimg1.png)');
+		$('.p_headerImg2').css('background-image', 'url(' + IP + 'src/img/p_headerimg2.png)');
+		$('.p_headerImg3').css('background-image', 'url(' + IP + 'src/img/p_headerimg3.png)');
+		setInterval(function () {
 			numImg++;
-			if(numImg== 4){
+			if (numImg == 4) {
 				numImg = 1;
 			}
-			$(".p_headerImg"+(numImg)).fadeIn(500);
-			if(numImg== 1){
+			$(".p_headerImg" + (numImg)).fadeIn(500);
+			if (numImg == 1) {
 				$(".p_headerImg3").fadeOut(2000);
-			}else{
-				$(".p_headerImg"+(numImg-1)).fadeOut(2000);
+			} else {
+				$(".p_headerImg" + (numImg - 1)).fadeOut(2000);
 			}
 		}, 6000);
 
@@ -439,99 +439,99 @@ function imgTransition(){
 
 
 
- 	
+
 }
 
-function centraElemento(contenedor, contenido){
+function centraElemento(contenedor, contenido) {
 	altoContenedor = contenedor.height();
 	altoContenido = contenido.height();
-	
+
 	anchoContenedor = contenedor.width();
 	anchoContenido = contenido.width();
-	
-	leftContenido = (anchoContenedor-anchoContenido)/2;
-	topContenido = (altoContenedor-altoContenido)/2;
-	contenido.css({"top":topContenido+"px", "left":leftContenido+"px"});
+
+	leftContenido = (anchoContenedor - anchoContenido) / 2;
+	topContenido = (altoContenedor - altoContenido) / 2;
+	contenido.css({ "top": topContenido + "px", "left": leftContenido + "px" });
 }
 
-function colocaEmergente(param){
+function colocaEmergente(param) {
 	/*
 	* NOMBRE: colocaEmergente
 	* UTILIDAD: Acomoda ventana emergente.
 	* ENTRADAS: Ninguna.
 	* SALIDAS: Ninguna.
 	* VARIABLES*****/
-    //Asigna el máximo tamaño de altura y centra el contenido.
-    var ventanaAlto = window.innerHeight;
-    var ventanaAncho = $(window).width();
-    var emergenteAlto = $(".p_emerbox").height();
-    var emergenteAncho = $(".p_emerbox").width();
+	//Asigna el máximo tamaño de altura y centra el contenido.
+	var ventanaAlto = window.innerHeight;
+	var ventanaAncho = $(window).width();
+	var emergenteAlto = $(".p_emerbox").height();
+	var emergenteAncho = $(".p_emerbox").width();
 	/*************/
 
 
-	$(".p_emerbox").css({"max-height":(window.innerHeight/4)*3});
-    $(".p_emerbox").css({"top":((ventanaAlto/2)-(emergenteAlto/2)),"left":((ventanaAncho/2)-(emergenteAncho/2))});
-	
-    //Al div que esta visible, se obtiene el alto
-   $(".p_emerboxconte").each(function(){
-        if($(this).css("display") == "table"){
-            if($(this).height() > $(".p_emerbox").height()){
-                $(".p_emerbox").css({"overflow-y":"scroll"});
-            }
-        }
+	$(".p_emerbox").css({ "max-height": (window.innerHeight / 4) * 3 });
+	$(".p_emerbox").css({ "top": ((ventanaAlto / 2) - (emergenteAlto / 2)), "left": ((ventanaAncho / 2) - (emergenteAncho / 2)) });
+
+	//Al div que esta visible, se obtiene el alto
+	$(".p_emerboxconte").each(function () {
+		if ($(this).css("display") == "table") {
+			if ($(this).height() > $(".p_emerbox").height()) {
+				$(".p_emerbox").css({ "overflow-y": "scroll" });
+			}
+		}
 	});
 
 	param = param || 'filtra';
-    if(bandActUser && !bandConf){
-	
+	if (bandActUser && !bandConf) {
+
 		//paginadorUser.setValues();
 		/*if(param == "filtra"){
 			$pagActual = 1;
 			$pagSeccion = 1;
 			filtrarAppsSql();
 		}		*/
-    
-    }else if(bandActUser && bandConf){
-    	bandActUserConf = true;
-		
-    }
-	
-    if(bandConf){//Se muestra configuracion
-	
-		try{
-			
-			filtrarAppsAdmin();
-		
-		}catch(e){
-			
-		}
-    }
 
-    if(bandGuest){
+	} else if (bandActUser && bandConf) {
+		bandActUserConf = true;
+
+	}
+
+	if (bandConf) {//Se muestra configuracion
+
+		try {
+
+			filtrarAppsAdmin();
+
+		} catch (e) {
+
+		}
+	}
+
+	if (bandGuest) {
 		//paginadorGuest.setValues();
 		//filtrarAppsGuest();
 		mostrarApps();
-    }
-	
-    /*try{
+	}
+
+	/*try{
 		modalidadMenuFiltro();//Se encuentra
 	}catch(e){
 		
 	}*/
-	
-	if(bandInfo){cerrarEmergentes();}
-	
-    if(user){
-		
+
+	if (bandInfo) { cerrarEmergentes(); }
+
+	if (user) {
+
 		masReciente();
-		
+
 	}
-	
+
 }
 
 
 
-function cerrarEmergentes(){
+function cerrarEmergentes() {
 	/*
 	* NOMBRE: cerrarEmergentes
 	* UTILIDAD: Cierra div emergente.
@@ -539,16 +539,16 @@ function cerrarEmergentes(){
 	* SALIDAS: Ninguna.
 	* VARIABLES: Ninguna.
 	*/
-	if($('#formChangeUser').is(":visible")){
+	if ($('#formChangeUser').is(":visible")) {
 		doIngresa("");
 	};
-	$(".p_emergenteusuario").fadeOut(300,function(){
+	$(".p_emergenteusuario").fadeOut(300, function () {
 		$("p_emergenteusuario, .p_emerboxconte").removeAttr("style");
 	});
 	bandInfo = false;
 }
 
-function verSubtemas(id){
+function verSubtemas(id) {
 	/*
 	* NOMBRE: verSubtemas
 	* UTILIDAD: Muestra subtemas del menú azul.
@@ -559,7 +559,7 @@ function verSubtemas(id){
 	var altoVentana = $(window).height();
 	/************/
 	ideSubtema = id;
-	if(ideSubtema == "contacto"){//Tema contacto
+	if (ideSubtema == "contacto") {//Tema contacto
 		insertaLogLink("Contacto")
 		ocultaSubtemas();
 		$("html body").stop().animate({
@@ -570,28 +570,28 @@ function verSubtemas(id){
 
 	}
 
-	if(menuVisible){
+	if (menuVisible) {
 
-		$(".p_menusup").stop().animate({"top":(altoHeader-$(".p_menusup").height())+"px","opacity":"1"}, 500, function(){
+		$(".p_menusup").stop().animate({ "top": (altoHeader - $(".p_menusup").height()) + "px", "opacity": "1" }, 500, function () {
 			$(".contenido, .maskrismar, .britannica, .libros, .docente").hide();
-			$("."+ideSubtema).show();
-			$(".p_menusup").stop().animate({"top":altoHeader+"px","opacity":"1"}, 500);//Se le asigna un "top" al menu respecto al header.
+			$("." + ideSubtema).show();
+			$(".p_menusup").stop().animate({ "top": altoHeader + "px", "opacity": "1" }, 500);//Se le asigna un "top" al menu respecto al header.
 			menuVisible = true;
 		});//Se le asigna un "top" al menu respecto al header.
 
-	}else{
+	} else {
 
-		$("."+ideSubtema).show();
-		$(".p_menusup").stop().animate({"top":altoHeader+"px","opacity":"1"}, 500);//Se le asigna un "top" al menu respecto al header.
+		$("." + ideSubtema).show();
+		$(".p_menusup").stop().animate({ "top": altoHeader + "px", "opacity": "1" }, 500);//Se le asigna un "top" al menu respecto al header.
 		menuVisible = true;
 	}
 	$("#contenido, #maskrismar, #britannica, #libros, #contacto, #docente").removeClass("p_navsupinbtn_indicador");
-	$("#"+ideSubtema).addClass("p_navsupinbtn_indicador");
-	$(".p_menuemergente").css({"display":"block","height":(altoVentana-altoHeader)+"px","top":altoHeader+"px"});//Muestra div emergente para cerrar menu de navegación.
+	$("#" + ideSubtema).addClass("p_navsupinbtn_indicador");
+	$(".p_menuemergente").css({ "display": "block", "height": (altoVentana - altoHeader) + "px", "top": altoHeader + "px" });//Muestra div emergente para cerrar menu de navegación.
 
 }
 
-function subtemasVisibles(){
+function subtemasVisibles() {
 	/*
 	* NOMBRE: subtemasVisibles
 	* UTILIDAD: Muestra subtemas visibles sin animación.
@@ -600,11 +600,11 @@ function subtemasVisibles(){
 	* VARIABLES	*/
 	var altoHeader = $(".p_header").height();
 	/************/
-	$("."+ideSubtema).show();
-	$(".p_menusup").css({"top":altoHeader+"px", "opacity": "1"});//Se le asigna un "top" al menu respecto al header.
+	$("." + ideSubtema).show();
+	$(".p_menusup").css({ "top": altoHeader + "px", "opacity": "1" });//Se le asigna un "top" al menu respecto al header.
 }
 
-function ocultaSubtemas(){
+function ocultaSubtemas() {
 	/*
 	* NOMBRE: ocultaSubtemas
 	* UTILIDAD: Oculta subtemas.
@@ -617,12 +617,12 @@ function ocultaSubtemas(){
 	$(".p_menuemergente").removeAttr("style");
 	$(".contenido, .maskrismar, .britannica, .libros, .docente").hide();
 	$(".p_menusup").removeAttr("style");
-  $("#contenido, #maskrismar, #britannica, #libros, #contacto, #docente").removeClass("p_navsupinbtn_indicador");
+	$("#contenido, #maskrismar, #britannica, #libros, #contacto, #docente").removeClass("p_navsupinbtn_indicador");
 }
 
 
 
-function ocultaMenuAnimado(callback, callback2){
+function ocultaMenuAnimado(callback, callback2) {
 	/*
 	* NOMBRE: ocultaMenuAnimado
 	* UTILIDAD: Oculta los subtemas, con animación.
@@ -631,18 +631,18 @@ function ocultaMenuAnimado(callback, callback2){
 	* VARIABLES	*/
 	var altoHeader = $(".p_header").height();
 	/***********/
-    if(menuVisible){
-        $(".p_menuemergente").removeAttr("style");
-        $(".p_menusup").stop().animate({"top":(altoHeader-$(".p_menusup").height())+"px","opacity":"1"}, 300, function(){
-            ocultaSubtemas();
-			if(callback != undefined)callback();
-			if(callback2 != undefined)callback2();
-        });
-    }
+	if (menuVisible) {
+		$(".p_menuemergente").removeAttr("style");
+		$(".p_menusup").stop().animate({ "top": (altoHeader - $(".p_menusup").height()) + "px", "opacity": "1" }, 300, function () {
+			ocultaSubtemas();
+			if (callback != undefined) callback();
+			if (callback2 != undefined) callback2();
+		});
+	}
 }
 
 
-function obtenDisp(){
+function obtenDisp() {
 	/*
 	* NOMBRE: obtenDisp
 	* UTILIDAD:
@@ -654,14 +654,14 @@ function obtenDisp(){
 	* VARIABLES: Ninguna.
 	*/
 	//if(navigator.userAgent.toLowerCase().search(/iphone|ipod|ipad|android|webos|blackberry|iemobile|phone|mobile/) > -1){
-	if($("#device").attr("value") == "movil"){
+	if ($("#device").attr("value") == "movil") {
 		disp = "movil";
 		ocultaBanner();
 		resizeMovil();
 		colocaEmergente();
-	}else{
+	} else {
 		disp = "pc";
-		
+
 		imgTransition();
 		resizePc();
 	}
@@ -671,10 +671,10 @@ function obtenDisp(){
 	}catch(e){
 		
 	}*/
-	
+
 }
 
-function cambiaModalidadApp(){
+function cambiaModalidadApp() {
 
 	/*if(disp == "movil" || $(".recienteicon").css("display") === "flex" || $(".recienteicon").css("display") === "block"){
 		$(".p_recienteboximg ").addClass("p_resalteminiatura_over").removeClass("p_resalteminiatura");
@@ -704,50 +704,50 @@ function cambiaModalidadApp(){
 	});
 	*/
 	//modalidadMenuFiltro();
-	if(bandInfo){cerrarEmergentes();}
-	
+	if (bandInfo) { cerrarEmergentes(); }
+
 }
 
 
 
 var bandInfo = false;
 
-function muestraInfo(objeto, rel,nombre, img, objetivos){
-	
-	var objetivos  = objeto.parent().parent().find(".p_recienteinfoobjetivos").find("ul").find("li");
+function muestraInfo(objeto, rel, nombre, img, objetivos) {
+
+	var objetivos = objeto.parent().parent().find(".p_recienteinfoobjetivos").find("ul").find("li");
 	//var nombre_info = objeto.parent().parent().parent().parent().parent().attr("nombre");
-	
+
 	$("#objetivo_info").empty();
-	
+
 	$("#nombre_info").text(nombre);
-	
-	$("#play_info").attr("onclick", "playDemo("+rel+", '"+nombre+"')");
-	
-	$("#play_info").css("background-image", "url("+img+")");
-	
-	
-	
-	objetivos.each(function(index, item){
-		
-		$("#objetivo_info").append("<li>"+item.innerHTML.replace("*", "")+"</li>");
-		
+
+	$("#play_info").attr("onclick", "playDemo(" + rel + ", '" + nombre + "')");
+
+	$("#play_info").css("background-image", "url(" + img + ")");
+
+
+
+	objetivos.each(function (index, item) {
+
+		$("#objetivo_info").append("<li>" + item.innerHTML.replace("*", "") + "</li>");
+
 	});
-	
-	
+
+
 	$(".p_emergenteusuario").fadeIn("fast");
-	
-	$("#info_app").css({"display":"table"});
-	
+
+	$("#info_app").css({ "display": "table" });
+
 	colocaEmergente('noFiltra');
-	
+
 	bandInfo = true;
-	
+
 }
 
 
 
 
-function irArriba(velocidad){
+function irArriba(velocidad) {
 	/*
 	* NOMBRE: irArriba.
 	* UTILIDAD: Anima scroll scrollTop a 0.
@@ -762,7 +762,7 @@ function irArriba(velocidad){
 	}, velocidad);
 }
 
-function verBtnArriba(){
+function verBtnArriba() {
 	/*
 	* NOMBRE: verBtnArriba
 	* UTILIDAD: Muestra el botón que regresa scroll.
@@ -770,16 +770,16 @@ function verBtnArriba(){
 	* SALIDAS: Ninguna.
 	* VARIABLES: Ninguna.
 	*/
-    //if(navigator.userAgent.toLowerCase().search(/iphone|ipod|ipad|android|webos|blackberry|iemobile|phone|mobile/) > -1){
-	if($("#device").attr("value") == "movil"){
-        altoHeader = $(".p_navsup").height()+50;
-    }else{
-        altoHeader = $(".p_header").height();
-    }
+	//if(navigator.userAgent.toLowerCase().search(/iphone|ipod|ipad|android|webos|blackberry|iemobile|phone|mobile/) > -1){
+	if ($("#device").attr("value") == "movil") {
+		altoHeader = $(".p_navsup").height() + 50;
+	} else {
+		altoHeader = $(".p_header").height();
+	}
 
 	otroAlto = $(".p_headersmall").height();
-    var ultimoScroll = 0;
-	$(document).scroll(function(){
+	var ultimoScroll = 0;
+	$(document).scroll(function () {
 		/*if($(document).scrollTop() == 0){
 			
 			if($("#libros_sep").length > 0){
@@ -787,33 +787,33 @@ function verBtnArriba(){
 			}
 		}*/
 		//console.log($(".p_headerin").height() +"---"+ $(document).scrollTop())
-		if($(".p_headerin").height() >= $(document).scrollTop()){
+		if ($(".p_headerin").height() >= $(document).scrollTop()) {
 			$(".p_flotanteicon").stop().fadeOut(250);
-			
-             if($(this).scrollTop() > ultimoScroll){
 
-                $(".p_headerImg1, .p_headerImg2, .p_headerImg3").css({"background-position":"0% "+(70-((350+$(this).scrollTop())/10))+"%"});
-            }else if($(this).scrollTop() < ultimoScroll){
+			if ($(this).scrollTop() > ultimoScroll) {
 
-                $(".p_headerImg1, .p_headerImg2, .p_headerImg3").css({"background-position":"0% "+(70-((350+$(this).scrollTop())/10))+"%"});
-            }
-		}else{
+				$(".p_headerImg1, .p_headerImg2, .p_headerImg3").css({ "background-position": "0% " + (70 - ((350 + $(this).scrollTop()) / 10)) + "%" });
+			} else if ($(this).scrollTop() < ultimoScroll) {
+
+				$(".p_headerImg1, .p_headerImg2, .p_headerImg3").css({ "background-position": "0% " + (70 - ((350 + $(this).scrollTop()) / 10)) + "%" });
+			}
+		} else {
 			$(".p_flotanteicon").stop().fadeIn(250);
 		}
-		if(disp != "movil"){
+		if (disp != "movil") {
 			headerTransit();
 		}
 
 
-		if(ideSubtema != null){
+		if (ideSubtema != null) {
 			subtemasVisibles();
 		}
-        ultimoScroll = $(document).scrollTop();
-		
+		ultimoScroll = $(document).scrollTop();
+
 	});
 }
 
-function headerTransit(){
+function headerTransit() {
 	/*
 	* NOMBRE: headerTransit
 	* UTILIDAD: Transición del header, oculta/Muestra el banner al mover scroll
@@ -822,26 +822,26 @@ function headerTransit(){
 	* VARIABLES: Ninguna.
 	*/
 	//170 PORQUE LA MEDIDA DEL HEADER ES FIJA DE 220 - 50 DEL MENU AZUL(LAS MEDIDAS SIEMPRE SON FIJAS)
-	if($(document).scrollTop() >= 170 ){
+	if ($(document).scrollTop() >= 170) {
 
 		ocultaBanner();
 
-	}else{
+	} else {
 
 		$("#sombras").show();
-        $(".p_header, .p_headerdatos, .p_headersmall, .p_section, .p_menusup").removeAttr("style");//El header aparece con imagen y es parte del scroll.
-        if(bandConf){
-            $("#section_1").addClass("p_oculta");
-        }
+		$(".p_header, .p_headerdatos, .p_headersmall, .p_section, .p_menusup").removeAttr("style");//El header aparece con imagen y es parte del scroll.
+		if (bandConf) {
+			$("#section_1").addClass("p_oculta");
+		}
 
 		$(".p_logonova").removeClass("p_logonovasmall");//Aparece el logo normal del header.
-        $(".p_headergradient1, .p_headergradient2, .p_headerimgs").removeClass("p_headergradientsmall");
+		$(".p_headergradient1, .p_headergradient2, .p_headerimgs").removeClass("p_headergradientsmall");
 		$(".p_navsupinbtn").removeClass("p_navsupinbtn_indicador");//Quita clase de indicador.
-	
+
 	}
 }
 
-function ocultaBanner(){
+function ocultaBanner() {
 	/*
 	* NOMBRE: ocultaBanner
 	* UTILIDAD: Oculta el banner.
@@ -850,34 +850,34 @@ function ocultaBanner(){
 	* VARIABLES: Ninguna.
 	*/
 	$("#sombras").hide();
-	$(".p_headerdatos").css({"height":"50px"});//Se reduce el tamaño del encabezado.
-	
-	$(".p_headersmall").css({"opacity":"1"});//Se agrega la clase para dispositivo movil para el header.
-	
-	$(".p_logonova").addClass("p_logonovasmall");//Se agrega la clase para dispositivo
-    $(".p_headergradient1, .p_headergradient2, .p_headerimgs").addClass("p_headergradientsmall");
-	
-	if($("#is_movil").length 	 == 1){//es pc
-		if($(".p_header").height() == 298 || $(".p_header").height() == 128){
-			//170 PORQUE LA MEDIDA DEL HEADER ES FIJA DE 220 +26 DEL MENU AZUL(LAS MEDIDAS SIEMPRE SON FIJAS)
-		$(".p_section").css({"margin-top":310+"px"});//La sección se posiciona con un margen.
-		}else{
-			//170 PORQUE LA MEDIDA DEL HEADER ES FIJA DE 220 +26 DEL MENU AZUL(LAS MEDIDAS SIEMPRE SON FIJAS)
-			$(".p_section").css({"margin-top":246+"px"});//La sección se posiciona con un margen.
-		}
-		
-	}else{//es movil
-		//170 PORQUE LA MEDIDA DEL HEADER ES FIJA DE 220 +26 DEL MENU AZUL(LAS MEDIDAS SIEMPRE SON FIJAS)
-		$(".p_section").css({"margin-top":$(".p_header").height()+"px"});//La sección se posiciona con un margen.
-	}
-	
-	
+	$(".p_headerdatos").css({ "height": "50px" });//Se reduce el tamaño del encabezado.
 
-	$(".p_header").css({"position":"fixed"});//El header ya no forma parte del scroll.
+	$(".p_headersmall").css({ "opacity": "1" });//Se agrega la clase para dispositivo movil para el header.
+
+	$(".p_logonova").addClass("p_logonovasmall");//Se agrega la clase para dispositivo
+	$(".p_headergradient1, .p_headergradient2, .p_headerimgs").addClass("p_headergradientsmall");
+
+	if ($("#is_movil").length == 1) {//es pc
+		if ($(".p_header").height() == 298 || $(".p_header").height() == 128) {
+			//170 PORQUE LA MEDIDA DEL HEADER ES FIJA DE 220 +26 DEL MENU AZUL(LAS MEDIDAS SIEMPRE SON FIJAS)
+			$(".p_section").css({ "margin-top": 310 + "px" });//La sección se posiciona con un margen.
+		} else {
+			//170 PORQUE LA MEDIDA DEL HEADER ES FIJA DE 220 +26 DEL MENU AZUL(LAS MEDIDAS SIEMPRE SON FIJAS)
+			$(".p_section").css({ "margin-top": 246 + "px" });//La sección se posiciona con un margen.
+		}
+
+	} else {//es movil
+		//170 PORQUE LA MEDIDA DEL HEADER ES FIJA DE 220 +26 DEL MENU AZUL(LAS MEDIDAS SIEMPRE SON FIJAS)
+		$(".p_section").css({ "margin-top": $(".p_header").height() + "px" });//La sección se posiciona con un margen.
+	}
+
+
+
+	$(".p_header").css({ "position": "fixed" });//El header ya no forma parte del scroll.
 
 }
 
-function resizePc(){
+function resizePc() {
 	/*
 	* NOMBRE: resizePc
 	* UTILIDAD: Reestablece valores al redimensionar pantalla.
@@ -886,27 +886,27 @@ function resizePc(){
 	* VARIABLES: Ninguna
 	*/
 
-	$(window).resize(function(){
-		altoNavegacion = $(".p_navsup").height()+50;//Altura de la barra de navegación mas 50 de p_headersmall.
+	$(window).resize(function () {
+		altoNavegacion = $(".p_navsup").height() + 50;//Altura de la barra de navegación mas 50 de p_headersmall.
 		condicionMobile = (disp == "movil" || $(".recienteicon").css("display") === "flex" || $(".recienteicon").css("display") === "block");
 		colocaEmergente();
 		//$("html body").scrollTop(0);
 
-		setTimeout(function(){
+		setTimeout(function () {
 			altoHeader = $(".p_header").height();
 			otroAlto = $(".p_headersmall").height();
-		},600);
+		}, 600);
 
-		if(menuVisible){
+		if (menuVisible) {
 			ocultaSubtemas();
-            $(".p_menuemergente").removeAttr("style");
+			$(".p_menuemergente").removeAttr("style");
 		}
 
 	});
 }
 
 var timerMovil = null;
-function resizeMovil(){
+function resizeMovil() {
 	/*
 	* NOMBRE: resizeMovil
 	* UTILIDAD: Reestablece valores en móviles.
@@ -914,21 +914,21 @@ function resizeMovil(){
 	* SALIDAS: Ninguna.
 	* VARIABLES: Ninguna.
 	*/
-    window.addEventListener("orientationchange", function() {
-		altoNavegacion = $(".p_navsup").height()+50;//Altura de la barra de navegación mas 50 de p_headersmall.
+	window.addEventListener("orientationchange", function () {
+		altoNavegacion = $(".p_navsup").height() + 50;//Altura de la barra de navegación mas 50 de p_headersmall.
 		ocultaBanner();
-		
-		if(timerMovil != null){
+
+		if (timerMovil != null) {
 			clearTimeout(timerMovil);
 		}
-       	timerMovil = setTimeout(function(){
+		timerMovil = setTimeout(function () {
 			condicionMobile = (disp == "movil" || $(".recienteicon").css("display") === "flex" || $(".recienteicon").css("display") === "block");
-		
+
 			colocaEmergente();
 			//altoHeader = $(".p_navsup").height()+50;
 			//$(".p_section").css({"margin-top":$(".p_header").height()+"px"});//La sección se posiciona con un margen.
-			
-			if(menuVisible){
+
+			if (menuVisible) {
 				ocultaSubtemas();
 			}
 		}, 1000);
@@ -936,14 +936,14 @@ function resizeMovil(){
 }
 
 
-function cerrarIframe(){
-	
+function cerrarIframe() {
+
 	$(".p_iframe").fadeOut();
 	$(".p_iframe").removeAttr("src");
-	
+
 }
 
-function execPlayDemo(numero, nombre, lugar, windowReference){
+function execPlayDemo(numero, nombre, lugar, windowReference) {
 	/*
 	* NOMBRE: execPlayDemo
 	* UTILIDAD: Despliega una ventana con la aplicacion especificada.
@@ -952,71 +952,71 @@ function execPlayDemo(numero, nombre, lugar, windowReference){
 	* VARIABLES:
 	*/
 	var empresa = "";
-	if(qES == 1){ empresa = "LG";}else{ empresa = "primaria";}
+	if (qES == 1) { empresa = "LG"; } else { empresa = "primaria"; }
 
-	if(windowReference!=null){
-		windowReference.location = IPSRC + "recurso/cargarApp/"+numero+"/"+empresa;
+	if (windowReference != null) {
+		windowReference.location = IPSRC + "recurso/cargarApp/" + numero + "/" + empresa;
 	} else {
-		window.open(IPSRC + "recurso/cargarApp/"+numero+"/"+empresa);
+		window.open(IPSRC + "recurso/cargarApp/" + numero + "/" + empresa);
 	}
 	//window.open(IPSRC + "index.php/recurso/cargarApp/"+numero+"/primaria");
 	//window.open('https://www.krismar-educa.com.mx/primariauat/','_blank');
 	var info = "";
-	var dispUser = ($("#is_movil").size() == 1)? "PC" : "Móvil";
+	var dispUser = ($("#is_movil").size() == 1) ? "PC" : "Móvil";
 	var lugarProviene = lugar || "Cursos";
 	/*********/
-	try{
-		
-		if(objetoFiltros.hasOwnProperty('dispositivo')){
+	try {
+
+		if (objetoFiltros.hasOwnProperty('dispositivo')) {
 			info += "Dispositivo búsqueda: ";
-			info += (objetoFiltros.dispositivo == 1)? "PC \n" : "Móvil \n";
+			info += (objetoFiltros.dispositivo == 1) ? "PC \n" : "Móvil \n";
 		}
-		if(objetoFiltros.hasOwnProperty('materia')){
-			info += ">Materia: " + atributosMateria[objetoFiltros.materia].nombre +" \n";
+		if (objetoFiltros.hasOwnProperty('materia')) {
+			info += ">Materia: " + atributosMateria[objetoFiltros.materia].nombre + " \n";
 		}
-		if(objetoFiltros.hasOwnProperty('tema')){
-			info += ">Tema: " + objetoFiltros.tema +" \n";
+		if (objetoFiltros.hasOwnProperty('tema')) {
+			info += ">Tema: " + objetoFiltros.tema + " \n";
 		}
-		if(objetoFiltros.hasOwnProperty('grado')){
-			info += ">Grado: " + objetoFiltros.grado +" \n";
+		if (objetoFiltros.hasOwnProperty('grado')) {
+			info += ">Grado: " + objetoFiltros.grado + " \n";
 		}
-		if(objetoFiltros.hasOwnProperty('categoria')){
-			info += ">Categoria: " + objetoFiltros.categoria +" \n";
+		if (objetoFiltros.hasOwnProperty('categoria')) {
+			info += ">Categoria: " + objetoFiltros.categoria + " \n";
 		}
-		if($("#inputB").val() != ""){
-			info += ">Palabras cv: " + $("#inputB").val() +" \n";
+		if ($("#inputB").val() != "") {
+			info += ">Palabras cv: " + $("#inputB").val() + " \n";
 		}
 		//Validar si es movil o pc
 		/*info += ">Dispositivo usuario: ";
 		info += ($("#is_movil").size() == 1)? "PC \n" : "Móvil \n";*/
-		
+
 		info += ">Abierta desde: " + lugarProviene;
-		info += ">Nombre app: "+ nombre;
-		info += ">Id app: "+ numero;
-	}catch(e){
+		info += ">Nombre app: " + nombre;
+		info += ">Id app: " + numero;
+	} catch (e) {
 		info += "Dispositivo usuario: ";
-		info += ($("#is_movil").size() == 1)? "PC \n" : "Móvil \n";
+		info += ($("#is_movil").size() == 1) ? "PC \n" : "Móvil \n";
 		info += ">Abierta desde: " + lugarProviene;
-		info += ">Nombre app: "+ nombre;
-		info += ">Id app: "+ numero;	
+		info += ">Nombre app: " + nombre;
+		info += ">Id app: " + numero;
 	}
-	
-	
+
+
 	$.post(
 		IP + "Home/registraLogApp",
 		{
-			rel:numero,
-			inf:info,
+			rel: numero,
+			inf: info,
 			device: dispUser,
 			accion: "View App"
 		},
-		function(data){
-			
+		function (data) {
+
 		}
 	);
 }
 
-function playDemo(numero, nombre, lugar){
+function playDemo(numero, nombre, lugar) {
 	/*
 	* NOMBRE: playDemo
 	* UTILIDAD: 
@@ -1032,25 +1032,25 @@ function playDemo(numero, nombre, lugar){
 	*/
 	var windowReference = null;
 	var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
-               navigator.userAgent &&
-               navigator.userAgent.indexOf('CriOS') == -1 &&
-               navigator.userAgent.indexOf('FxiOS') == -1;
-	if(!user){
+		navigator.userAgent &&
+		navigator.userAgent.indexOf('CriOS') == -1 &&
+		navigator.userAgent.indexOf('FxiOS') == -1;
+	if (!user) {
 		execPlayDemo(numero, nombre, lugar, windowReference);
-	}else{
-		if(isSafari){
-			windowReference = window.open("","_blank");
+	} else {
+		if (isSafari) {
+			windowReference = window.open("", "_blank");
 		}
 		$.get(
-			IP + "Home/ValidarSesion",{},
-			function(data){
-				if(data=="false"){
-					if(isSafari){
+			IP + "Home/ValidarSesion", {},
+			function (data) {
+				if (data == "false") {
+					if (isSafari) {
 						windowReference.close();
 					}
 					muestraIngresar("Tu sesión ha sido abierta en otro dispositivo\nPor favor ingresa nuevamente.");
 					//location.reload();
-				}else{
+				} else {
 					execPlayDemo(numero, nombre, lugar, windowReference);
 				}
 			}
@@ -1058,10 +1058,10 @@ function playDemo(numero, nombre, lugar){
 	}
 }
 
-function insertaLogLink(seccion){
+function insertaLogLink(seccion) {
 }
 
-function muestraNoInternet(){
+function muestraNoInternet() {
 	/*
 	* NOMBRE: muestraContraseniaOlvidada
 	* UTILIDAD: Muestra div emergente.
@@ -1073,25 +1073,36 @@ function muestraNoInternet(){
 	$(".p_emerboxbienvenido").hide(0);
 	$(".p_emeralerta").text("Se requiere una conexión a internet para ver este contenido");
 	$(".p_emergenteusuario").fadeIn();
-	$($(".p_emerboxconte")[$(".p_emerboxconte").length-1]).css({"display":"table"});
-    colocaEmergente();
+	$($(".p_emerboxconte")[$(".p_emerboxconte").length - 1]).css({ "display": "table" });
+	colocaEmergente();
 }
 
-$(document).ready(function(){
-	$('a.mustBeLogged').click(function(event) {
+$(document).ready(function () {
+	$('a.mustBeLogged').click(function (event) {
 		let url = '';
 		var a = $(this);
-		if(a.attr('class').includes('Escolar')){ url = "https://www.krismar-educa.com.mx/primaria/primaria.php"; }
-		if(a.attr('class').includes('School')){ url = "https://www.krismar-educa.com.mx/primaria/escolar.php"; }
-		if(a.attr('class').includes('Biografía')){ url = "https://www.krismar-educa.com.mx/primaria/biografias.php"; }
-		if(a.attr('class').includes('Mapas')){ url = "https://www.krismar-educa.com.mx/primaria/mapas.php"; }
+		if (a.attr('class').includes('Escolar')) { url = "https://www.krismar-educa.com.mx/primaria/primaria.php"; }
+		if (a.attr('class').includes('School')) { url = "https://www.krismar-educa.com.mx/primaria/escolar.php"; }
+		if (a.attr('class').includes('Biografía')) { url = "https://www.krismar-educa.com.mx/primaria/biografias.php"; }
+		if (a.attr('class').includes('Mapas')) { url = "https://www.krismar-educa.com.mx/primaria/mapas.php"; }
 		let url2 = `${IP}/home/is_connected`;
-		$.get( url2, function( data ) {
-			if(data == "false"){
+		$.get(url2, function (data) {
+			if (data == "false") {
 				muestraNoInternet();
 				return true;
 			}
-			window.open(url,'_blank');
+			window.open(url, '_blank');
 		});
-    });
+	});
+});
+
+$(document).ready(function () {
+	console.log("checking");
+	const parentDiv = document.querySelector('.p_navsupin');
+	const children = parentDiv.children;
+	if (children.length % 2 === 0) {
+		parentDiv.classList.add('even-children');
+	} else {
+		parentDiv.classList.add('odd-children');
+	}
 });

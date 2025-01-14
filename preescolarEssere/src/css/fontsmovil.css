@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*
+==============================================
+CSS TIPOGRAFÍA
+==============================================
+*/
+
+@font-face {
+    font-family:Verdana;
+    src: url("../font/verdana.ttf") format("truetype");
+}
+@font-face {
+    font-family:Verdana;
+    src: url("../font/verdana.eot");
+}
+
+@font-face {
+    font-family:Calibri;
+    src: url("../font/calibri.ttf") format("truetype");
+}
+@font-face {
+    font-family:Calibri;
+    src: url("../font/calibri.eot");
+}
+@font-face {
+    font-family:"Fedra Sans Std";
+    src: url("../font/FedraSansStd Light.ttf") format("truetype");
+}
+@font-face {
+    font-family:"Fedra Sans Std";
+    src: url("../font/FedraSansStd Light.eot");
+}

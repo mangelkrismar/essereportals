@@ -1,0 +1,63 @@
+{
+    "label": "Contenido 1",
+    "extra": {
+        "viewltg1": true,
+        "viewltg2": false,
+        "viewltg3": false
+    },
+    "ltg1_id": [
+       21
+    ],
+    "ltg2_id": [],
+    "ltg3_id": [],
+    "listpda": [
+        {
+
+            "listApp": [
+                47,
+                53
+            ],
+            "label": "1. Describe de manera oral y/o escrita, en su lengua materna,\nobjetos, lugares y seres vivos reales o ficticios."
+        },
+        {
+
+            "listApp": [
+                67,
+                68
+            ],
+            "label": "2. Representa objetos, lugares y seres vivos de forma plástica,\nsonora, corporal, teatral y/o por medio de otros lenguajes\nartísticos."
+        }
+    ],
+    "contenido": "1. Descripción de objetos, lugares y seres vivos.",
+    "tematica": "Descripciones",
+    "palabras_clave": "Observar, describir, adjetivos calificativos, arte",
+    "eje_articulador": "Pensamiento crítico, Apropiación de las culturas a través de la lectura y la escritura, Artes y experiencias estéticas.",
+    "nivel": {
+        "id": 2,
+        "id_padre": 1,
+        "label": "Primaria",
+        "activo": 1,
+        "detalles": []
+    },
+    "fase": {
+        "id": 17,
+        "id_padre": 4,
+        "label": "Tercera",
+        "activo": 1,
+        "detalles": []
+    },
+    "grado": {
+        "id": 5,
+        "id_padre": 2,
+        "label": "Primero",
+        "activo": 1,
+        "detalles": []
+    },
+    "campo_formativo": {
+        "id": 11,
+        "id_padre": 3,
+        "label": "Lenguaje",
+        "activo": 1,
+        "detalles": []
+    }
+}

@@ -1,0 +1,2455 @@
+@charset "utf-8";
+/*
+==============================================
+CSS TIPOGRAFÍA
+==============================================
+*/
+@font-face {
+	font-family:DaxlinePro;
+	src: url("../font/DaxlinePro-Regular.otf") format("opentype");
+}
+/*
+==============================================
+CSS BACKGROUND
+==============================================
+*/
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+    background: transparent;
+}
+
+.d_background1{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#48346f+0,1bd2c5+100 */
+    background: rgb(72,52,111)100%; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: -moz-linear-gradient(top, rgb(72,52,111) 0%, rgb(27,210,197) 100%)100%; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(72,52,111)), color-stop(100%,rgb(27,210,197)))100%; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgb(72,52,111) 0%,rgb(27,210,197) 100%)100%; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgb(72,52,111) 0%,rgb(27,210,197) 100%)100%; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgb(72,52,111) 0%,rgb(27,210,197) 100%)100%; /* IE10+ */
+    background: linear-gradient(to bottom, rgb(72,52,111) 0%,rgb(27,210,197) 100%)100%; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48346f', endColorstr='#1bd2c5',GradientType=0 )100%; /* IE6-8 */
+}
+
+.d_background2{
+    background: rgb(45,14,69) 100%; /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(45,14,69,1) 0%, rgba(158,0,93,1) 100%) 100%; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(45,14,69,1)), color-stop(100%,rgba(158,0,93,1))) 100%; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(45,14,69,1) 0%,rgba(158,0,93,1) 100%) 100%; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(45,14,69,1) 0%,rgba(158,0,93,1) 100%) 100%; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(45,14,69,1) 0%,rgba(158,0,93,1) 100%) 100%; /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(45,14,69,1) 0%,rgba(158,0,93,1) 100%) 100%; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d0e45', endColorstr='#9e005d',GradientType=0 ) 100%; /* IE6-9 */
+}
+
+.d_background3{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fdc295+0,ff3253+100 */
+    background: rgb(253,194,149)100%; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: -moz-linear-gradient(top,  rgb(253,194,149) 0%, rgb(255,50,83) 100%)100%; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(253,194,149)), color-stop(100%,rgb(255,50,83)))100%; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgb(253,194,149) 0%,rgb(255,50,83) 100%)100%; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgb(253,194,149) 0%,rgb(255,50,83) 100%)100%; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgb(253,194,149) 0%,rgb(255,50,83) 100%)100%; /* IE10+ */
+    background: linear-gradient(to bottom,  rgb(253,194,149) 0%,rgb(255,50,83) 100%)100%; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdc295', endColorstr='#ff3253',GradientType=0 )100%; /* IE6-8 */
+}
+
+html{
+    margin:0 auto 0 auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100%;
+    left: 0;
+    top: 0;
+    cursor: default;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 16px;
+}
+.d_contenedor{
+    height:100%;
+    width:100%; 
+    position: relative;
+    top:0%;
+    left: 0%;
+}
+.d_general{
+    width:100%;
+    max-width: 1150px;
+    margin:auto;
+    position: relative;
+    display: table;
+}
+/*
+==============================================
+CSS HEADER
+==============================================
+*/
+.d_header{
+    width:100%;
+    float: left;
+}
+.d_headerIcono1{
+    width:275px;
+    height: 89px;
+    float: left;
+}
+.d_Icono1{
+    width:275px;
+    height: 89px;
+    background: url(../img/headerIcono1.png) no-repeat;
+    background-size: contain;
+}
+.d_headerIcono2{
+    width:275px;
+    height: 89px;
+    float: right;
+}
+.d_Icono2{
+    width:275px;
+    height: 89px;
+    background: url(../img/NOVASCHOOL-REDI.png) no-repeat;
+    background-size: contain;
+}
+.d_headerIcono3{
+    width:80px;
+    height: 89px;
+    float: right;
+}
+.d_Icono3{
+    display: none;
+    width:80px;
+    height: 89px;
+    background: url(../img/headerIcono3.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+/*
+==============================================
+CSS SECCION DE HEXÁGONOS
+==============================================
+*/
+.d_sectiongeneral{
+    width:100%;
+    float: left;
+}
+.d_section{
+    width:600px;
+    margin: auto;
+    margin-top:91px;
+    min-height: 260px;
+    position: relative;
+}
+
+.d_mascaraPantalla{
+    width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.d_tiraPantalla{
+    position: relative;
+    width: 1800px;
+    height: 100%;
+}
+.d_pantalla{
+    width: 600px;
+    height: 100%;
+    float: left;
+}
+/*ESPACIOS*/
+.d_espacio1, .d_espacio2, .d_espacio4, .d_espacio6, .d_espacio7, .d_espacio9, .d_espacio11, .d_espacio12, .d_espacio20, .d_icon_espacio{
+    width:75px;
+    height:5px;
+    float: left;
+    margin-top:-6;
+    }
+.d_espacio3, .d_espacio5, .d_espacio8, .d_espacio10, .d_espacio13, .d_espacio15{
+    width:112.4px;
+    height:5px;
+    float: left;
+    margin-top:-6;
+    }
+/*ESPACIOS OCULTOS*/
+.d_espacio_oculto2, .d_espacio_oculto, .d_icon_espacio_oculto{
+    width:112.4px;
+    height:5px;
+    float: left;
+    margin-top:-6;
+    display: none;
+    }
+
+
+/*BOTONES DE ICONOS*/
+.d_celda1, .d_celda2, .d_celda3,.d_iespacio,
+.d_celda4, .d_celda5, .d_celda6, .d_celda7, .d_celda8, .d_celda9, .d_celda10, .d_celda11,
+.d_celda12, .d_celda13, .d_celda14, .d_celda15, .d_celda16, .d_celda17, .d_celda18, .d_celda19,
+.d_celda20, .d_celda21, .d_celda36, .d_celda37,.d_celda38,.d_celda39,.d_celda40,.d_celda41,.d_celda42,.d_celda43,.d_celda44,.d_celda45{
+    width:150px;
+    height:130px;
+    margin-top: -66px;
+    float: left;
+    cursor: pointer;
+}
+.d_celda1{
+    background: url(../img/IconosNova1.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda2{
+    background: url(../img/IconosNova2.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda3{
+    background: url(../img/IconosNova3.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda4{
+    background: url(../img/IconosNova4.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda5{
+    background: url(../img/IconosNova5.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda6{
+    background: url(../img/IconosNova6.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda7{
+    background: url(../img/IconosNova7.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda8{
+    background: url(../img/IconosNova8.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda9{
+    background: url(../img/IconosNova9.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda10{
+    background: url(../img/IconosNova10.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda11{
+    background: url(../img/IconosNova11.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda12{
+    background: url(../img/IconosNova12.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda13{
+    background: url(../img/IconosNova13.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda14{
+    background: url(../img/IconosNova14.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda15{
+    background: url(../img/IconosNova15.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda16{
+    background: url(../img/IconosNova16.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda17{
+    background: url(../img/IconosNova17.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda18{
+    background: url(../img/IconosNova18.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda19{
+    background: url(../img/IconosNova19.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda20{
+    background: url(../img/IconosNova20.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda21{
+    background: url(../img/IconosNova21.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+
+.d_celda36{
+    background: url(../img/IconosNova22.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda37{
+    background: url(../img/IconosNova37.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda38{
+    background: url(../img/IconosNova25.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda39{
+    background: url(../img/IconosNova27.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda40{
+    background: url(../img/IconosNova40.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda41{
+    background: url(../img/IconosNova41.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda42{
+    background: url(../img/IconosNova42.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda43{
+    background: url(../img/IconosNova43.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda44{
+    background: url(../img/IconosNova44.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_celda45{
+    background: url(../img/IconosNova45.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+
+.d_iespacio{
+    background: url(../img/IconoEspacio.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+	visibility: hidden;
+}
+/*
+==============================================
+CSS SECCION HEXÁGONOS HOVER
+==============================================
+*/
+.d_celda1Hover{    
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda2Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda3Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda4Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda5Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda6Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda7Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda8Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda9Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda10Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda11Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda12Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda13Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda14Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda15Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda16Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda17Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda18Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda19Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda20Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda21Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda22Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda23Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda24Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda25Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda26Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda27Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda28Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda29Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda30Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda31Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda32Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda33Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda34Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda35Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda36Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda37Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda38Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda39Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda40Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda41Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda42Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+.d_celda43Hover{
+    animation: flipp 0.7s linear 1 both;
+}
+
+.d_celda44Hover{  /*Para que de vueltas y se reproduzca infinitramente*/
+   animation: flipp44 6s infinite linear;
+}
+.d_celda45Hover{  /*Para que de vueltas y se reproduzca infinitramente*/
+   animation: flipp 0.7s linear 1 both;
+}
+
+
+
+.d_celda44Hover1{  /*Para que de vueltas y se reproduzca infinitramente*/
+   animation: flipp 0s linear 1 both;
+}
+/*
+==============================================
+CSS SECCION DE DEMOS GRATUITAS
+==============================================
+*/
+.d_sectiondemos{
+    width:100%;
+    float: left;
+}
+.d_demos{
+    width:600px;
+    margin: auto;
+    margin-top:91px;
+}
+/*BOTONES DE ICONOS*/
+.d_demosboton1, .d_demosboton2, .d_demosboton3,
+.d_demosboton4, .d_demosboton5, .d_demosboton6, .d_demosboton7, .d_demosboton8, .d_demosboton9, .d_demosboton10, .d_demosboton11,
+.d_demosboton12, .d_demosboton13, .d_demosboton14{
+    width:150px;
+    height:130px;
+    margin-top: -66px;
+    float: left;
+    cursor: pointer;
+}
+.d_demosboton1{
+    background: url(../img/IconosDemos1.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_demosboton2{
+    background: url(../img/IconosDemos2.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_demosboton3{
+    background: url(../img/IconosDemos3.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_demosboton4{
+    background: url(../img/IconosDemos4.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_demosboton5{
+    background: url(../img/IconosDemos5.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_demosboton6{
+    background: url(../img/IconosDemos6.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_demosboton7{
+    background: url(../img/IconosDemos7.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_demosboton8{
+    background: url(../img/IconosDemos8.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_demosboton9{
+    background: url(../img/IconosDemos9.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_demosboton10{
+    background: url(../img/IconosDemos10.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_demosboton11{
+    background: url(../img/IconosDemos11.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_demosboton12{
+    background: url(../img/IconosDemos12.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_demosboton13{
+    background: url(../img/IconosDemos13.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+.d_demosboton14{
+    background: url(../img/IconosDemos14.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+}
+/*
+==============================================
+CSS SECCION BTNS CARRUSEL
+==============================================
+*/
+.d_section_btncarrusel{
+    width: 600px;
+    margin-top:194px;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+}
+.d_sectionbtncarruselprev, .d_sectionbtncarruselnext{
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(0,0,0,.15);
+    position: absolute;
+    top: 0%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.d_sectionbtncarruselprev{
+    left: -4rem;
+}
+.d_sectionbtncarruselnext{
+    right: -4rem;
+}
+.d_sectionbtncarruselprev > svg, .d_sectionbtncarruselnext > svg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.d_sectionbtncarrusel_inactive{
+    cursor: default;
+    opacity: 0.5;
+}
+
+/*
+==============================================
+CSS SECCION BTNS
+==============================================
+*/
+.d_sectionbtns{
+    width: 100%;
+    height: 5rem;
+    //background-color: dimgrey;
+    float: left;
+    margin-top: 1.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.d_sectionbtn1, .d_sectionbtn2, .d_sectionbtn3{
+    border: 0.15rem solid #f2f2f2;
+    box-sizing: border-box;
+    float: left;
+    padding: 0rem 1.4rem 0rem 1.4rem;
+    border-radius: 0.5rem;
+    font-family: daxlinePro;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #f2f2f2;
+    margin: 0 1rem 0 1rem;
+    cursor: pointer;
+    tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    
+}
+.d_sectionbtn_selected{
+    border: 0.15rem solid yellow;
+    color: yellow;
+    text-shadow: 0 0 0.2rem rgba(0,0,0,.5);
+    box-shadow: 0 0 0.2rem rgba(0,0,0,.5);
+    cursor: default;
+}
+/*
+==============================================
+CSS SECCION LOGOS
+==============================================
+*/
+.d_logosgeneral{
+    width:100%;
+    float: left;
+}
+.d_logosmascara{
+    width:810px;
+	height:64px;
+    margin: auto;
+    margin-top:40px;
+    overflow-x: hidden;
+}
+.d_logoscaja{
+    position: relative;
+    height:64px;
+    width:2790px;
+}
+.d_logo1, .d_logo2, .d_logo3, .d_logo4, .d_logo5, .d_logo6,.d_logo7, .d_logo8,.d_logo9, .d_logo10, .d_logo11, .d_logo12, .d_logo13, .d_logo14, .d_logo15, .d_logo16, .d_logo17, .d_logo18, .d_logo19, .d_logo20, .d_logo21, .d_logo22, .d_logo23, .d_logo24, .d_logo25, .d_logo26, .d_logo27, .d_logo28, .d_logo29, .d_logo30, .d_logo31, .d_logo32, .d_logo33{
+    width:90px;
+    height:64px;
+    float: left;
+}
+.d_logo1{
+    background: url(../img/logo1.png) no-repeat;
+    background-size: contain;
+}
+.d_logo2{
+    background: url(../img/logo2.png) no-repeat;
+    background-size: contain;
+}
+.d_logo3{
+    background: url(../img/logo3.png) no-repeat;
+    background-size: contain;
+}
+.d_logo4{
+    background: url(../img/logo4.png) no-repeat;
+    background-size: contain;
+}
+.d_logo5{
+    background: url(../img/logo5.png) no-repeat;
+    background-size: contain;
+}
+.d_logo6{
+    background: url(../img/logo6.png) no-repeat;
+    background-size: contain;
+}
+.d_logo7{
+    background: url(../img/logo7.png) no-repeat;
+    background-size: contain;
+}
+.d_logo8{
+    background: url(../img/logo8.png) no-repeat;
+    background-size: contain;
+}
+.d_logo9{
+    background: url(../img/logo9.png) no-repeat;
+    background-size: contain;
+}
+.d_logo10{
+    background: url(../img/logo10.png) no-repeat;
+    background-size: contain;
+}
+.d_logo11{
+    background: url(../img/logo11.png) no-repeat;
+    background-size: contain;
+}
+.d_logo12{
+    background: url(../img/logo12.png) no-repeat;
+    background-size: contain;
+}
+.d_logo13{
+    background: url(../img/logo13.png) no-repeat;
+    background-size: contain;
+}
+.d_logo14{
+    background: url(../img/logo14.png) no-repeat;
+    background-size: contain;
+}
+.d_logo15{
+    background: url(../img/logo15.png) no-repeat;
+    background-size: contain;
+}
+.d_logo16{
+    background: url(../img/logo16.png) no-repeat;
+    background-size: contain;
+}
+.d_logo17{
+    background: url(../img/logo17.png) no-repeat;
+    background-size: contain;
+}
+.d_logo18{
+    background: url(../img/logo18.png) no-repeat;
+    background-size: contain;
+}
+.d_logo19{
+    background: url(../img/logo19.png) no-repeat;
+    background-size: contain;
+}
+.d_logo20{
+    background: url(../img/logo20.png) no-repeat;
+    background-size: contain;
+}
+.d_logo21{
+    background: url(../img/logo21.png) no-repeat;
+    background-size: contain;
+}
+.d_logo22{
+    background: url(../img/logo22.png) no-repeat;
+    background-size: contain;
+}
+.d_logo23{
+    background: url(../img/logo23.png) no-repeat;
+    background-size: contain;
+}
+.d_logo24{
+    background: url(../img/logo24.png) no-repeat;
+    background-size: contain;
+}
+.d_logo25{
+    background: url(../img/logo25.png) no-repeat;
+    background-size: contain;
+}
+.d_logo26{
+    background: url(../img/logo26.png) no-repeat;
+    background-size: contain;
+}
+.d_logo27{
+    background: url(../img/logo27.png) no-repeat;
+    background-size: contain;
+}
+.d_logo28{
+    background: url(../img/logo28.png) no-repeat;
+    background-size: contain;
+}
+.d_logo29{
+    background: url(../img/logo29.png) no-repeat;
+    background-size: contain;
+}
+.d_logo30{
+    background: url(../img/logo30.png) no-repeat;
+    background-size: contain;
+}
+.d_logo31{
+    background: url(../img/logo31.png) no-repeat;
+    background-size: contain;
+}
+.d_logo32{
+    background: url(../img/logo32.png) no-repeat;
+    background-size: contain;
+}
+.d_logo33{
+    background: url(../img/logo33.png) no-repeat;
+    background-size: contain;
+}
+/*
+==============================================
+CSS SECCION REGISTRO
+==============================================
+*/
+.d_registrogeneral{
+    width:100%;
+    float: left;
+    margin-top:70px;
+    position: relative;
+}
+.d_registro{
+    width:80%;
+    max-width:350px;
+    margin: auto;
+}
+.d_cajaregistro{
+    width:100%;
+    max-width:350px;
+    float: left;
+    background-color:#FFFFFF;
+    border-radius: 10px;
+}
+
+/*Para el registro de los usuarios en la plataforma seleccionada*/
+.d_registrogeneralUC{
+    width:100%;
+    float: left;
+    position: relative;
+}
+.d_registroU{
+    width:80%;
+    max-width:480px;
+	min-width: 280px;
+    margin: auto;
+}
+.d_cajaregistroU{
+    width:100%;
+    max-width:480px;
+	min-width: 280px;
+    float: left;
+    background-color:#FFFFFF;
+	border-radius:10px !important;
+	background-image:url(../img/menutexture.png) !important;
+	background-size: cover !important;
+    background-position: center !important;
+    background-repeat: repeat !important;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .35) !important;
+}
+.titlePaquete{
+	width:100%;
+	float:left;
+	text-align:center;
+	font-weight: bold;	
+	font-size: 1.1em;
+	font-family: daxlinePro;
+	height:40px;
+	color:#b9007b;
+	margin-bottom:0px;
+}
+#portalE{
+	text-decoration:underline;
+}
+.d_boton{
+    width:91%;
+    font-weight: bold;	
+	font-size: 1em;
+    padding-bottom: 2%;
+    padding-top: 2%;
+	margin-left: 6%;
+}
+.d_botonactiva{
+	width:91%;
+    font-weight: bold;	
+	font-size: 1em;
+    padding-bottom: 2%;
+    padding-top: 2%;
+	/*margin-left: 6%;*/
+	border:0;
+	outline:none;
+	background-color: #b9007b;
+	color: #ffffff;
+	cursor:pointer;
+}
+.ui-widget-overlay{
+	opacity: 0.5 !important;
+	background-color:black !important;
+}
+.ui-dialog{
+	border-radius:10px !important;
+	background-image:url(../img/menutexture.png) !important;
+	background-size: auto !important;
+    background-position: center !important;
+    background-repeat: repeat !important;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .35) !important;
+}
+.ui-dialog-title{
+	color: #b9007b;
+}
+.d_boton1{
+    font-weight: bold;	
+	font-size: 1em;
+    padding-bottom: 2%;
+    padding-top: 2%;
+	margin-left: 6%;
+}
+
+.d_link{
+    width:91%;
+	font-size: 0.7em;
+	color: red;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+
+/**Termina aquí el registro de usuarios**/
+.d_cajacontenido{
+    width:90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.d_cajatexto{
+    width:100%;
+    font-weight: bold;
+    font-family: daxlinePro;
+    font-size: 1em;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+/*ESTILO DE "NOVA"*/
+span.d_cajatexto{
+    font-weight: 100;
+}
+/*ESTILO DE "15"*/
+span.d_cajatextoB{
+    font-size: 1.3em;
+    font-weight: 900;
+}
+.d_cajatextoM{
+    width:100%;
+	height: 30px;
+    font-weight: bold;
+    font-family: daxlinePro;
+    font-size: 0.9em;
+    /*padding-bottom: 2%;
+    padding-top: 2%;*/
+	color: red;
+	float: left;
+}
+/*CONETENEDOR DE "PAIS" Y "ESTADO"*/
+.d_cajaopciones{
+    width:100%;
+    float: left;
+}
+.d_cajaopcion1{
+    width:48%;
+    float: left;
+    margin-right: 2%;
+}
+.d_cajaopcion2{
+    width:48%;
+    float: left;
+    margin-left: 2%;
+    display: none;
+}
+.d_cajatexto2{
+    width:100%;
+    float: left;
+    font-weight: bold;
+    font-family: daxlinePro;
+    font-size: 1em;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+.d_input{
+    width:96%;
+    float: left;
+    font-family: daxlinePro;
+    padding: 2% 2% 2% 2%;
+    color:#4D4D4D;
+    font-size: 0.9em;
+    border:none;
+    border-radius: 5px;
+    outline:0px;
+    background: #CCCCCC;
+}
+/*OPCIONES NIVEL ESCOLAR*/
+.d_opciones{
+    width:100%;
+    float: left;
+    font-family: daxlinePro;
+    padding: 2% 2% 2% 2%;
+    color:#4D4D4D;
+    font-size: 0.9em;
+    border:none;
+    border-radius: 5px;
+    background: #CCCCCC;
+}
+/*OPCIONES PAÍS*/
+.d_opciones2{
+    width:100%;
+    float: left;
+    font-family: daxlinePro;
+    padding: 2% 0% 2% 0%;
+    color:#4D4D4D;
+    font-size: 0.9em;
+    border:none;
+    border-radius: 5px;
+    background: #CCCCCC;
+}
+/*OPCIONES ESTADO*/
+.d_opciones3{
+    width:100%;
+    float: left;
+    font-family: daxlinePro;
+    padding: 2% 0% 2% 0%;
+    color:#4D4D4D;
+    font-size: 0.9em;
+    border:none;
+    border-radius: 5px;
+    background: #CCCCCC;
+}
+/*DESPLEGABLE DEL SELECT*/
+.d_opciones select option{
+	background:#E6E6E6;
+	text-indent:1em;
+}
+.d_avioncaja{
+    width:100%;
+    height:43px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+/*GUARDA Y ENVIA LA INFORMACION*/
+.d_avion{
+    width:43px;
+    height:43px;
+    background: url(../img/avion.png) no-repeat;
+    background-size: contain;
+    margin: auto;
+    cursor: pointer;
+}
+.d_cajasombra{
+    width:100%;
+    max-width:350px;
+    height:37px;
+    float: left;
+    background: url(../img/sombra.png) no-repeat;
+    background-size: contain;
+}
+/*
+==============================================
+CSS SECCION ACTIVACIÓN
+==============================================
+*/
+.d_activaciongeneral{
+    width:100%;
+    float: left;
+    margin-top:70px;
+    position: relative;
+}
+.d_activacion{
+    width:80%;
+    max-width:420px;
+    margin: auto;
+}
+.d_cajaActivacion{
+    width:100%;
+    float: left;
+    background-color:#FFFFFF;
+    border-radius: 10px;
+}
+.d_cajaAcontenido{
+    width:90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.d_cajaAimg{
+    width:25%;
+    height: 123px;
+    float: left;
+    margin-right: 5%;
+}
+.d_imgActivacion{
+    width:100px;
+    height:123px;
+    margin: auto;
+    background: url(../img/Activacion.png) no-repeat;
+    background-size: contain;
+}
+.d_generalAtexto{
+    width:65%;
+    float: left;
+}
+.d_cajaAtextocolor{
+    font-weight: bold;
+    font-family: daxlinePro;
+    font-size: 1em;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    color:#BA007C;
+}
+.d_cajaAtexto{
+    font-weight: bold;
+    font-family: daxlinePro;
+    font-size: 1em;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+.d_lineaseparadora{
+    width:90%;
+    height:2px;
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #CCCCCC;
+    float: left;
+}
+.d_generaltexto{
+    width:100%;
+    float: left;
+}
+.d_cajatxt{
+    font-weight: bold;
+    font-family: daxlinePro;
+    font-size: 1em;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+/*ESTILO DE COLOR PARA EL TEXTO*/
+span.d_cajatxt{
+    color:#BA007C;
+}
+.d_cajatxt2{
+    width:100%;
+    float: left;
+    font-weight: bold;
+    font-family: daxlinePro;
+    font-size: 1em;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+.d_input2{
+    width:70%;
+    float: left;
+    font-family: daxlinePro;
+    padding: 2% 2% 2% 2%;
+    color:#4D4D4D;
+    font-size: 0.9em;
+    border:none;
+    border-radius: 5px;
+    outline:0px;
+    background: #CCCCCC;
+}
+.d_avioncaja2{
+    width:25%;
+    height:43px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+/*GUARDA Y ENVIA LA INFORMACION*/
+.d_avion2{
+    width:43px;
+    height:43px;
+    background: url(../img/avion2.png) no-repeat;
+    background-size: contain;
+    margin: auto;
+    cursor: pointer;
+    border: 0;
+    margin-left: 40%; 
+	margin-top: 20px;
+}
+.d_cajatxtaviso{
+    width:100%;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    font-family: daxlinePro;
+    color:#BA007C;
+    font-size: 0.8em;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+.d_cajasombra2{
+    width:100%;
+    max-width:450px;
+    height:37px;
+    margin-top: 10px;
+    float: left;
+    background: url(../img/sombra.png) no-repeat;
+    background-size: contain;
+}
+/*
+==============================================
+CSS SECCION QUIÉNES SOMOS
+==============================================
+*/
+.d_somosgeneral{
+    width:100%;
+    float: left;
+    margin-top:70px;
+    position: relative;
+}
+.d_somos{
+    width:80%;
+    max-width:430px;
+    margin: auto;
+}
+.d_cajasomos{
+    width:100%;
+    float: left;
+    background-color:#FFFFFF;
+    border-radius: 10px;
+}
+.d_somoscontenido{
+    width:90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.d_somosimg{
+    width:30%;
+    float: left;
+    height:143px;
+    margin-right: 5%;
+}
+.d_somosimgicono{
+    width:100px;
+    height: 143px;
+    background: url(../img/IconoKrismar.png) no-repeat;
+    background-size:contain; 
+    margin: auto;
+}
+.d_somosgeneraltxt{
+    width:65%;
+    float: left;
+}
+.d_somostxt{
+    font-weight: bold;
+    float: left;
+    font-family: daxlinePro;
+    padding: 2% 2% 2% 2%;
+    color:#4D4D4D;
+    font-size: 0.9em;
+}
+.d_somosiconosgeneral{
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+}
+.d_somosiconos{
+    max-width:240px;
+    margin: auto;
+}
+.d_somosicono1, .d_somosicono2, .d_somosicono3, .d_somosicono4{
+    width:60px;
+    height:64px;
+    float:left; 
+    cursor: pointer;
+}
+.d_somosicono1{
+    background: url(../img/iconosoporte.png) no-repeat;
+    background-size: contain;
+}
+.d_somosicono2{
+    background: url(../img/iconocontacto.png) no-repeat;
+    background-size: contain;
+}
+.d_somosicono3{
+    background: url(../img/icononoticias.png) no-repeat;
+    background-size: contain;
+}
+.d_somosicono4{
+    background: url(../img/iconopregfrecuentes.png) no-repeat;
+    background-size: contain;
+}
+/*ESTOS SON LOS HOVER DE LOS ICONOS*/
+.d_somosicono1:hover{
+    background: url(../img/iconosoportehover.png) no-repeat;
+    background-size: contain;
+}
+.d_somosicono2:hover{
+    background: url(../img/iconocontactohover.png) no-repeat;
+    background-size: contain;
+}
+.d_somosicono3:hover{
+    background: url(../img/icononoticiashover.png) no-repeat;
+    background-size: contain;
+}
+.d_somosicono4:hover{
+    background: url(../img/iconopregfrecuenteshover.png) no-repeat;
+    background-size: contain;
+}
+/*
+==============================================
+CSS SECCION SOPORTE TÉCNICO/CONTACTO
+==============================================
+*/
+.d_soportegeneral{
+    width:100%;
+    float: left;
+    margin-top:70px;
+    position: relative;
+}
+.d_soporte{
+    width:80%;
+    max-width:430px;
+    margin: auto;
+}
+.d_cajasoporte{
+    width:100%;
+    float: left;
+    background-color:#FFFFFF;
+    border-radius: 10px;
+}
+.d_soportecontenido{
+    width:90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.d_contenedorsoporte{
+    width: 100%;
+    float:left;
+}
+.d_soporteimgeneral{
+    float: left;
+    height:127px;
+    margin-right: 5%;
+}
+.d_soporteimg{
+    width:100px;
+    height:127px;
+    background: url(../img/soportetecnico.png) no-repeat;
+    background-size: contain;
+    margin: auto;
+}
+.d_soportetxt{
+    width:60%;
+    float: left;
+    font-weight: bold;
+    font-family: daxlinePro;
+    padding: 2% 2% 2% 2%;
+    color:#4D4D4D;
+    font-size: 0.9em;
+}
+.d_contenedorubicacion{
+    width:100%;
+    float:left;
+    margin-top: 15px;
+}
+.d_ubicacionimgeneral{
+    float: left;
+    height:102px;
+    margin-right: 5%;
+}
+.d_ubicacionimg{
+    width:100px;
+    height:127px;
+    background: url(../img/ubicacion.png) no-repeat;
+    background-size: contain;
+    margin: auto;
+    cursor: pointer;
+}
+/*EL TEXTO DE UBICACION USA EL ESTILO DE .d_soportetxt*/
+/*PARA EL TEXTO Y LOS INPUTS SE USA .d_cajatexto Y .d_input DE SECCIÓN REGISTRO*/
+.d_captchaIMG{
+    text-align: center;
+}
+.d_captcha{
+    width:44%;
+    float: left;
+    font-family: daxlinePro;
+    
+    margin-right: 2%;
+    color:#4D4D4D;
+    font-size: 0.9em;
+    border:none;
+    border-radius: 5px;
+    outline:0px;
+    /*background: #CCCCCC;*/
+}
+.d_captchatxt{
+    width:44%;
+    float: left;
+    font-family: daxlinePro;
+    padding: 2% 2% 2% 2%;
+    margin-left: 2%;
+    color:#4D4D4D;
+    font-size: 0.9em;
+    border:none;
+    border-radius: 5px;
+    outline:0px;
+    background: #CCCCCC;
+}
+.d_comentarios{
+    width:65%;
+    height:100px;
+    float: left;
+    font-family: daxlinePro;
+    padding: 2% 2% 2% 2%;
+    margin-right: 2%;
+    color:#4D4D4D;
+    font-size: 0.9em;
+    border:none;
+    border-radius: 5px;
+    outline:0px;
+    background: #CCCCCC;
+}
+/*
+==============================================
+CSS SECCION PREGUNTAS FRECUENTES
+==============================================
+*/
+.d_preguntasgeneral{
+    width:100%;
+    float: left;
+    margin-top:70px;
+    position: relative;
+}
+.d_preguntas{
+    width:80%;
+    max-width:430px;
+    margin: auto;
+}
+.d_cajapreguntas{
+    width:100%;
+    float: left;
+    background-color:#FFFFFF;
+    border-radius: 10px;
+}
+.d_preguntascontenido{
+    width:90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.d_preguntastxt{
+    width:96%;
+    float: left;
+    font-weight: bold;
+    font-family: daxlinePro;
+    padding: 2% 2% 2% 2%;
+    color:#4D4D4D;
+    font-size: 0.9em;
+}
+.d_preguntasiconosgeneral{
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.d_preguntasiconos{
+    max-width:80px;
+    margin: auto;
+}
+.d_preguntasiconos2{
+    max-width:210px;
+    margin: auto;
+}
+.d_preguntasicono1, .d_preguntasicono2 {
+    width:80px;
+    height:54px;
+    float:left; 
+}
+.d_preguntasicono3, .d_preguntasicono4, .d_preguntasicono5 {
+    width:70px;
+    height:74px;
+    float:left; 
+    cursor: pointer;
+}
+.d_preguntasicono1{
+    background: url(../img/preguntasicono1.png) no-repeat;
+    background-size: contain;
+}
+.d_preguntasicono2{
+    background: url(../img/preguntasicono2.png) no-repeat;
+    background-size: contain;
+}
+.d_preguntasicono3{
+    background: url(../img/iconosoporte.png) no-repeat;
+    background-size: contain;
+}
+.d_preguntasicono4{
+    background: url(../img/iconocontacto.png) no-repeat;
+    background-size: contain;
+}
+.d_preguntasicono5{
+    background: url(../img/iconoubicacion.png) no-repeat;
+    background-size: contain;
+}
+/*ESTOS SON LOS HOVER DE LOS ICONOS*/
+.d_preguntasicono3:hover{
+    background: url(../img/iconosoportehover.png) no-repeat;
+    background-size: contain;
+}
+.d_preguntasicono4:hover{
+    background: url(../img/iconocontactohover.png) no-repeat;
+    background-size: contain;
+}
+.d_preguntasicono5:hover{
+    background: url(../img/iconoubicacionhover.png) no-repeat;
+    background-size: contain;
+}
+.d_vermas{
+    width:96%;
+    float: left;
+    text-align: right;
+    font-weight: bold;
+    font-family: daxlinePro;
+    padding: 1% 2% 1% 2%;
+    font-size: 0.75em;
+    color:#BA007C;
+}
+/*
+==============================================
+CSS SECCION LICENCIAS
+==============================================
+*/
+.d_licenciasgeneral{
+    width:100%;
+    float: left;
+    margin-top:70px;
+    position: relative;
+}
+.d_licencias{
+    width:90%;
+    max-width:600px;
+    margin: auto;
+}
+.d_cajalicencias{
+    width:100%;
+    float: left;
+    background-color:#FFFFFF;
+    border-radius: 1px;
+    overflow-x: hidden 
+}
+.d_tiralicencias{
+    width: 600px;
+    height: 466px;
+    position: relative;
+}
+.d_licenciascontenido1{
+    width:600px;
+    height:466px;
+    background: url(../img/licenciaPreescolar_horizontal.png) no-repeat;
+    background-size:contain;
+    position: absolute;
+    display: none;
+}
+.d_licenciascontenido2{
+    width:600px;
+    height:466px;
+    background: url(../img/licenciaPrimaria_horizontal.png) no-repeat;
+    background-size:contain;
+    position: absolute;
+    display: none;
+}
+.d_licenciascontenido3{
+    width:600px;
+    height:466px;
+    background: url(../img/licenciaSecundaria_horizontal.png) no-repeat;
+    background-size:contain;
+    position: absolute;
+    display: none;
+}
+.d_licenciascontenido4{
+    width:600px;
+    height:466px;
+    background: url(../img/licenciaBachillerato_horizontal.png) no-repeat;
+    background-size:contain;
+    position: absolute;
+    display: none;
+}
+.d_cambiosgeneral{
+    width:100%;
+    float: left;
+    margin-top: 15px;
+    position: relative;
+    display: none !important;
+}
+.d_cajacambios{
+    max-width:160px;
+    margin: auto;
+}
+.d_cajacambios2{
+    max-width:120px;
+    margin: auto;
+}
+.d_circulocambios{
+    width:10px;
+    height:10px;
+    float:left;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #FFFFFF;
+    border-radius:5px;
+    cursor: pointer;
+}
+.d_cajasombra3{
+    width:100%;
+    float: left;
+    margin-top: 15px;
+}
+.d_sombra{
+    width:80%;
+    height:37px;
+    margin: auto;
+    background: url(../img/sombra.png) no-repeat;
+    background-size: contain;
+}
+/*
+==============================================
+CSS SECCION FOOTER
+==============================================
+*/
+.d_footergeneral{
+    width:100%;
+    float: left;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.d_footerArriba{
+    width:182px;
+    max-width:203px;
+    margin: auto;
+}
+.p_footerdatosboxredes{
+    width: 20%;
+    float: left;
+    cursor: pointer;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;  
+}
+.p_footerdatosboxredes > div{
+    width: 40px;
+    height: 40px;
+    float: left;
+    background-image: url(../img/p_footericon_rsociales.png);
+    background-size: 300%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.p_footerdatosboxredes > div:nth-child(1){
+   background-position: 0%;
+}
+.p_footerdatosboxredes > div:nth-child(2){
+   background-position: 50%;
+    margin-left: 5px;
+}
+.p_footerdatosboxredes > div:nth-child(3){
+   background-position: 100%;
+    margin-left: 5px;
+}
+.d_cajaup{
+    width:100%;
+    height:70px;
+}
+/* FOOTER */
+
+.d_footer{
+    width: 100%;
+    bottom: 0%;
+    /*background-color: #003253;*/
+    position: relative;
+    display: table;
+    font-family: arial;
+    margin-top: 5%;
+    border-top: solid 1px #fff;
+}
+.d_footer_in{
+    max-width: 1024px;
+    position: relative; 
+    margin: auto;
+    margin-top:5px;
+}
+.d_footer_datosGral{
+    width: 100%;
+    height: 50%;
+}
+.d_footer_datos{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.d_KrismarEducacion{
+    width: 35%;
+    height: 50%;
+    margin: auto;
+}
+.d_footer_krismar, .d_footer_ubicacion, .d_footer_telefono, .d_footer_manual, .d_footer_contacto, .d_footer_ayuda{
+    width:40px;
+    height:40px;
+    float: left;
+    background: url(../img/p_footericonos.png) no-repeat;
+}
+.d_footer_krismar{
+    background-position: 0%;
+    background-size: 600%;
+}
+.d_footer_ubicacion{
+    background-position: 20%;
+    background-size: 600%;
+}
+.d_footer_telefono{
+    background-position: 40%;
+    background-size: 600%;
+}
+.d_footer_manual{
+    background-position: 60%;
+    background-size: 600%;
+}
+.d_footer_contacto{
+    background-position: 80%;
+    background-size: 600%;
+}
+.d_footer_ayuda{
+    background-position: 100%;
+    background-size: 600%;
+}
+.d_footer_info{
+    height: 40px;
+    width: 80%;
+    font-size: 0.7rem;
+    color:#FFFFFF;
+    float: left;
+}
+.cambio{
+    display: inherit;
+}
+/*SUBE AL INICIO DE LA PÁGINA*/
+.d_up{
+    width:59px;
+    height:60px;
+    background: url(../img/up.png) no-repeat;
+    background-size: contain; 
+    cursor: pointer;
+    margin: auto;
+}
+.d_logoKrismar{
+    width:182px;
+    height:48px;
+    background: url(../img/logoKrismar.png) no-repeat;
+    background-size: contain; 
+}
+
+.ui-dialog-titlebar,.ui-dialog, .ui-dialog-content{
+	text-align: center;
+}
+
+
+/*
+==============================================
+CSS MEDIA QUERIES 1024px
+==============================================
+*/
+@media only screen and (max-width:1024px){
+    .p_footerdatosboxredes{
+    width: 33%;
+    }
+    /* FOOTER */
+    .d_footer_in{
+        width: 90%;
+    }
+    .d_footer_datos{
+        width: 33.3%;
+    }
+    
+    .p_articlecenter{
+        width: 1000px;
+    }
+}
+/*
+==============================================
+CSS MEDIA QUERIES 850px
+==============================================
+*/
+@media only screen and (max-width:850px){
+    /* INICIAR SESIÓN */
+
+    
+    .d_footer_selec_in{
+        width: 50%;
+    }
+    .d_KrismarEducacion{
+        width: 60%;
+        float: left;
+        position: relative;
+        left: 20%;
+    }
+    /* FOOTER */
+    .d_footer_in{
+        width: 89%;
+    }
+
+    
+}
+/*
+==============================================
+CSS MEDIA QUERIES 680px
+==============================================
+*/
+@media only screen and (max-width:680px){
+    .p_footerdatosboxredes{
+        width: 145px;
+    }
+    /* FOOTER */
+    .d_footer_datos{
+        width: 50%;
+    }
+    .d_KrismarEducacion{
+        width: 96%;
+        left: 2%;
+    }
+}
+/*
+==============================================
+CSS MEDIA QUERIES HEXÁGONOS 600PX
+4 HEXÁGONOS
+==============================================
+*/
+@media only screen and (max-width:850px){
+    .d_logosmascara{
+        width:540px;
+    }
+    .d_section{
+        width: 487.4px;
+    }
+    .d_mascaraPantalla{
+        width: 487.4px;
+    }
+
+    .d_tiraPantalla{
+        width: 1462.2px;
+    }
+    .d_pantalla{
+        width: 487.4px;
+    }
+    .d_demos{
+        width: 487.4px;
+    }
+    .d_espacio1, .d_espacio3, .d_espacio5, .d_espacio7, .d_espacio9, .d_espacio11, .d_espacio13, .d_espacio17, .d_espacio19{
+        width:75px;
+        display: block;
+        height:15px;
+        margin-top: -6px;
+    }
+    .d_espacio15{
+        width:75px;
+        height:15px;
+        margin-top:-6px;
+        margin-left: 0px;        
+    }
+    .d_espacio2, .d_espacio6, .d_espacio10, .d_espacio14, .d_espacio18{
+        width:2.4px;
+        margin-left: 110px;
+        height:130px;
+        margin-top:-66px;
+    }
+    .d_espacio_oculto2, .d_espacio_oculto6, .d_espacio_oculto10, .d_espacio_oculto14, .d_espacio_oculto18{
+        display: block;
+        width:112.4px;
+        height:5px; 
+        float: left;
+    }
+    .d_espacio4, .d_espacio8, .d_espacio12, .d_espacio16{
+    display: none;
+    }
+    
+    /*CSS MEDIA QUERIES DE LAS IMAGENES DE LICENCIAS*/
+    .d_licencias{
+    max-width:350px;
+    }
+    .d_tiralicencias{
+        width: 350px;
+        height: 450px;
+        position: relative;
+    }
+    .d_licenciascontenido1{
+    width:350px;
+    height:450px;
+    background: url(../img/licenciaPreescolar_vertical.png) no-repeat;
+    background-size:contain;
+    absolute
+    }
+    .d_licenciascontenido2{
+    width:350px;
+    height:450px;
+    background: url(../img/licenciaPrimaria_vertical.png) no-repeat;
+    background-size:contain;
+    absolute
+    }
+    .d_licenciascontenido3{
+    width:350px;
+    height:450px;
+    background: url(../img/licenciaSecundaria_vertical.png) no-repeat;
+    background-size:contain;
+    absolute
+    }
+    .d_licenciascontenido4{
+    width:350px;
+    height:450px;
+    background: url(../img/licenciaBachillerato_vertical.png) no-repeat;
+    background-size:contain;
+    absolute
+    }
+    .d_section_btncarrusel{
+        width: 487.4px;
+        margin-left: -243.7px;
+    }
+}
+/*
+==============================================
+CSS MEDIA QUERIES 460px
+==============================================
+*/
+@media only screen and (max-width:460px){
+    /* FOOTER */
+    .d_footer_datos{
+        width: 100%;
+    }
+    
+}
+/*
+==============================================
+CSS MEDIA QUERIES HEXÁGONOS 600PX
+4 HEXÁGONOS
+==============================================
+*/
+@media only screen and (max-width:650px){
+    .d_headerIcono1{
+        width:80px;
+        height: 89px;
+        float: left;
+    }
+    .d_Icono1{
+        width:80px;
+        height: 89px;
+        background: url(../img/headerIcono1_chico.png) no-repeat;
+        background-size: contain;
+    }
+    .d_headerIcono2{
+        width:80px;
+        height: 89px;
+        float: right;
+    }
+    .d_Icono2{
+        width:80px;
+        height: 89px;
+        background: url(../img/headerIcono2_chico.png) no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+    .d_logosmascara{
+        width:540px;
+    }
+    .d_section{
+        width: 487.4px;
+    }
+    .d_mascaraPantalla{
+        width: 487.4px;
+    }
+
+    .d_tiraPantalla{
+        width: 1462.2px;
+    }
+    .d_pantalla{
+        width: 487.4px;
+    }
+    .d_demos{
+        width: 487.4px;
+    }
+    .d_espacio1, .d_espacio3, .d_espacio5, .d_espacio7, .d_espacio9, .d_espacio11, .d_espacio13, .d_espacio17, .d_espacio19{
+        width:75px;
+        display: block;
+        height:15px;
+        margin-top: -6px;
+    }
+    .d_espacio15{
+        width:75px;
+        height:15px;
+        margin-top:-6px;
+        margin-left: 0px;        
+    }
+    .d_espacio2, .d_espacio6, .d_espacio10, .d_espacio14, .d_espacio18{
+        width:2.4px;
+        margin-left: 110px;
+        height:130px;
+        margin-top:-66px;
+    }
+    .d_espacio_oculto2, .d_espacio_oculto6, .d_espacio_oculto10, .d_espacio_oculto14, .d_espacio_oculto18{
+        display: block;
+        width:112.4px;
+        height:5px; 
+        float: left;
+    }
+    .d_espacio4, .d_espacio8, .d_espacio12, .d_espacio16{
+    display: none;
+    }
+	
+	.d_iespacio, .d_icon_espacio_oculto, .d_icon_espacio, .d_icon_espacio{
+		//display: none;		
+	}
+    
+    /*CSS MEDIA QUERIES DE LAS IMAGENES DE LICENCIAS*/
+    .d_licencias{
+    max-width:350px;
+    }
+    .d_tiralicencias{
+        width: 350px;
+        height: 450px;
+        position: relative;
+    }
+    .d_licenciascontenido1{
+    width:350px;
+    height:450px;
+    background: url(../img/licenciaPreescolar_vertical.png) no-repeat;
+    background-size:contain;
+    absolute
+    }
+    .d_licenciascontenido2{
+    width:350px;
+    height:450px;
+    background: url(../img/licenciaPrimaria_vertical.png) no-repeat;
+    background-size:contain;
+    absolute
+    }
+    .d_licenciascontenido3{
+    width:350px;
+    height:450px;
+    background: url(../img/licenciaSecundaria_vertical.png) no-repeat;
+    background-size:contain;
+    absolute
+    }
+    .d_licenciascontenido4{
+    width:350px;
+    height:450px;
+    background: url(../img/licenciaBachillerato_vertical.png) no-repeat;
+    background-size:contain;
+    absolute
+    }
+}
+
+/*
+==============================================
+CSS MEDIA QUERIES HEXÁGONOS 510PX
+3 HEXÁGONOS
+==============================================
+*/
+@media only screen and (max-width:640px){
+    .d_logosmascara{
+        width:450px;
+    }
+    .d_section{
+        width: 375px;
+    }
+    .d_mascaraPantalla{
+        width: 375px;
+    }
+
+    .d_tiraPantalla{
+        width: 1125px;
+    }
+    .d_pantalla{
+        width: 375px;
+    }
+    .d_demos{
+        width: 375px;
+    }
+    .d_espacio1, .d_espacio4, .d_espacio7, .d_espacio13, .d_espacio16, .d_espacio19{
+        width:75px;
+        display: block;
+    }
+    .d_espacio10{
+        width:75px;
+        height:15px;
+        margin-top:-6px;
+        margin-left:0px;
+    }
+    .d_espacio3, .d_espacio5, .d_espacio8, .d_espacio9, .d_espacio11, .d_espacio12, .d_espacio14, .d_espacio15, .d_espacio17, .d_espacio18, .d_espacio{
+        width:112.4px;
+        display: block;
+        height:15px;
+        margin-top: -6px;
+        margin-left: 0px;
+    }
+   .d_espacio_oculto2, .d_espacio_oculto6, .d_espacio_oculto10, .d_espacio_oculto14, .d_espacio_oculto18{
+        display: none;
+    }
+	
+	.d_iespacio, .d_icon_espacio_oculto, .d_icon_espacio, .d_icon_espacio{
+		display: none;		
+	}
+/*CSS MEDIA QUERIES DE LAS SECCIONES DE REGISTRO*/
+    .d_cajaopcion1{
+        width: 100%;
+        margin-right: 0%;
+    }
+    .d_cajaopcion2{
+        width: 100%;
+        margin-left: 0%;
+    }
+/*CSS MEDIA QUERIES DE LAS SECCIONES DE ACTIVACIÓN*/
+    .d_cajaAimg{
+        width: 100%;
+    }
+    .d_generalAtexto{
+        width:100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .d_input2{
+        width: 96%;
+    }
+    .d_avioncaja2{
+        width:100%;
+    }
+/*CSS MEDIA QUERIES DE LAS SECCION QUIENES SOMOS*/
+    .d_somosimg{
+        width:100%;
+    }
+    .d_somosgeneraltxt{
+        width:100%;
+        text-align: center;
+    }
+/*CSS MEDIA QUERIES DE LAS SECCION SOPORTE TÉCNICO/CONTACTO*/
+    .d_soporteimgeneral, .d_ubicacionimgeneral {
+        width:100%;
+    }
+    .d_soportetxt{
+        width:96%;
+        text-align: center;
+    }
+    .d_comentarios{
+        width: 96%;
+    }
+    .d_section_btncarrusel{
+        width: 375px;
+        margin-top:258px;
+        margin-left: -187.5px;
+    }
+}
+/*
+==============================================
+CSS MEDIA QUERIES HEXÁGONOS 400PX
+2 HEXÁGONOS
+==============================================
+*/
+@media only screen and (max-width:520px){
+    .d_headerIcono1, .d_headerIcono2, .d_headerIcono3{
+    width:54px;
+    height: 60px;
+    }
+    .d_Icono1, .d_Icono2, .d_Icono3{
+    width:54px;
+    height: 60px;
+    }
+
+.d_headerIcono3{
+    width:54px;
+    height: 60px;
+    float: right;
+}
+.d_Icono3{
+    width:54px;
+    height: 60px;
+    background: url(../img/headerIcono3.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+    .d_logosmascara{
+        width:250px;
+    }
+    .d_section{
+        width: 252px;
+    }
+    .d_mascaraPantalla{
+        width: 256px;
+    }
+    .d_tiraPantalla{
+        width: 768px;
+    }
+    .d_pantalla{
+        width: 256px;
+    }
+    .d_demos{
+        width: 256px;
+    }
+    .d_espacio1, .d_espacio4, .d_espacio7, .d_espacio13, .d_espacio10, .d_espacio16, .d_espacio19{
+        width:52px;
+        height:10px;
+        display: block;
+    }
+    .d_espacio10{
+        width:52px;
+        height:10px;
+    }
+    .d_espacio2, .d_espacio3, .d_espacio5, .d_espacio6, .d_espacio8, .d_espacio9, .d_espacio11, .d_espacio12, .d_espacio14, .d_espacio15, .d_espacio17, .d_espacio18, .d_espacio{
+        width:76px;
+        display: block;
+        height:10px;
+        margin-top: -6px;
+        margin-left: 0px;
+    }
+   .d_espacio_oculto2, .d_espacio_oculto6, .d_espacio_oculto10, .d_espacio_oculto14, .d_espacio_oculto18{
+        display: none;
+    }
+    .d_celda1, .d_celda2, .d_celda3,
+    .d_celda4, .d_celda5, .d_celda6, .d_celda7, .d_celda8, .d_celda9, .d_celda10, .d_celda11,
+    .d_celda12, .d_celda13, .d_celda14, .d_celda15, .d_celda16, .d_celda17, .d_celda18, .d_celda19,
+	.d_celda20, .d_celda21, .d_celda22, .d_celda36, .d_celda37, .d_celda39, .d_celda40, .d_celda41, .d_celda42, .d_celda43, .d_celda44, .d_celda45{
+        width:100px;
+        height:86px;
+        margin-top: -43px;
+    }
+	
+	.d_iespacio, .d_icon_espacio_oculto, .d_icon_espacio, .d_icon_espacio{
+		display: none;		
+	}
+   
+    .d_logosmascara{
+        width:270px;
+    }
+/*CSS MEDIA QUERIES DE LOS DEMOS*/
+    .d_demosboton1, .d_demosboton2, .d_demosboton3,
+    .d_demosboton4, .d_demosboton5, .d_demosboton6, .d_demosboton7, .d_demosboton8, .d_demosboton9, .d_demosboton10, .d_demosboton11,
+    .d_demosboton12, .d_demosboton13, .d_demosboton14{
+        width:100px;
+        height:86px;
+        margin-top: -43px;
+    }  
+/*CSS MEDIA QUERIES DE LAS SECCION QUIENES SOMOS*/
+    .d_somosicono1, .d_somosicono2, .d_somosicono3, .d_somosicono4{
+        width:40px;
+        height:44px;
+    }
+    .d_somosiconos{
+        max-width: 160px;
+    }
+/*CSS MEDIA QUERIES DE LAS SECCION PREGUNTAS FRECUENTES*/
+    .d_preguntasiconos2{
+        width:135px;
+    }
+    .d_preguntasicono3, .d_preguntasicono4, .d_preguntasicono5{
+        width:45px;
+        height:48px;
+    }
+/*CSS MEDIA QUERIES DE LAS IMAGENES DE LICENCIAS*/
+    .d_licencias{
+    max-width:220px;
+    }
+    .d_tiralicencias{
+        width: 220px;
+        height: 283px;
+        position: relative;
+    }
+    .d_licenciascontenido1{
+    width:220px;
+    height:283px;
+    }
+    .d_licenciascontenido2{
+    width:220px;
+    height:283px;
+    }
+    .d_licenciascontenido3{
+    width:220px;
+    height:283px;
+    }
+    .d_licenciascontenido4{
+    width:220px;
+    height:283px;
+    }
+    .d_section_btncarrusel{
+        width: 252px;
+        margin-top:194px;
+        margin-left: -126px;
+    }
+    .d_sectionbtncarruselprev{
+        left: -3rem;
+    }
+    .d_sectionbtncarruselnext{
+        right: -3rem;
+    }
+    .d_sectionbtn1, .d_sectionbtn2, .d_sectionbtn3{
+        margin: 0 0.4rem 0 0.4rem;
+        padding: 0rem 1rem 0rem 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+@keyframes flipp{
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+        background-size: 200% 100%;
+    }
+    51%{
+        background-repeat: no-repeat;
+        background-position: 100% 0%;
+        background-size: 200% 100%;
+    }
+    100%{
+        transform: rotateY(180deg);
+        background-repeat: no-repeat;
+        background-position: 100% 0%;
+        background-size: 200% 100%;
+    }
+}
+
+@keyframes flipp44{
+    0%{
+        transform: rotateY(0deg);
+    }
+    15%{
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+        background-size: 200% 100%;
+    }
+    16%{
+        background-repeat: no-repeat;
+        background-position: 100% 0%;
+        background-size: 200% 100%;
+    }
+    30%{
+        transform: rotateY(180deg);
+        background-repeat: no-repeat;
+        background-position: 100% 0%;
+        background-size: 200% 100%;
+    }
+    70%{
+        transform: rotateY(180deg);
+        background-repeat: no-repeat;
+        background-position: 100% 0%;
+        background-size: 200% 100%;
+    }
+    84%{
+        background-repeat: no-repeat;
+        background-position: 100% 0%;
+        background-size: 200% 100%;
+    }
+    85%{
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+        background-size: 200% 100%;
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+.ui-dialog{
+	max-width: 450px !important;
+	width: 90% !important;
+}
+
+
+

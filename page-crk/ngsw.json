@@ -1,0 +1,62 @@
+{
+  "configVersion": 1,
+  "timestamp": 1730319239403,
+  "index": "/page-crk/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/page-crk/index.html",
+        "/page-crk/main.85efd4d99016a287.js",
+        "/page-crk/manifest.webmanifest",
+        "/page-crk/polyfills.95b0fb90e827bb63.js",
+        "/page-crk/runtime.4e9ab16a616ae24d.js",
+        "/page-crk/scripts.75f4824514c0c2fa.js"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/page-crk/index.html": "032c9df3ba9e21a569e361056abdfcfc97572ed2",
+    "/page-crk/main.85efd4d99016a287.js": "6ffd00e25322c5c6ba0930ebc2622e20feef1fee",
+    "/page-crk/manifest.webmanifest": "e101b591e85ddfb321b5289ea7833822c6829eb2",
+    "/page-crk/polyfills.95b0fb90e827bb63.js": "1b113175ac103740f8124ce55c89abcea8e73e40",
+    "/page-crk/runtime.4e9ab16a616ae24d.js": "3fa95302845506a606c62f36c61d7c191573c762",
+    "/page-crk/scripts.75f4824514c0c2fa.js": "86dad5c205b69788f4b249a2805724f3105fc3a1"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

@@ -1,0 +1,3 @@
+id certificado: ADQCF63MG9F72
+
+Autoridad Certificadora: /C=MX/ST=Mexico/L=Metepec/O=Krismar Computacion/OU=Software/CN=KRS/emailAddress=magoh@krismar.com.mx

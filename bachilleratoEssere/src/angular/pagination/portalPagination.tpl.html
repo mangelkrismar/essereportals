@@ -1,0 +1,16 @@
+<div ng-if="1 < pages.length || !autoHide" class="p_actbtnnav">
+	<div class="p_actnavcenter" >
+		<div ng-if="pagination.current == 1" style="opacity: 0.3; cursor: default;" class="p_actnavarrowleft"></div>
+		<div ng-if="pagination.current != 1" style="opacity: 1.0; cursor: pointer;" class="p_actnavarrowleft" ng-click="setCurrent(pagination.current - 1)"></div>
+		<div style="float:left;">
+			<div class="p_actnavnum"
+				ng-repeat="pageNumber in pages track by tracker(pageNumber, $index)"
+				ng-class="{ p_actnavnum_active : pagination.current == pageNumber}"
+				ng-click="setCurrent(pageNumber)">
+				{{ pageNumber }}
+			</div>
+		</div>
+		<div ng-if="pagination.current == pagination.last" style="opacity: 0.3; cursor: default;" class="p_actnavarrowright"></div>
+		<div ng-if="pagination.current != pagination.last" style="opacity: 1.0; cursor: pointer;" class="p_actnavarrowright" ng-click="setCurrent(pagination.current + 1)"></div>
+	</div>
+</div>

@@ -1,0 +1,22 @@
+{
+    "librosProyecto" : [
+        {
+            "id": 5,
+            "label": "Proyectos de Aula",
+            "activo": 1,
+            "check" : false
+        },
+        {
+            "id": 6,
+            "label": "Proyectos Escolares",
+            "activo": 1,
+            "check" : false
+        },
+        {
+            "id": 7,
+            "label": "Proyectos Comunitarios",
+            "activo": 1,
+            "check" : false
+        }
+    ]
+}

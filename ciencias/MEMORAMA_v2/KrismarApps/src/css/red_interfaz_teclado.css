@@ -1,0 +1,292 @@
+@charset "utf-8";
+/*
+==============================================
+CSS TIPOGRAFÍA
+==============================================
+*/
+@font-face {
+	font-family: Arial;
+	src: url("../font/arial.ttf") format("truetype");
+}
+/*
+==============================================
+CSS TECLADO NUMÉRICO
+==============================================
+*/
+.d_Ageneral{
+    position: absolute;
+    padding: 2px;
+    z-index: 6;
+    display: none;
+    background: #333333;
+    bottom: -102px;
+    left: 50%;
+    margin-left: -172px;
+}
+.d_AgeneralIn{
+    width: 343px;
+	background: #333333;
+	float: left;
+}
+.d_tn_1, .d_tn_2, .d_tn_3, .d_tn_4, .d_tn_5, .d_tn_6, .d_tn_7, .d_tn_8, .d_tn_9, .d_tn_0, .d_tn_punto{
+    width: 45px;
+    height: 45px;
+    margin: 2px;
+	cursor: pointer;
+    float: left;
+    background-color: #feb113;
+}
+.d_tn_close{
+    width: 45px;
+    height: 45px;
+    margin: 2px;
+	cursor: pointer;
+    float: left;
+    background-color: #F2F2F2;
+}
+ .d_tn_borrar{
+    width: 94px;
+    height: 45px;
+    margin: 2px;
+	cursor: pointer;
+     float: left;
+    background-color: #F2F2F2;
+ }
+.d_tn_1{
+    background-image: url(../img/red_interfaz_tecla1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.d_tn_2{
+    background-image: url(../img/red_interfaz_tecla2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.d_tn_3{
+    background-image: url(../img/red_interfaz_tecla3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.d_tn_4{
+    background-image: url(../img/red_interfaz_tecla4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.d_tn_5{
+    background-image: url(../img/red_interfaz_tecla5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.d_tn_6{
+    background-image: url(../img/red_interfaz_tecla6.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.d_tn_7{
+    background-image: url(../img/red_interfaz_tecla7.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.d_tn_8{
+    background-image: url(../img/red_interfaz_tecla8.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.d_tn_9{
+    background-image: url(../img/red_interfaz_tecla9.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.d_tn_0{
+    background-image: url(../img/red_interfaz_tecla0.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.d_tn_punto{
+    background-image: url(../img/red_interfaz_teclapunto.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.d_tn_close{
+    background-image: url(../img/red_interfaz_teclacerrar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.d_tn_borrar{
+    background-image: url(../img/red_interfaz_teclaborrar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*
+=========================================================
+QUERIES PARA ADPATAR EL TECLADO
+=========================================================
+*/
+/*
+==============================================
+CSS MEDIA QUERIES MAX-HEIGHT 860px
+==============================================
+*/
+@media screen and (max-height: 860px) {
+.d_Ageneral {
+    margin-left: -387px;
+}
+.d_AgeneralIn{
+    width: 682px;
+}
+.d_tn_1, .d_tn_2, .d_tn_3, .d_tn_4, .d_tn_5, .d_tn_6, .d_tn_7, .d_tn_8, .d_tn_9, .d_tn_0, .d_tn_punto, .d_tn_close{
+    width: 45px;
+    height: 45px;
+}
+ .d_tn_borrar{
+    width: 90px;
+    height: 45px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-HEIGHT 760px
+==============================================
+*/
+@media screen and (max-height: 760px) {
+.d_Ageneral {
+    margin-left: -348px;
+}
+.d_AgeneralIn{
+    width: 612px;
+}
+.d_tn_1, .d_tn_2, .d_tn_3, .d_tn_4, .d_tn_5, .d_tn_6, .d_tn_7, .d_tn_8, .d_tn_9, .d_tn_0, .d_tn_punto, .d_tn_close{
+    width: 40px;
+    height: 40px;
+}
+ .d_tn_borrar{
+    width: 80px;
+    height: 40px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-HEIGHT 660px
+==============================================
+*/
+@media screen and (max-height: 660px) {
+.d_Ageneral {
+    margin-left: -312px;
+}
+.d_AgeneralIn{
+    width: 542px;
+}
+.d_tn_1, .d_tn_2, .d_tn_3, .d_tn_4, .d_tn_5, .d_tn_6, .d_tn_7, .d_tn_8, .d_tn_9, .d_tn_0, .d_tn_punto, .d_tn_close{
+    width: 35px;
+    height: 35px;
+}
+ .d_tn_borrar{
+    width: 70px;
+    height: 35px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-HEIGHT 560px
+==============================================
+*/
+@media screen and (max-height: 560px) {
+.d_Ageneral {
+    margin-left: -223px;
+}
+.d_AgeneralIn{
+    width: 402px;
+}
+.d_tn_1, .d_tn_2, .d_tn_3, .d_tn_4, .d_tn_5, .d_tn_6, .d_tn_7, .d_tn_8, .d_tn_9, .d_tn_0, .d_tn_punto, .d_tn_close{
+    width: 25px;
+    height: 25px;
+}
+ .d_tn_borrar{
+    width: 50px;
+    height: 25px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 1170px PORTRAIT
+==============================================
+*/
+@media screen and (max-width: 1170px) and (orientation: portrait) {
+.d_Ageneral {
+    margin-left: -235px;
+}
+.d_AgeneralIn{
+    width: 413px;
+}
+.d_tn_1, .d_tn_2, .d_tn_3, .d_tn_4, .d_tn_5, .d_tn_6, .d_tn_7, .d_tn_8, .d_tn_9, .d_tn_0, .d_tn_punto, .d_tn_close{
+    width: 55px;
+    height: 55px;
+}
+ .d_tn_borrar{
+    width: 114px;
+    height: 55px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 970px PORTRAIT
+==============================================
+*/
+@media screen and (max-width: 970px) and (orientation: portrait) {
+.d_Ageneral {
+    margin-left: -216px;
+}
+.d_AgeneralIn{
+    width: 378px;
+}
+.d_tn_1, .d_tn_2, .d_tn_3, .d_tn_4, .d_tn_5, .d_tn_6, .d_tn_7, .d_tn_8, .d_tn_9, .d_tn_0, .d_tn_punto, .d_tn_close{
+    width: 50px;
+    height: 50px;
+}
+ .d_tn_borrar{
+    width: 104px;
+    height: 50px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 520px PORTRAIT 
+==============================================
+*/
+@media screen and (max-width: 520px) and (orientation: portrait) {
+.d_Ageneral {
+    margin-left: -158px;
+}
+.d_AgeneralIn{
+    width: 273px;
+}
+.d_tn_1, .d_tn_2, .d_tn_3, .d_tn_4, .d_tn_5, .d_tn_6, .d_tn_7, .d_tn_8, .d_tn_9, .d_tn_0, .d_tn_punto, .d_tn_close{
+    width: 35px;
+    height: 35px;
+}
+ .d_tn_borrar{
+    width: 74px;
+    height: 35px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 350px PORTRAIT 
+==============================================
+*/
+@media screen and (max-width: 350px) and (orientation: portrait){
+    .d_Ageneral {
+    margin-left: -141px;
+}
+.d_AgeneralIn{
+    width: 238px;
+}
+.d_tn_1, .d_tn_2, .d_tn_3, .d_tn_4, .d_tn_5, .d_tn_6, .d_tn_7, .d_tn_8, .d_tn_9, .d_tn_0, .d_tn_punto, .d_tn_close{
+    width: 30px;
+    height: 30px;
+}
+ .d_tn_borrar{
+    width: 64px;
+    height: 30px;
+}
+}

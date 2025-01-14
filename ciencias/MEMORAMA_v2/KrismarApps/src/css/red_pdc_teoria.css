@@ -1,0 +1,9 @@
+/*
+==============================================
+CSS SE CAMBIA EL BACKGROUND DE "red_pdc_general"
+PARA EL CASO DE TEORIA. FONDO DE COLORES INFERIOR
+==============================================
+*/
+.d_conteNamesBtns{
+    background-image: none;
+}

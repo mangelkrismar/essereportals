@@ -1,0 +1,6 @@
+{
+    "ruta_images"  : "assets/nem/img/",
+    "label_img_carrucel" : "img_slider_home_img",
+    "ext_img_carrucel"   : ".webp",
+    "number_img_carrucel" : 5
+}

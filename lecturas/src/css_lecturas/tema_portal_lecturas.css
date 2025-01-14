@@ -1,0 +1,144 @@
+.p_buscador{
+	background-color: rgb(1,80,118);
+}
+.p_emerdatosinput{
+	background-color: rgb(1,80,118);
+}
+.p_emerpleca{
+	background-color: rgb(1,80,118);
+}
+.p_navsup{
+	background-color: #35b79e;
+	/*background-color: rgb(1,80,118);*/
+}
+.p_emerbtnin{
+	background-color: rgb(1,80,118);
+}
+.p_menuicon{
+	background-color: rgb(1,80,118);
+}
+.p_regresaricon{
+	background-color: rgb(1,80,118);
+}
+.p_flotanteicon{
+	background-color: rgb(1,80,118);
+}
+.p_switchbtnin{
+	background-color: rgb(1,80,118);
+}
+.p_actsubtemasiconin{
+	background-color: rgb(1,80,118);
+}
+.p_menupleca{
+	background-color: rgb(1,80,118);
+}
+.p_emerdatosselect{
+	background-color: rgb(1,80,118);
+}
+.p_cambio_sel{
+	background-color: rgb(1,80,118);
+}
+
+.p_recienteinfoplayicon>svg>g:nth-child(1)>path {
+    fill: rgb(1,80,118);
+}
+
+.p_actividadesmenubtn_active_right>div:nth-child(2) {
+    border-bottom: 4px solid rgb(1,80,118);
+    box-sizing: border-box;
+    color: rgb(1,80,118);
+    border-bottom-right-radius: 20px
+}
+
+.p_actividadesmenubtn_active_left>div:nth-child(2) {
+    border-bottom: 4px solid rgb(1,80,118);
+    box-sizing: border-box;
+    color: rgb(1,80,118);
+    border-bottom-left-radius: 20px;
+}
+.p_actividadesmenubtn_active_left>div:nth-child(1) {
+    border-bottom: 4px solid rgb(1,80,118);
+    box-sizing: border-box;
+    color: rgb(1,80,118);
+    border-bottom-left-radius: 20px;
+}
+.p_actividadesmenubtn_active > div:nth-child(2) {
+    border-bottom: 4px solid rgb(1,80,118);
+    box-sizing: border-box;
+    color: rgb(1,80,118);
+}
+.p_emertable>tbody>tr>td:nth-child(2){
+	color: rgb(1,80,118);
+}
+.p_emerinputfile+label{
+	color: rgb(1,80,118);
+}
+.p_switchcolor{
+	color: rgb(1,80,118);
+}
+.p_conocetxt{
+	color: rgb(1,80,118);
+}
+.p_regresartxt{
+	color: rgb(1,80,118);
+}
+.p_configicontxt{
+	color: rgb(1,80,118);
+}
+.p_actnavnum_active{
+	color: rgb(1,80,118);
+}
+.p_actnavnum_active_locked{
+	color: rgb(46,46,46);
+}
+
+.p_actividadescateg{
+	display: none;
+}
+.p_switch{
+	display: none;
+}
+#temas{
+	display: none;
+}
+#grados{
+	display: none;
+}
+
+@media screen and (min-width: 681px){
+	.p_actividadesmenubtn{
+		width: 50%;
+	}
+}
+.p_headerImg1{
+	background-image: url('../img/img_1.png');
+	background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.p_headerImg2{
+	background-image: url('../img/img_2.png');
+	background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.p_headerImg3{
+	background-image: url('../img/img_3.png');
+	background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.p_headerImg4{
+	background-image: url('../img/img_4.png');
+	background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.p_headerImg5{
+	background-image: url('../img/img_5.png');
+	background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+td.p_conte_notificacionn{
+    padding-top: 200px;
+    font-family: "Fedra Sans Std";
+    font-size: 2rem;
+    text-align: center;
+    color: #808080;
+}

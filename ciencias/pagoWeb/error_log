@@ -1,0 +1,58 @@
+[01-Dec-2014 20:17:28 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, array given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 135
+[01-Dec-2014 20:17:28 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, array given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 150
+[01-Dec-2014 20:17:28 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, integer given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 161
+[01-Dec-2014 20:17:28 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, array given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 162
+[01-Dec-2014 20:17:28 UTC] PHP Warning:  mysqli_free_result(): Couldn't fetch mysqli_result in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 163
+[01-Dec-2014 20:24:01 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, array given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 135
+[01-Dec-2014 20:24:01 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, array given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 150
+[01-Dec-2014 20:24:01 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, integer given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 161
+[01-Dec-2014 20:24:01 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, array given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 162
+[01-Dec-2014 20:24:01 UTC] PHP Warning:  mysqli_free_result(): Couldn't fetch mysqli_result in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 163
+[01-Dec-2014 20:32:22 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, array given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 135
+[01-Dec-2014 20:32:22 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, array given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 150
+[01-Dec-2014 20:32:22 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, integer given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 161
+[01-Dec-2014 20:32:22 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, array given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 162
+[01-Dec-2014 20:32:22 UTC] PHP Warning:  mysqli_free_result(): Couldn't fetch mysqli_result in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 163
+[31-May-2016 11:35:09 America/Mexico_City] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, array given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 133
+[31-May-2016 11:35:09 America/Mexico_City] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, array given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 148
+[31-May-2016 11:35:09 America/Mexico_City] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, integer given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 159
+[31-May-2016 11:35:09 America/Mexico_City] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, array given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 160
+[31-May-2016 11:35:09 America/Mexico_City] PHP Warning:  mysqli_free_result(): Couldn't fetch mysqli_result in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 161
+[29-Mar-2017 10:47:00 America/Mexico_City] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, array given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 133
+[29-Mar-2017 10:47:00 America/Mexico_City] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, array given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 148
+[29-Mar-2017 10:47:00 America/Mexico_City] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, integer given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 159
+[29-Mar-2017 10:47:00 America/Mexico_City] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, array given in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 160
+[29-Mar-2017 10:47:00 America/Mexico_City] PHP Warning:  mysqli_free_result(): Couldn't fetch mysqli_result in /home/krismarc/public_html/pandilla/pagoWeb/notifica.php on line 161
+[17-May-2017 14:43:34 America/New_York] PHP Warning:  include(..php/conexionPandilla): failed to open stream: No such file or directory in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 106
+[17-May-2017 14:43:34 America/New_York] PHP Warning:  include(..php/conexionPandilla): failed to open stream: No such file or directory in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 106
+[17-May-2017 14:43:34 America/New_York] PHP Warning:  include(): Failed opening '..php/conexionPandilla' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 106
+[17-May-2017 14:43:34 America/New_York] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 108
+[17-May-2017 14:47:45 America/New_York] PHP Warning:  include(..php/conexionPandilla): failed to open stream: No such file or directory in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 106
+[17-May-2017 14:47:45 America/New_York] PHP Warning:  include(..php/conexionPandilla): failed to open stream: No such file or directory in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 106
+[17-May-2017 14:47:45 America/New_York] PHP Warning:  include(): Failed opening '..php/conexionPandilla' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 106
+[17-May-2017 14:47:45 America/New_York] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 108
+[17-May-2017 15:01:28 America/New_York] PHP Warning:  include(..php/conexionPandilla): failed to open stream: No such file or directory in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 106
+[17-May-2017 15:01:28 America/New_York] PHP Warning:  include(..php/conexionPandilla): failed to open stream: No such file or directory in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 106
+[17-May-2017 15:01:28 America/New_York] PHP Warning:  include(): Failed opening '..php/conexionPandilla' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 106
+[17-May-2017 15:01:28 America/New_York] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 108
+[17-May-2017 16:21:45 America/New_York] PHP Warning:  include(..php/conexionPandilla): failed to open stream: No such file or directory in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 106
+[17-May-2017 16:21:45 America/New_York] PHP Warning:  include(..php/conexionPandilla): failed to open stream: No such file or directory in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 106
+[17-May-2017 16:21:45 America/New_York] PHP Warning:  include(): Failed opening '..php/conexionPandilla' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 106
+[17-May-2017 16:21:45 America/New_York] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 108
+[17-May-2017 16:45:15 America/New_York] PHP Warning:  include(..php/conexionPandilla.php): failed to open stream: No such file or directory in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 106
+[17-May-2017 16:45:15 America/New_York] PHP Warning:  include(..php/conexionPandilla.php): failed to open stream: No such file or directory in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 106
+[17-May-2017 16:45:15 America/New_York] PHP Warning:  include(): Failed opening '..php/conexionPandilla.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 106
+[17-May-2017 16:45:15 America/New_York] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 108
+[17-May-2017 16:51:00 America/New_York] PHP Fatal error:  Call to undefined function generaPass() in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 128
+[17-May-2017 17:23:00 America/New_York] PHP Fatal error:  Call to undefined function generaPass() in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 129
+[17-May-2017 17:30:31 America/New_York] PHP Warning:  include(php/conexionPandilla.php): failed to open stream: No such file or directory in /home/mdt/public_html/pandilla/pagoWeb/prueba.php on line 2
+[17-May-2017 17:30:31 America/New_York] PHP Warning:  include(php/conexionPandilla.php): failed to open stream: No such file or directory in /home/mdt/public_html/pandilla/pagoWeb/prueba.php on line 2
+[17-May-2017 17:30:31 America/New_York] PHP Warning:  include(): Failed opening 'php/conexionPandilla.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mdt/public_html/pandilla/pagoWeb/prueba.php on line 2
+[17-May-2017 17:30:31 America/New_York] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/mdt/public_html/pandilla/pagoWeb/prueba.php on line 4
+[19-May-2017 10:29:53 America/New_York] PHP Parse error:  syntax error, unexpected '}' in /home/mdt/public_html/pandilla/pagoWeb/prueba.php on line 133
+[19-May-2017 10:52:16 America/New_York] PHP Fatal error:  Call to undefined function gClave() in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 90
+[19-May-2017 10:54:22 America/New_York] PHP Fatal error:  Call to undefined function gClave() in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 90
+[19-May-2017 11:11:07 America/New_York] PHP Fatal error:  Call to undefined function gClave() in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 90
+[19-May-2017 11:11:58 America/New_York] PHP Fatal error:  Call to undefined function gClave() in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 90
+[19-May-2017 11:13:21 America/New_York] PHP Fatal error:  Call to undefined function gClave() in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 90
+[19-May-2017 11:37:26 America/New_York] PHP Fatal error:  Call to undefined function gClave() in /home/mdt/public_html/pandilla/pagoWeb/notifica.php on line 88

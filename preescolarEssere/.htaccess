@@ -1,0 +1,98 @@
+
+
+Options FollowSymLinks
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?/$1 [L]
+</IfModule>
+ 
+<IfModule !mod_rewrite.c>
+    # If we don't have mod_rewrite installed, all 404's
+    # can be sent to index.php, and everything works as normal.
+    # Submitted by: ElliotHaughin
+ 
+    ErrorDocument 404 /index.php
+</IfModule>
+
+#Para que se compriman los archivos y se visualicen un poco mas rapido
+<FilesMatch "\.(js|css|ico|pdf|flv|jpg|jpeg|png|gif|php|mp4|m4v|csv|svg|mp3|ogg|ott|eot|ttf|xlsx|xls)$">
+  SetOutputFilter DEFLATE
+</FilesMatch>
+
+<IfModule mod_deflate.c>
+ 
+    # Forzar compresión también para las cabeceras malformadas
+    # http://developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping
+    <IfModule mod_setenvif.c>
+        <IfModule mod_headers.c>
+            SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+            RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+        </IfModule>
+    </IfModule>
+ 
+    # Comprimir los contenidos que sean de cualquiera de estos tipos
+    <IfModule mod_filter.c>
+        AddOutputFilterByType DEFLATE application/atom+xml \
+                                      application/javascript \
+                                      application/json \
+                                      application/rss+xml \
+                                      application/vnd.ms-fontobject \
+                                      application/x-font-ttf \
+                                      application/x-font-otf \
+                                      application/x-web-app-manifest+json \
+                                      application/xhtml+xml \
+                                      application/xml \
+                                      font/opentype \
+                                      image/svg+xml \
+                                      image/x-icon \
+                                      image/png \
+                                      text/css \
+                                      text/html \
+                                      text/plain \
+                                      text/x-component \
+                                      text/xml \
+                                      image/bmp \
+                                      audio/ogg \
+                                      audio/wav
+    </IfModule>
+ 
+</IfModule>
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+#ExpiresActive On
+#ExpiresByType image/jpg "access 1 year"
+#ExpiresByType image/png "access 1 year"
+#ExpiresByType image/jpeg "access 1 year"
+#ExpiresByType image/gif "access 1 year"
+#ExpiresByType image/png "access 1 year"
+#ExpiresByType text/css "access 1 minute"
+#ExpiresByType text/html "access 1 minute"
+#ExpiresByType application/pdf "access 1 year"
+#ExpiresByType text/x-javascript "access 1 minute"
+ExpiresByType text/js "access 1 month"
+#ExpiresByType application/x-shockwave-flash "access 1 month"
+#ExpiresByType image/x-icon "access 1 year"
+#ExpiresDefault "access 1 month"
+</IfModule>
+
+## EXPIRES CACHING ##
+
+# 1 Month for most static assets
+<filesMatch ".(css|js|json)$">
+	#header set Cache-Control "max-age=3600, must-revalidate, public"
+	header set Cache-Control "max-age=60, must-revalidate, public"
+</filesMatch>
+
+<filesMatch ".(jpg|jpeg|png|gif)$">
+	header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+
+<filesMatch ".(ico|ttf|otf)$">
+	header set Cache-Control "max-age=31536000, public"
+</filesMatch>
+
+

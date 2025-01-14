@@ -1,0 +1,298 @@
+/*
+====================================================
+    ESTILOS DE LOS CUADROS DE INFORMACIÓN
+        CSS INSTRUCCIONES/OBJETIVOS
+====================================================
+*/
+.d_listaObj{
+    list-style-image: url(../img/red_interfaz_vinetaemergente.png);
+}
+.d_flechaDown{
+	width: 22px;
+	height: 22px;
+	background-image: url(../img/red_interfaz_btnind.png);
+	position: absolute;
+	z-index: 3;
+	left: 50%;
+	margin-left:-11px;
+	top: 2%;
+}
+.d_instruccionesGeneral,.d_objetivoGeneral, .d_borrarGeneral, .d_reinGeneral{
+	width: 560px;
+	height: 260px;
+	position: absolute;
+	z-index: 3;
+	top: 50%;
+	margin-top: -130px;
+	left: 50%;
+	margin-left: -280px;
+	display: none;
+}
+/*****ICONOS BORRAR*****/
+.d_borrarFrase, .d_reinFrase{
+    width: 100%;
+    padding: 4%;
+    font-family: Verdana;
+    color: #FFFFFF;
+    text-align: center;
+}
+.d_borrarFrase > tbody > tr:nth-child(1) > td{
+    font-size: 26px !important;
+}
+.d_borrarFrase > tbody > tr:nth-child(2) > td{
+    font-size: 16px !important;
+    padding-top: 2%;
+}
+.d_reinFrase > tbody > tr:nth-child(1) > td{
+    font-size: 26px !important;
+}
+.d_reinFrase > tbody > tr:nth-child(2) > td{
+    font-size: 16px !important;
+    padding-top: 2%;
+}
+.d_btnSi, .d_btnNo{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 4%;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.d_btnSi{
+    left: calc(50% - 90px);
+    left: -webkit-calc(50% - 90px);
+    left: -moz-calc(50% - 90px);
+    background-image: url(../img/red_interfaz_btnsi.png);
+}
+.d_btnNo{
+    right: calc(50% - 90px);
+    right: -webkit-calc(50% - 90px);
+    right: -moz-calc(50% - 90px);
+    background-image: url(../img/red_interfaz_btnno.png);
+}
+.d_instruccionesContenido, .d_objetivoContenido, .d_borrarContenido, .d_reinContenido{
+	width: 100%;
+	height: 96%;
+	float: right;
+	z-index: 3;
+	margin-top: 4%;
+}
+.d_logoKrismar{
+    width: 36%;
+    height: 50px;
+    background: url(../img/red_interfaz_logokrismar.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    float: left;
+}
+.d_tituloInstrucciones, .d_tituloObjetivos{
+    width: 61%;
+    height: 50px;
+    float: left;
+	color: #FFFFFF;
+	font-size: 16px !important;
+	padding-right: 3%;
+    line-height: 55px;
+	font-family: Verdana;
+	cursor: default;
+    text-align: right;
+    text-decoration: underline;
+}
+.d_txtInstrucciones, .d_txtObjetivos{
+	color: #FFFFFF;
+	padding-left: 7%;
+	padding-top: 2%;
+	font-size: 16px !important;
+	font-weight: normal;
+	font-family: Verdana;
+	width: 90%;
+	cursor: default;
+    float: left;
+}
+.d_temaGeneral{
+    color: #FFFFFF;
+    height: 100%;
+	float: left;
+	cursor: default;
+	padding-left: 1.5em;
+	font-size: 16px !important;
+	font-weight: bold;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 600px PORTRAIT
+==============================================
+*/
+@media screen and (max-width: 600px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 38%;
+}
+.d_flechaDown{
+	width: 22px;
+	height: 22px;
+	left: 50%;
+	margin-left:-11px;
+	top: 2%;
+}
+.d_instruccionesGeneral, .d_objetivoGeneral, .d_borrarGeneral, .d_reinGeneral{
+	width: 450px;
+	height: 260px;
+	top: 50%;
+	margin-top: -130px;
+	left: 50%;
+	margin-left: -235px;
+}
+.d_instruccionesContenido, .d_objetivoContenido, .d_borrarContenido, .d_reinContenido{
+	width: 100%;
+	height: 93.5%;
+	margin-top: 4%;
+}
+.d_logoKrismar{
+    width: 41%;
+    height: 50px;
+}
+.d_tituloInstrucciones, .d_tituloObjetivos{
+    width: 52%;
+    height: 50px;
+	font-size: 16px !important;
+	padding-right: 3%;
+    line-height: 55px;
+}
+.d_txtInstrucciones, .d_txtObjetivos{
+	padding-left: 7%;
+	padding-top: 2%;
+	font-size: 12px !important;
+	width: 86%;
+}
+.d_temaGeneral{
+	padding-left: 1.5em;
+	font-size: 17px !important;
+}
+/*****ICONOS BORRAR*****/
+.d_borrarFrase > tbody > tr:nth-child(1) > td{
+    font-size: 22px !important;
+}
+.d_borrarFrase > tbody > tr:nth-child(2) > td{
+    font-size: 12px !important;
+}
+.d_reinFrase > tbody > tr:nth-child(1) > td{
+    font-size: 22px !important;
+}
+.d_reinFrase > tbody > tr:nth-child(2) > td{
+    font-size: 12px !important;
+}
+.d_btnSi, .d_btnNo{
+    width: 50px;
+    height: 50px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 400px PORTRAIT
+==============================================
+*/
+@media screen and (max-width: 400px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 30%;
+}
+.d_flechaDown{
+	width: 22px;
+	height: 22px;
+	left: 50%;
+	margin-left:-11px;
+	top: 2%;
+}
+.d_instruccionesGeneral, .d_objetivoGeneral, .d_borrarGeneral, .d_reinGeneral{
+	width: 311px;
+	height: 260px;
+	top: 50%;
+	margin-top: -130px;
+	left: 50%;
+	margin-left: -159px;
+}
+.d_instruccionesContenido, .d_objetivoContenido, .d_borrarContenido, .d_reinContenido{
+	width: 100%;
+	height: 95.7%;
+	margin-top: 4%;
+}
+.d_logoKrismar{
+    width: 36%;
+    height: 50px;
+}
+.d_tituloInstrucciones, .d_tituloObjetivos{
+    width: 61%;
+    height: 50px;
+	font-size: 2.5rem;
+	padding-right: 3%;
+    line-height: 55px;
+}
+.d_txtInstrucciones, .d_txtObjetivos{
+	padding-left: 7%;
+	padding-top: 2%;
+	font-size: 3rem;
+	width: 90%;
+}
+.d_temaGeneral{
+	padding-left: 1.5em;
+	font-size: 13px !important;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 350px PORTRAIT
+==============================================
+*/
+@media screen and (max-width: 350px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 28%;
+}
+.d_flechaDown{
+	width: 22px;
+	height: 22px;
+	left: 50%;
+	margin-left:-11px;
+	top: 2%;
+}
+.d_instruccionesGeneral, .d_objetivoGeneral, .d_borrarGeneral, .d_reinGeneral{
+    width: 270px;
+    height: 300px;
+    top: 50%;
+    margin-top: -140px;
+    left: 50%;
+    margin-left: -140px;
+}
+.d_instruccionesContenido, .d_objetivoContenido, .d_borrarContenido, .d_reinContenido{
+	width: 100%;
+	height: 96%;
+	margin-top: 4%;
+}
+.d_logoKrismar{
+    width: 36%;
+    height: 50px;
+}
+.d_tituloInstrucciones, .d_tituloObjetivos{
+    width: 61%;
+    height: 50px;
+	font-size: 3rem;
+	padding-right: 3%;
+    line-height: 55px;
+}
+.d_txtInstrucciones, .d_txtObjetivos{
+	padding-left: 7%;
+	padding-top: 2%;
+	font-size: 3.3rem;
+	width: 90%;
+}
+.d_temaGeneral{
+	padding-left: 1.5em;
+	font-size: 12px !important;
+}
+}

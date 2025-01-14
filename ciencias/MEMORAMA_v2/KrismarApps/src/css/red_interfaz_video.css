@@ -1,0 +1,287 @@
+body{
+	margin: 0px;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 1em;
+    background-image: url(../img/red_interfaz_retbottom.png);
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/*
+==============================================
+CSS PRELOADER
+==============================================
+*/
+.d_preloader{
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    display: block;
+}
+.d_txtProperties{
+    font-family: Verdana;
+    font-size: 30px !important;
+    text-align: center;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+.d_helperResources{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 1%;
+    height: 1%;
+    z-index: -1;
+    background-image: url(../img/red_interfaz_retbottom.png), url(../img/red_interfaz_btnind.png),
+        url(../img/red_interfaz_vinetaemergente.png), url(../img/red_interfaz_btnobjetivo.png),
+        url(../img/red_interfaz_btnhome.png),url(../img/red_interfaz_btnplay.png),
+        url(../img/red_interfaz_btnpause.png),url(../img/red_interfaz_btnfull.png),
+        url(../img/red_interfaz_btnaudio.png),url(../img/red_interfaz_btnmute.png);
+}
+/*
+==============================================
+CSS HEADER
+==============================================
+*/
+.d_opacidadGeneralInformacion{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+	position: absolute;
+	z-index: 1;
+	cursor: pointer;
+	display: none;
+}
+.d_encabezadoVideoGral{
+	width : 100%; 
+	height : 38px; 
+    color: #fff;
+	margin: 0px;
+	position: relative;
+	float: left;
+}
+/*
+==============================================
+CSS BOTONES HEADER
+==============================================
+*/
+.d_flechaDown{
+	width: 22px;
+	height: 22px;
+	background-image: url(../img/red_interfaz_btnind.png);
+	position: absolute;
+	z-index: 3;
+	left: 50%;
+	margin-left:-11px;
+	top: 2%;
+}
+.d_btnObjetivosGeneral{
+    width: 58px;
+    height: 100%;
+    background-image: url(../img/red_interfaz_btnobjetivo.png);
+    float: right;
+    cursor: pointer;
+}
+.d_btnHomeGeneral{
+    width: 58px;
+    height: 100%;
+    background-image: url(../img/red_interfaz_btnhome.png);
+    float: right;
+    cursor: pointer;
+}
+/*
+==============================================
+CSS VIDEO
+==============================================
+*/
+video{
+    width: 100%;
+    height: 100%;
+}
+/*Contenedor de los controles del video*/
+.d_ctrlVideoGeneral{
+    margin: auto;
+    display: table;
+    min-width: 300px;
+    padding-top: 10px; 
+    text-align: center;
+}
+/*Contenedor de video*/
+.d_videoContenedor{
+	position: fixed;
+    width: 100%;
+    height: 100%;
+	top: 38px;
+}
+/*Estilos de la barra de progreso y de volumen*/
+input[type='range'] {
+    -webkit-appearance: none;
+    border-radius: 15px;
+    height: 32px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+input[type='range']::-moz-range-track {
+    -moz-appearance: none;
+    border-radius: 15px;
+    border: 0px;
+    height: 32px;
+    cursor: pointer;
+}
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    border-radius: 15px;
+    background-color: #fff;
+    height: 23px;
+    width: 23px;
+    cursor: pointer;
+}
+input[type='range']::-moz-range-thumb {
+    -moz-appearance: none;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 23px;
+    width: 23px;
+    cursor: pointer;
+}
+/*
+==============================================
+CSS MEDIA QUERY PARA FOOTER MIN-HEIGHT > 600PX
+==============================================
+*/
+@media screen and (min-height: 600px){
+	.btnMute{
+   		width: 58px;
+	    height: 58px;
+	    border-radius: 50%;
+	    cursor: pointer;
+	}
+	.barraVolumen{
+	    margin-top: -45px;
+	    margin-left: 5px;
+	    margin-right: 5px;
+	    cursor: pointer;
+	}
+}
+
+/*
+==============================================
+CSS MEDIA QUERY PARA FOOTER MAX-HEIGHT > 599PX
+==============================================
+*/
+@media screen and (max-height: 599px){
+    .btnMute{
+   		display: none;
+	}	
+	.barraVolumen{
+	    display: none;
+	}
+    /*****PRELOADER*****/
+    .d_txtProperties{
+        font-size: 26px !important;
+    }
+}
+/*
+==============================================
+CSS MEDIA QUIERIES MAX-HEIGHT : 499px landscape
+==============================================
+*/
+@media only screen 
+and (max-height : 499px)
+and (orientation : landscape) {
+/*****PRELOADER*****/
+.d_txtProperties{
+    font-size: 20px !important;
+}
+}
+/*
+==============================================
+CSS MEDIA QUIERIES MAX-HEIGHT : 399px landscape
+==============================================
+*/
+@media only screen 
+and (max-height : 399px)
+and (orientation : landscape) {
+/*****PRELOADER*****/
+.d_txtProperties{
+    font-size: 16px !important;
+}
+}
+/*
+==============================================
+CSS FOOTER
+==============================================
+*/
+.d_pieGeneral{
+	height : 80px; 
+	margin: 0px;
+	position: fixed;
+	text-align: center;
+    z-index: 100;
+}
+.d_opacidadGeneral{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    z-index: -1;
+}
+.btnPlay{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.barraDuracion{
+    margin-top: -45px;
+    width: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.btnFull{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/*
+==============================================
+CSS MEDIA QUERY CAMBIAR TAM CONTE CTRL VIDEO
+==============================================
+*/
+@media only screen and (orientation : portrait){
+    .d_pieGeneral{
+        width : 100%; 
+        bottom: 0px;
+    }
+    .d_ctrlVideoGeneral{
+        width: 100%;
+    }
+    /*****PRELOADER*****/
+    .d_txtProperties{
+        font-size: 18px !important;
+    }
+}
+/*
+==============================================
+CSS MEDIA QUERY CAMBIAR TAM CONTE CTRL VIDEO
+==============================================
+*/
+@media only screen and (orientation : landscape){
+    .d_pieGeneral{
+        width : 100%; 
+        bottom: 0px;
+    }
+    .d_ctrlVideoGeneral{
+        width: 70%;
+    }
+}

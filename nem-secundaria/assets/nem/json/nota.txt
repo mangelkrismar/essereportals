@@ -1,0 +1,6 @@
+Busca las lineas de codigo en donde esta la funcion downloadJson
+si no existe te doy el orden de como ir habilitandolo para saber los json que son offline
+
+listContenidosMin.json
+listCatalogosComplete.json
+listCatalogos.json

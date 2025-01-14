@@ -1,0 +1,533 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "id_padre": 1,
+            "label": "Preescolar",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 2,
+            "id_padre": 1,
+            "label": "Primaria",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 3,
+            "id_padre": 1,
+            "label": "Secundaria",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 4,
+            "id_padre": 1,
+            "label": "Bachillerato",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 5,
+            "id_padre": 2,
+            "label": "1º",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 6,
+            "id_padre": 2,
+            "label": "2º",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 7,
+            "id_padre": 2,
+            "label": "3º",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 8,
+            "id_padre": 2,
+            "label": "4º",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 9,
+            "id_padre": 2,
+            "label": "5º",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 10,
+            "id_padre": 2,
+            "label": "6º",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 11,
+            "id_padre": 3,
+            "label": "Lenguajes",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 12,
+            "id_padre": 3,
+            "label": "Saberes y pensamiento científico",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 13,
+            "id_padre": 3,
+            "label": "Ética, naturaleza y sociedades",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 14,
+            "id_padre": 3,
+            "label": "De lo humano y comunitario",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 15,
+            "id_padre": 4,
+            "label": "1",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 16,
+            "id_padre": 4,
+            "label": "2",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 17,
+            "id_padre": 4,
+            "label": "3",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 18,
+            "id_padre": 4,
+            "label": "4",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 19,
+            "id_padre": 4,
+            "label": "5",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 20,
+            "id_padre": 4,
+            "label": "6",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 21,
+            "id_padre": 8,
+            "label": "Inclusión",
+            "activo": 1,
+            "detalles": [
+                {
+                    "id": 1489,
+                    "id_padre": 21,
+                    "data": {
+                        "svg": "<svg viewBox='0 0 200 200'>                    <path d='M100.5,134.9h24.3c5.6,0,10.1-4.5,10.1-10c0-5.5-4.5-10-10.1-10h-24.3c-2.1,0-3.8-1.7-3.8-3.8v-6.9h-3.1v20.5                            c0,9.7-7.9,17.6-17.5,17.6c-9.7,0-17.5-7.9-17.5-17.6v-20.5h-40c0.7,3,2.2,5.8,4.4,8l65.8,65.8c2.2,2.2,5,3.7,8,4.4v-43.8                            C96.7,136.6,98.4,134.9,100.5,134.9' />                    <path d='M62.3,96.7L62.3,96.7c2.1,0,3.8,1.7,3.8,3.8v24.3c0,5.6,4.5,10.1,10,10.1c5.5,0,10-4.5,10-10.1v-24.3                            c0-2.1,1.7-3.8,3.8-3.8h6.9v-3.2H76.2c-9.7,0-17.6-7.9-17.6-17.5s7.9-17.5,17.6-17.5h20.5V18.5c-3,0.7-5.8,2.2-8,4.4L22.9,88.7                            c-2.2,2.2-3.7,5-4.4,8H62.3z' />                    <path d='M100.5,66.1H76.2c-5.6,0-10.1,4.5-10.1,10c0,5.5,4.5,10,10.1,10h24.3c2.1,0,3.8,1.7,3.8,3.8v6.9h3.1V76.2                            c0-9.7,7.9-17.6,17.5-17.6c9.7,0,17.5,7.9,17.5,17.6v20.5h40.1c-0.7-3-2.2-5.8-4.4-8l-65.8-65.8c-2.2-2.2-5-3.7-8-4.4v43.8                            C104.3,64.4,102.6,66.1,100.5,66.1' />                    <path d='M134.9,100.5V76.2c0-5.6-4.5-10.1-10-10.1c-5.5,0-10,4.5-10,10.1v24.3c0,2.1-1.7,3.8-3.8,3.8h-6.9v3.1h20.5                            c9.7,0,17.6,7.9,17.6,17.5s-7.9,17.5-17.6,17.5h-20.5v40.1c3-0.7,5.8-2.2,8-4.4l65.8-65.8c2.2-2.2,3.7-5,4.4-8h-43.8                            C136.6,104.3,134.9,102.6,134.9,100.5' />                </svg>"
+                    },
+                    "activo": 1
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "id_padre": 8,
+            "label": "Pensamiento crítico",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 23,
+            "id_padre": 8,
+            "label": "Interculturalidad crítica",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 24,
+            "id_padre": 8,
+            "label": "Igualdad de género",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 25,
+            "id_padre": 8,
+            "label": "Vida saludable",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 26,
+            "id_padre": 8,
+            "label": "Apropiación de las culturas a través de la lectura y la escritura",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 27,
+            "id_padre": 8,
+            "label": "Artes y experiencias estéticas",
+            "activo": 1,
+            "detalles": []
+        },
+        {
+            "id": 522,
+            "id_padre": 11,
+            "label": "Matemáticas",
+            "activo": 1,
+            "detalles": [
+                {
+                    "id": 2098,
+                    "id_padre": 522,
+                    "data": {
+                        "key": "filtrar",
+                        "listaGrado": [
+                            5,
+                            6,
+                            7
+                        ],
+                        "listaCampoFormativo": [
+                            12
+                        ]
+                    },
+                    "activo": 1
+                }
+            ]
+        },
+        {
+            "id": 523,
+            "id_padre": 11,
+            "label": "Biología",
+            "activo": 1,
+            "detalles": [
+                {
+                    "id": 2099,
+                    "id_padre": 523,
+                    "data": {
+                        "key": "filtrar",
+                        "listaGrado": [
+                            5
+                        ],
+                        "listaCampoFormativo": [
+                            12
+                        ]
+                    },
+                    "activo": 1
+                }
+            ]
+        },
+        {
+            "id": 524,
+            "id_padre": 11,
+            "label": "Física",
+            "activo": 1,
+            "detalles": [
+                {
+                    "id": 2100,
+                    "id_padre": 524,
+                    "data": {
+                        "key": "filtrar",
+                        "listaGrado": [
+                            6
+                        ],
+                        "listaCampoFormativo": [
+                            12
+                        ]
+                    },
+                    "activo": 1
+                }
+            ]
+        },
+        {
+            "id": 525,
+            "id_padre": 11,
+            "label": "Química",
+            "activo": 1,
+            "detalles": [
+                {
+                    "id": 2101,
+                    "id_padre": 525,
+                    "data": {
+                        "key": "filtrar",
+                        "listaGrado": [
+                            7
+                        ],
+                        "listaCampoFormativo": [
+                            12
+                        ]
+                    },
+                    "activo": 1
+                }
+            ]
+        },
+        {
+            "id": 533,
+            "id_padre": 11,
+            "label": "Geografía",
+            "activo": 1,
+            "detalles": [
+                {
+                    "id": 2109,
+                    "id_padre": 533,
+                    "data": {
+                        "key": "filtrar",
+                        "listaGrado": [
+                            5
+                        ],
+                        "listaCampoFormativo": [
+                            13
+                        ]
+                    },
+                    "activo": 1
+                }
+            ]
+        },
+        {
+            "id": 526,
+            "id_padre": 11,
+            "label": "Historia",
+            "activo": 1,
+            "detalles": [
+                {
+                    "id": 2102,
+                    "id_padre": 526,
+                    "data": {
+                        "key": "filtrar",
+                        "listaGrado": [
+                            5,
+                            6,
+                            7
+                        ],
+                        "listaCampoFormativo": [
+                            13
+                        ]
+                    },
+                    "activo": 1
+                }
+            ]
+        },
+        {
+            "id": 527,
+            "id_padre": 11,
+            "label": "Formación Cívica y Ética",
+            "activo": 1,
+            "detalles": [
+                {
+                    "id": 2103,
+                    "id_padre": 527,
+                    "data": {
+                        "key": "filtrar",
+                        "listaGrado": [
+                            5,
+                            6,
+                            7
+                        ],
+                        "listaCampoFormativo": [
+                            13
+                        ]
+                    },
+                    "activo": 1
+                }
+            ]
+        },
+        {
+            "id": 528,
+            "id_padre": 11,
+            "label": "Tecnología",
+            "activo": 1,
+            "detalles": [
+                {
+                    "id": 2104,
+                    "id_padre": 528,
+                    "data": {
+                        "key": "filtrar",
+                        "listaGrado": [
+                            5,
+                            6,
+                            7
+                        ],
+                        "listaCampoFormativo": [
+                            14
+                        ]
+                    },
+                    "activo": 1
+                }
+            ]
+        },
+        {
+            "id": 529,
+            "id_padre": 11,
+            "label": "Educación física",
+            "activo": 1,
+            "detalles": [
+                {
+                    "id": 2105,
+                    "id_padre": 529,
+                    "data": {
+                        "key": "filtrar",
+                        "listaGrado": [
+                            5,
+                            6,
+                            7
+                        ],
+                        "listaCampoFormativo": [
+                            14
+                        ]
+                    },
+                    "activo": 1
+                }
+            ]
+        },
+        {
+            "id": 530,
+            "id_padre": 11,
+            "label": "Tutoría y educación socioemocional",
+            "activo": 1,
+            "detalles": [
+                {
+                    "id": 2106,
+                    "id_padre": 530,
+                    "data": {
+                        "key": "filtrar",
+                        "listaGrado": [
+                            5,
+                            6,
+                            7
+                        ],
+                        "listaCampoFormativo": [
+                            14
+                        ]
+                    },
+                    "activo": 1
+                }
+            ]
+        },
+
+        {
+            "id": 532,
+            "id_padre": 11,
+            "label": "Español",
+            "activo": 1,
+            "detalles": [
+                {
+                    "id": 2108,
+                    "id_padre": 532,
+                    "data": {
+                        "key": "filtrar",
+                        "listaGrado": [
+                            5,
+                            6,
+                            7
+                        ],
+                        "listaCampoFormativo": [
+                            11
+                        ]
+                    },
+                    "activo": 1
+                }
+            ]
+        },
+        {
+            "id": 1142,
+            "id_padre": 11,
+            "label": "Lengua indígena",
+            "activo": 1,
+            "detalles": [
+                {
+                    "id": 2110,
+                    "id_padre": 1142,
+                    "data": {
+                        "key": "filtrar",
+                        "listaGrado": [
+                            5,
+                            6,
+                            7
+                        ],
+                        "listaCampoFormativo": [
+                            11
+                        ]
+                    },
+                    "activo": 1
+                }
+            ]
+        },
+        {
+            "id": 1143,
+            "id_padre": 11,
+            "label": "Lengua extranjera",
+            "activo": 1,
+            "detalles": [
+                {
+                    "id": 2111,
+                    "id_padre": 1143,
+                    "data": {
+                        "key": "filtrar",
+                        "listaGrado": [
+                            5,
+                            6,
+                            7
+                        ],
+                        "listaCampoFormativo": [
+                            11
+                        ]
+                    },
+                    "activo": 1
+                }
+            ]
+        },
+        {
+            "id": 1144,
+            "id_padre": 11,
+            "label": "Artes",
+            "activo": 1,
+            "detalles": [
+                {
+                    "id": 2112,
+                    "id_padre": 1144,
+                    "data": {
+                        "key": "filtrar",
+                        "listaGrado": [
+                            5,
+                            6,
+                            7
+                        ],
+                        "listaCampoFormativo": [
+                            11
+                        ]
+                    },
+                    "activo": 1
+                }
+            ]
+        }
+    ]
+}
+
+

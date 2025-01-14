@@ -1,0 +1,111 @@
+/*
+===============================================================
+
+    DISTRIBUCIÓN DE ESPACIOS DE LAS OPCIONES DE CONFIGURACIÓN
+
+===============================================================
+*/
+.d_contenedorAudioConfig, .d_contenedorTempConfig{
+	width: 100%;
+	height: 50%;
+}
+.d_contenedorCalculadora{
+	display: none;
+}
+/*
+===============================================================
+
+    BCKGRND-COLOR DE LOS ENCABEZADOS DE LAS INTERFACES
+
+===============================================================
+*/
+.d_encabezadoVideoGral, .d_encabezadoTeoriaGral, .d_encabezadoAppGral{
+    background-color: rgb(247, 230, 210);
+    background-image: url(../img/red_interfaz_next.png), url(../img/red_interfaz_plecacolors_top.png);
+    background-repeat: repeat, repeat-x;
+    background-size: 80%, 20% 16%;
+    background-position: center, bottom;
+}
+/*
+===============================================================
+
+    BCKGRND-COLOR DE LOS BOTONES DE LAS INTERFACES
+
+===============================================================
+*/
+.d_btnObjetivosGeneral, .d_btnHomeGeneral, .d_comunBtnsHeader, .d_btnRepetiraudio, .d_btnBorrar, .d_btnConfiguracion, .d_btnSiguiente, .d_btnEvaluar, .d_btnReiniciar, .btnPlay, .btnMute, .btnFull, .d_comunBtnsFooterBar, .d_conteNamesBtns, input[type='range'], .d_btnSi, .d_btnNo{
+    background-color: rgb(166, 124, 82);
+}
+/*
+===============================================================
+
+    BACKGRND-COLOR DE INSTRUCCIONES, OBJETIVOS, ASIDE Y FOOTER Y PRELOADER
+
+===============================================================
+*/
+.d_instruccionesContenido, .d_objetivoContenido, .d_borrarContenido, .d_reinContenido, .d_btnDespliegaMenu, .d_conteBtnsOpc, .d_contenedorOpcMenuConf, .d_contenedorDetallesEvaluacion, .d_btnCronometro, .d_contenedorCrono, .d_plecaBotons,.d_preloader{
+    background-color: rgb(63, 51, 45);
+}
+/*
+===============================================================
+
+    BCKGRND-COLOR DE LOS NOMBRES DE BOTONES DEL FOOTER Y ASIDE
+
+===============================================================
+*/
+.d_conteNamesBtns, .d_plecaNames{
+    background-color: rgb(223, 221, 196);
+    background-image: url(../img/red_interfaz_plecacolors_right.png);
+    background-repeat: repeat-y;
+    background-size: 3% 50%;
+    background-position: left;
+}
+/*
+===============================================================
+
+    BCKGRND-COLOR DE LOS CINTOS DE LOS CUADROS DE DIALOGO
+
+===============================================================
+*/
+.d_instruccionesGeneral, .d_objetivoGeneral, .d_borrarGeneral, .d_reinGeneral, .d_menuConfiguracion, .d_detallesEvaluacion{
+    background-color: rgb(251, 191, 0);
+}
+/*
+===============================================================
+
+    CAMBIO DE COLOR PARA ADAPTARLO A LA PANDILLA DEL CONOCIMIENTO
+    SE REMPLAZAN POR LOS ANTERIORES
+
+===============================================================
+*/
+.d_temaGeneral{
+    color: rgb(117, 76, 36);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .35);
+}
+.d_nameStyle{
+    color: rgb(77, 77, 77);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .35);
+}
+.d_instruccionesContenido, .d_objetivoContenido{
+    background-color: rgb(63, 51, 45);
+}
+.d_instruccionesGeneral, .d_objetivoGeneral{
+    background-color: rgb(251, 191, 0);
+}
+.d_txtInstrucciones, .d_txtObjetivos, .d_tituloInstrucciones, .d_tituloObjetivos, {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .35);
+}
+.d_txtNumEjercicio{
+    color: rgb(117, 76, 36);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .35);
+}
+.d_comunTxtFooterBar{
+    color: rgb(77, 77, 77);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .35);
+}
+.d_logoKrismar {
+    background: url(../img/red_interfaz_logokrismar.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}

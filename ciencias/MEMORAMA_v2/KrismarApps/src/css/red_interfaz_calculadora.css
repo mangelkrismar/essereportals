@@ -1,0 +1,121 @@
+/*botones especiales*/
+.d_FONDO{
+	position: absolute;
+	top: 10%;
+	right: 20%;
+	width:252px;
+	max-width: 252px;
+	display:none;
+	background-color:#000;
+	padding-top:5px;
+	padding-bottom:1px;
+	position: fixed;
+	z-index: 2;
+}
+#txtPantallaCalc{
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-left:5px;
+	font-family: "Verdana";
+	text-align:right;
+	padding-right:10px;
+	font-size:26pt;
+	color: #333333;
+	overflow: hidden;
+	background-image:url(../img/red_interfaz_display.png);
+	background-repeat:no-repeat;
+	height:45px;
+	max-width: 235px;
+}
+.d_anchoBtns{
+    width: 78px;
+}
+.d_anchoBtnsNum{
+    width: 45px;
+}
+.d_BTNS{
+	margin-left:5px;
+}
+.d_BTNS img{
+	cursor: pointer;
+}
+.d_SUP{
+	margin-top:5px;
+	margin-left:10px;
+}
+.d_SUP img{
+	cursor: pointer;
+}
+.d_CERRAR{
+	float:right;
+	margin-right:5px;
+	height: 27px;
+}
+.d_MOVER{
+	margin-right:5px;
+	height: 27px;
+}
+/*
+==============================================
+CSS MEDIA QUERIE 650px height
+==============================================
+*/
+@media screen and (max-height: 650px) { 
+/*botones especiales*/
+.d_FONDO{
+	position: absolute;
+	top: 10%;
+	right: 20%;
+	width:175px;
+	max-width: 175px;
+	display:none;
+	background-color:#000;
+	padding-top:5px;
+	padding-bottom:1px;
+	position: fixed;
+	z-index: 2;
+}
+#txtPantallaCalc{
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-left:5px;
+	font-family: "Verdana";
+	text-align:right;
+	padding-right:10px;
+	font-size:16pt;
+	color: #333333;
+	overflow: hidden;
+	background-image:url(../img/red_interfaz_display.png);
+	background-repeat:no-repeat;
+	height:24px;
+	max-width: 155px;
+}
+.d_anchoBtns{
+    width: 53px;
+}
+.d_anchoBtnsNum{
+    width: 30px;
+}
+.d_BTNS{
+	margin-left:5px;
+}
+.d_BTNS img{
+	cursor: pointer;
+}
+.d_SUP{
+	margin-top:5px;
+	margin-left:10px;
+}
+.d_SUP img{
+	cursor: pointer;
+}
+.d_CERRAR{
+	float:right;
+	margin-right:5px;
+	height: 22px;
+}
+.d_MOVER{
+	margin-right:5px;
+	height: 22px;
+}
+}

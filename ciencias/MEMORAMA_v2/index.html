@@ -1,0 +1,515 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>red_memorama</title>
+<link href="src/css/general (no incluir).css" rel="stylesheet" type="text/css">
+<link href="src/css/animate.css" rel="stylesheet" type="text/css">
+<link href="src/css/red_memorama.css" rel="stylesheet" type="text/css">
+<link href="src/css/admin_memorama.css" rel="stylesheet" type="text/css">
+<script src="src/js/jquery-1.11.1.js" type="text/javascript"></script>
+<script src="src/js/red_memorama.js" type="text/javascript"></script>
+</head>
+<body>
+    
+    <!--ADMINISTRACIÓN-->
+    <div class="administracion">
+        <!--DATOS-->
+        <div id="datos">
+            <div class="a_title">DATOS DE MEMORAMA</div>
+            <div class="a_usuario">
+                <a>USUARIO: <span>ARMANDO</span></a>
+            </div>
+            <div class="a_informacion">
+                <div>
+                    <a class="a_infotitle">ASIGNATURA</a>
+                    <div>
+                        <select id="p_asignatura">
+                            <option value="">SELECCIONA</option>
+                            <option value="mdt_esp">MDT_Español</option>
+                            <option value="mdt_mat">MDT_Matemáticas</option>
+                            <option value="hab_mat">HAB_R_Matemático</option>
+                            <option value="hab_log">HAB_R_Lógico</option>
+                            <option value="hab_ver">HAB_R_Verbal</option>
+                            <option value="hab_bp">HAB_BP</option>
+                            <option value="red_esp">RED_Español</option>
+                            <option value="red_mat">RED_Matemáticas</option>
+                            <option value="red_his">RED_Historia</option>
+                            <option value="red_geo">RED_Geografía</option>
+                            <option value="red_nat">RED_Ciencias naturales</option>
+                            <option value="red_art">RED_Arte</option>
+                            <option value="red_dep">RED_Deporte</option>
+                            <option value="red_eco">RED_Ecología</option>
+                            <option value="red_ant">RED_Anatomía</option>
+                            <option value="red_pdc">RED_Pandilla</option>
+                            <option value="red_cye">RED_Formación Cívica y Ética</option>
+                            <option value="red_rob">RED_Robótica</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="a_informacion">
+                <div>
+                    <a class="a_infotitle">TÍTULO DE LA APP</a>
+                    <input placeholder="Sumas con Alex" id="p_titulo">
+                </div>
+            </div>
+            <div class="a_informacion">
+                <div>
+                    <a class="a_infotitle">PREFIJO DE LA APP</a>
+                    <input placeholder="red_esp_5201" id="p_prefijo" pattern=".{12,}" required title="Minimo 12 caracteres">
+                </div>
+            </div>
+            <div class="a_informacion">
+                <div>
+                    <a class="a_infotitle">INSTRUCCIONES</a>
+                    <textarea placeholder="Escribe aquí tus instrucciones" id="p_instrucciones"></textarea>
+                </div>
+            </div>
+            <div class="a_informacion">
+                <div>
+                    <a class="a_infotitle">OBJETIVOS</a>
+                    <textarea placeholder="-Objetivo 1-Objetivo 2" id="p_objetivos"></textarea>
+                </div>
+            </div>
+            <div class="a_informacion">
+                <div>
+                    <a class="a_infotitle">PALABRAS CLAVE</a>
+                    <textarea placeholder="-Palabra clave 1-Palabra clave 2" id="p_palabras"></textarea>
+                </div>
+            </div>
+        </div>
+        <!--ESTRUCTURA-->
+        <div id="estructura">
+            <div class="a_title">ESTRUCTURA DEL MEMORAMA</div>
+            <div class="a_option">
+                <div>
+                    <input type="checkbox" id="box"/>
+                    <label for="box"></label>
+                    <a>PLECA</a>
+                </div>
+            </div>
+            <div class="a_fondopleca">
+                <div>
+                    <table><tr><td>POSICIÓN DE LA PLECA</td></tr></table>
+                    <table class="plecas" id="pleca1"><tr><td>IZQ</td></tr></table>
+                    <table class="plecas" id="pleca2"><tr><td>DER</td></tr></table>
+                    <table class="plecas" id="pleca3"><tr><td>INFERIOR</td></tr></table>
+                </div>
+            </div>
+            <div class="a_title">No. CARTAS</div>
+            <div class="a_icon" id="cartas18"></div>
+            <div class="a_icon" id="cartas16"></div>
+            <div class="a_icon" id="cartas12"></div>
+            <div class="a_icon" id="cartas8"></div>
+            <div class="a_icon" id="cartas6"></div>
+            <div class="a_title">FORMATO CARTAS</div>
+            <div class="a_format" id="formato_v"></div>
+            <div class="a_format" id="formato_h"></div>
+        </div>
+        <!--IMAGEN Y COLOR-->
+        <div id="diseno">
+            <div class="a_title">DISEÑO DE MEMORAMA</div>
+            <div class="a_menudisenotxt">Selecciona un elemento con el icono <input class="a_iconconfig" type="button"> para agregar estilos de diseño a tu memorama.</div>
+            <div class="a_menudiseno">
+                
+                <div class="a_encabezado">COLOR FONDO</div>
+                <!--BOTON DISENO CARTA-->
+                <div class="a_disenocontecarta" id="optionbtncarta">
+                    <div class="a_optioncartas">
+                        <div>
+                            <input class="radiocarta" type="radio" name="cartapress" id="adddiscarta"/>
+                            <label for="adddiscarta" id="c1"></label>
+                        </div>
+                    </div>
+                </div>
+                <!--BOTON DISENO PERSONAJE-->
+                <div class="a_disenocontecarta" id="optionbtnpers">
+                    <div class="a_optioncartas">
+                        <div>
+                            <input class="radiocarta" type="radio" name="cartapress" id="addpersona"/>
+                            <label for="addpersona" id="c2"></label>
+                        </div>
+                    </div>
+                </div>
+                <!--BOTON DISENO REVERSO-->
+                <div class="a_disenocontecarta" id="optionbtn">
+                    <div class="a_optioncartas">
+                        <div>
+                            <input class="radiocarta" type="radio" name="cartapress" id="verreverso"/>
+                            <label for="verreverso" id="c3"></label>
+                        </div>
+                    </div>
+                </div>
+                <!--COLOR GENERAL-->
+                <div class="a_disenoconte" id="optioncolor">
+                    <div class="a_subtitle">COLOR FONDO</div>
+                    <div class="a_color">
+                        <div>
+                            <input type="color" value="#29abe2">
+                            <div class="a_colornone"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--SOMBRA-->
+                <div class="a_disenoconte" id="optionsombra">
+                    <div class="a_subtitle">SOMBRA</div>
+                    <div class="a_colorsombra">
+                        <div>
+                            <input type="color" value="#29abe2">
+                            <div class="a_colorsombranone"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--IMAGEN-->
+                <div class="a_disenoconte" id="optionimg">
+                    <div class="a_subtitle">IMAGEN FONDO</div>
+                    <div class="a_inputFile">
+                        <div class="a_input-group">
+                            <input type="text" class="a_form-control1" readonly placeholder="Ningún archivo seleccionado">
+                            <div class="a_btn a_btn-primary a_btn-file">
+                                     <input id="inFile1" type="file" name="archs[]" required>
+                            </div>
+                            <div class="a_imgnone"></div>
+                        </div>
+                    </div>
+                    <div class="a_leyenda">Peso máximo: 1mb</div>
+                </div>
+                <!--TIPO IMG-->
+                <div class="a_tipoimg">
+                    <div class="a_tipoimgin">
+                        <div class="a_tipoimgtitle">TAMAÑO IMAGEN</div>
+                        <div class="a_tipoimgconte">
+                            <div class="a_option">
+                                <div>
+                                    <input class="inradio" type="radio" id="box1" name="tipoimg" checked="checked"/>
+                                    <label for="box1"></label>
+                                    <a>ORIGINAL</a>
+                                </div>
+                            </div>
+                            <div class="a_option">
+                                <div>
+                                    <input class="inradio" type="radio" id="box2" name="tipoimg" checked="checked"/>
+                                    <label for="box2"></label>
+                                    <a>AUTOMÁTICA</a>
+                                </div>
+                            </div>
+                            <div class="a_option">
+                                <div>
+                                    <input class="inradio" type="radio" id="box3" name="tipoimg"/>
+                                    <label for="box3"></label>
+                                    <a>COMPLETA</a>
+                                </div>
+                            </div>
+                            <div class="a_option">
+                                <div>
+                                    <input class="inradio" type="radio" id="box4" name="tipoimg"/>
+                                    <label for="box4"></label>
+                                    <a>MOSAICO</a>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="a_optionzoom">
+                                <div>
+                                    <input type="range" id="zoomimg" value="50" min="1">
+                                    <a id="zoom">100%</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--BOTON DISENO TEXTO MARCADOR-->
+                <!--div class="a_disenoconte" id="optionbtntxt">
+                    <div class="a_option">
+                        <div>
+                            <input type="checkbox" id="marcadortxt"/>
+                            <label for="marcadortxt"></label>
+                            <a>TEXTO</a>
+                        </div>
+                    </div>
+                </div-->
+                <!--COLOR BORDE-->
+                <div class="a_disenoconte" id="optionborde">
+                    <div class="a_subtitle">BORDE</div>
+                    <div class="a_colorborde">
+                        <div>
+                            <input type="color" value="#29abe2">
+                            <div class="a_colorbordenone"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--REDONDEAR BORDE-->
+                <div class="a_disenoconte" id="redondearborde">
+                    <div class="a_subtitle">REDONDEAR BORDE</div>
+                    <div class="redondearopcion">
+                        <div class="redondearopcionin">
+                            <select>
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option val="0">0</option>
+                                <option val="5">5</option>
+                                <option val="10">10</option>
+                                <option val="15">15</option>
+                                <option val="20">20</option>
+                                <option val="25">25</option>
+                                <option val="30">30</option>
+                                <option val="40">40</option>
+                                <option val="60">60</option>
+                                <option val="80">80</option>
+                                <option val="200">200</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!--COLOR TEXTO-->
+                <div class="a_disenoconte" id="optiontxtreverso">
+                    <div class="a_subtitle">COLOR DE TEXTO</div>
+                    <div class="a_colortxt">
+                        <div>
+                            <input type="color" value="#29abe2">
+                            <div class="a_colortxtnone"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--FUENTE Y TAMAÑO DE TEXTO-->
+                <div class="a_disenoconte" id="optiontxtedit">
+                    <div class="a_subtitle">TIPO Y TAMAÑO DE TEXTO</div>
+                    <div class="a_txteditin">
+                        <div class="a_txteditfont">
+                            <select>
+                                <option val="Verdana" selected>Verdana</option>
+                                <option val="Comic Sans MS">Comic Sans MS</option>
+                                <option val="Courier New">Courier New</option>
+                                <option val="Forte">Forte</option>
+                                <option val="Times New Roman">Times New Roman</option>
+                                <option val="Freestyle Script">Freestyle Script</option>
+                            </select>
+                        </div>
+                        <div class="a_txteditsize">
+                            <select>
+                                <option vcal="1">1</option>
+                                <option vcal="1.2">1.2</option>
+                                <option vcal="1.4">1.4</option>
+                                <option vcal="1.6">1.6</option>
+                                <option vcal="1.8">1.8</option>
+                                <option vcal="2" selected>2</option>
+                                <option vcal="2.4">2.4</option>
+                                <option vcal="2.6">2.6</option>
+                                <option vcal="2.8">2.8</option>
+                                <option vcal="3">3</option>
+                                <option vcal="3.2">3.2</option>
+                                <option vcal="3.4">3.4</option>
+                                <option vcal="3.6">3.6</option>
+                                <option vcal="3.8">3.8</option>
+                                <option vcal="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!--PREVISUALIZAR TEXTO-->
+                <div class="a_disenoconte" id="previewtxt">
+                    <div class="a_subtitle">PREVISUALIZAR TEXTO</div>
+                    <div class="a_previewtexto">
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contenido">
+            <div class="a_title">CONTENIDO DE MEMORAMA</div>
+            <!--BOTON TIPO 1-->
+            <div class="a_parejasopciones" id="parejasopt1">
+                <div class="a_parejastipo">
+                    <div>
+                        <input class="parejacarta" type="radio" name="parejas" id="parejatipo1"/>
+                        <label for="parejatipo1" id="p1"></label>
+                    </div>
+                </div>
+            </div>
+            <!--BOTON TIPO 2-->
+            <div class="a_parejasopciones" id="parejasopt2">
+                <div class="a_parejastipo">
+                    <div>
+                        <input class="parejacarta" type="radio" name="parejas" id="parejatipo2"/>
+                        <label for="parejatipo2" id="p2"></label>
+                    </div>
+                </div>
+            </div>
+            <!--BOTON TIPO 3-->
+            <div class="a_parejasopciones" id="parejasopt3">
+                <div class="a_parejastipo">
+                    <div>
+                        <input class="parejacarta" type="radio" name="parejas" id="parejatipo3"/>
+                        <label for="parejatipo3" id="p3"></label>
+                    </div>
+                </div>
+            </div>
+            <!--DISTRACTORES-->
+            <div class="a_disenoconte" id="distractores">
+                <div class="a_subtitle">AGREGA MÁS OPCIONES</div>
+                <div class="distractoropcion">
+                    <div class="distractoropcionin">
+                        <select>
+                            <option val="0">0</option>
+                            <option val="1">1</option>
+                            <option val="2">2</option>
+                            <option val="3">3</option>
+                            <option val="4">4</option>
+                            <option val="5">5</option>
+                            <option val="6">6</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="a_contparejas">
+                <div class="a_contparejasin">
+                    <div class="a_parejastitle">IMAGEN - IMAGEN</div>
+                    <div class="a_parejasnum">
+                        <!--AGREGAN BOTONES DE PAREJAS-->
+                    </div>
+                    <div class="a_parejasconf">
+                        <div class="a_parejasconfoption">
+                            <div class="a_parejasiconimg imgladoa"></div>
+                            <div class="a_parejasicontxt txtladoa"></div>
+                            <table class="a_parejasicontitle"><tr><td>CARTA A</td></tr></table>
+                        </div>
+                        <div class="a_parejasimgup_a campollenado">
+                            <div class="a_input-group3">
+                                <input type="text" class="a_form-control3" readonly1 placeholder="Ningún archivo seleccionado">
+                                <div class="a_miniaturaimg"></div>
+                                <div class="a_btn3 a_btn-primary3 a_btn-file3">
+                                    <input type="file" name="archs[]" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a_parejastxtup_a campollenado">
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                    <div class="a_option" id="chekparB">
+                        <div>
+                            <input type="checkbox" id="mostrarInput" checked/>
+                            <label for="mostrarInput"></label>
+                            <a>MISMA IMAGEN</a>
+                        </div>
+                    </div>
+                    <div class="a_parejasconf" id="opcionB">
+                        <div class="a_parejasconfoption">
+                            <div class="a_parejasiconimg imgladob"></div>
+                            <div class="a_parejasicontxt txtladob"></div>
+                            <table class="a_parejasicontitle"><tr><td>CARTA B</td></tr></table>
+                        </div>
+                        <div class="a_parejasimgup_b campollenado">
+                            <div class="a_input-group3">
+                                <input type="text" class="a_form-control3" readonly placeholder="Ningún archivo seleccionado">
+                                <div class="a_miniaturaimg"></div>
+                                <div class="a_btn3 a_btn-primary3 a_btn-file3">
+                                    <input type="file" name="archs[]" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a_parejastxtup_b campollenado">
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--NAVEGACIÓN-->
+        <!--<div class="a_botones">
+            <div id="btndatos" class="a_botones_press">DATOS</div>
+            <div id="btnestructura">ESTRUCTURA</div>
+            <div id="btndiseno">DISEÑO</div>
+            <div id="btncontenido">CONTENIDO</div>
+        </div>-->
+        
+    </div>
+    <programacion id="contenidoHTML">
+    <!--DISENO-->
+    <div class="d_fondo d_estructura agrega1" id="agrega"><!--BACKGROUND-->
+        <!--AQUÍ VAN LOS ELEMENTOS EXTRAS-->
+        <div class="d_contenido">
+            <!--AQUÍ VA EL DISEÑO-->
+            <article class="agrega6">
+                <div id="agregacartas">
+                    <!--CARTAS-->
+                </div>
+            </article>
+            <aside class="agrega2">
+                <div class="agrega3"></div>
+                <div class="agrega4">
+                    <table class="txt4">
+                        <tr>
+                            <td>Intentos</td>
+                        </tr>
+                        <tr>
+                            <td id="contIntentos">00</td>
+                        </tr>
+                        <tr>
+                            <td>Aciertos</td>
+                        </tr>
+                        <tr>
+                            <td id="contAciertos">00</td>
+                        </tr>
+                    </table>
+                </div>
+                <div></div>
+            </aside>
+        </div>
+    </div>
+    </programacion>
+    <!--EDITOR-->
+    <div class="d_fondo d_estructura a_fondo" id="agregaconf">
+        <a class="a_config" id="1"></a>
+        <div class="d_contenido">
+            <article>
+                <div id="agregacartasconf">
+                    <article>
+                        <div>
+                            <a class="a_config" id="7"></a>
+                        </div>
+                    </article>
+                </div>
+                <a class="a_config" id="6"></a>
+            </article>
+            <aside>
+                <div>
+                    <a class="a_config" id="3"></a>
+                </div>
+                <div>
+                    <a class="a_config" id="4"></a>
+                </div>
+                <a class="a_config" id="2"></a>
+            </aside>
+        </div>
+    </div>
+    
+    <!--VISTA PREVIA-->
+    <div class="vistaprevia" title="Vista previa"></div>
+    <!--<div class="saveacty" onclick="generaArchivos()" title="Genera aplicación">--></div>
+    <!--NAVEGACIÓN-->
+    <div class="a_botones">
+        <div id="btndatos" class="a_botones_press">1. DATOS</div>
+        <div id="btnestructura">2. ESTRUCTURA</div>
+        <div id="btndiseno">3. DISEÑO</div>
+        <div id="btncontenido">4. CONTENIDO</div>
+        <div id="saveacty" onclick="generaArchivos()">5. GENERA APLICACIÓN</div>
+    </div>
+    <!--EMERGENTE-->
+    <div class="a_emergente">
+        <div>
+            <table><tr><td id="pregunta"></td></tr></table>
+            <table id="aceptar"><tr><td>ACEPTAR</td></tr></table>
+            <table id="cancelar"><tr><td>CANCELAR</td></tr></table>
+        </div>
+    </div>
+    <div class="a_emergente2">
+        <div>
+            <table><tr><td id="pregunta2"></td></tr></table>
+            <table id="aceptar2"><tr><td>ACEPTAR</td></tr></table>
+        </div>
+    </div>
+    
+</body>
+</html>

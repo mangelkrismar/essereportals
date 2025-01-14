@@ -1,0 +1,255 @@
+{
+    "libros": [
+        {
+            "id": 1,
+            "label": "1°",
+            "items": [
+                {
+                    "id": 1,
+                    "label": "Un libro sin recetas, para la maestra y el maestro. Fase 3.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P1LPM.htm"
+                },
+                {
+                    "id": 2,
+                    "label": "Múltiples lenguajes.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P1MLA.htm"
+                },
+                {
+                    "id": 3,
+                    "label": "Libro de proyectos de Aula.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P1PAA.htm"
+                },
+                {
+                    "id": 4,
+                    "label": "Libro de proyectos Comunitarios.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P1PCA.htm"
+                },
+                {
+                    "id": 5,
+                    "label": "Libro de proyectos escolares.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P1PEA.htm"
+                },
+                {
+                    "id": 6,
+                    "label": "Nuestros saberes: Libro para alumnos, maestros y familia.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P1SDA.htm"
+                },
+                {
+                    "id": 7,
+                    "label": "Múltiples lenguajes. Trazos y palabras.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P1TPA.htm"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "label": "2°",
+            "items": [
+                {
+                    "id": 8,
+                    "label": "Un libro sin recetas, para la maestra y el maestro. Fase 3.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P1LPM.htm"
+                },
+                {
+                    "id": 9,
+                    "label": "Múltiples lenguajes.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P2MLA.htm"
+                },
+                {
+                    "id": 10,
+                    "label": "Libro de proyectos de Aula.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P2PAA.htm"
+                },
+                {
+                    "id": 11,
+                    "label": "Libro de proyectos Comunitarios.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P2PCA.htm"
+                },
+                {
+                    "id": 12,
+                    "label": "Libro de proyectos escolares.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P2PEA.htm"
+                },
+                {
+                    "id": 13,
+                    "label": "Nuestros saberes: Libro para alumnos, maestros y familia.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P2SDA.htm"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "label": "3°",
+            "items": [
+                {
+                    "id": 14,
+                    "label": "Un libro sin recetas, para la maestra y el maestro. Fase 4.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P3LPM.htm"
+                },
+                {
+                    "id": 15,
+                    "label": "Múltiples lenguajes.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P3MLA.htm"
+                },
+                {
+                    "id": 16,
+                    "label": "Libro de proyectos de Aula.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P3PAA.htm"
+                },
+                {
+                    "id": 17,
+                    "label": "Libro de proyectos Comunitarios.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P3PCA.htm"
+                },
+                {
+                    "id": 18,
+                    "label": "Libro de proyectos escolares.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P3PEA.htm"
+                },
+                {
+                    "id": 19,
+                    "label": "Nuestros saberes: Libro para alumnos, maestros y familia.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P3SDA.htm"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "label": "4°",
+            "items": [
+                {
+                    "id": 20,
+                    "label": "Un libro sin recetas, para la maestra y el maestro. Fase 4.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P3LPM.htm"
+                },
+                {
+                    "id": 21,
+                    "label": "Múltiples lenguajes.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P4MLA.htm"
+                },
+                {
+                    "id": 22,
+                    "label": "Libro de proyectos de aula.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P4PAA.htm"
+                },
+                {
+                    "id": 23,
+                    "label": "Libro de proyectos comunitarios.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P4PCA.htm"
+                },
+                {
+                    "id": 24,
+                    "label": "Libro de proyectos escolares.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P4PEA.htm"
+                },
+                {
+                    "id": 25,
+                    "label": "Nuestros saberes: Libro para alumnos, maestros y familia.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P4SDA.htm"
+                },
+                {
+                    "id": 26,
+                    "label": "Cartografía de México y el mundo.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P0CMA.htm"
+                },
+                {
+                    "id": 27,
+                    "label": "Nuestros saberes México, Grandeza y diversidad. Multigrado.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P0SHA.htm"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "label": "5°",
+            "items": [
+                {
+                    "id": 28,
+                    "label": "Un libro sin recetas, para la maestra y el maestro. Fase 5.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P5LPM.htm"
+                },
+                {
+                    "id": 29,
+                    "label": "Múltiples lenguajes.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P5MLA.htm"
+                },
+                {
+                    "id": 30,
+                    "label": "Libro de proyectos de Aula.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P5PAA.htm"
+                },
+                {
+                    "id": 31,
+                    "label": "Libro de proyectos comunitarios.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P5PCA.htm"
+                },
+                {
+                    "id": 32,
+                    "label": "Libro de proyectos escolares.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P5PEA.htm"
+                },
+                {
+                    "id": 33,
+                    "label": "Nuestros saberes: Libro para alumnos, maestros y familia.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P5SDA.htm"
+                },
+                {
+                    "id": 34,
+                    "label": "Cartografía de México y el mundo.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P0CMA.htm"
+                },
+                {
+                    "id": 35,
+                    "label": "Nuestros saberes México, Grandeza y diversidad. Multigrado.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P0SHA.htm"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "label": "6°",
+            "items": [
+                {
+                    "id": 36,
+                    "label": "Un libro sin recetas, para la maestra y el maestro. Fase 5.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P5LPM.htm"
+                },
+                {
+                    "id": 37,
+                    "label": "Múltiples lenguajes.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P6MLA.htm"
+                },
+                {
+                    "id": 38,
+                    "label": "Libro de proyectos de Aula.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P6PAA.htm"
+                },
+                {
+                    "id": 39,
+                    "label": "Libro de proyectos Comunitarios.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P6PCA.htm"
+                },
+                {
+                    "id": 40,
+                    "label": "Libro de proyectos escolares.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P6PEA.htm"
+                },
+                {
+                    "id": 41,
+                    "label": "Nuestros saberes: Libro para alumnos, maestros y familia.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P6SDA.htm"
+                },
+                {
+                    "id": 42,
+                    "label": "Cartografía de México y el mundo.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P0CMA.htm"
+                },
+                {
+                    "id": 43,
+                    "label": "Nuestros saberes México, Grandeza y diversidad. Multigrado.",
+                    "url": "https://libros.conaliteg.gob.mx/2023/P0SHA.htm"
+                }
+            ]
+        }
+    ]
+}

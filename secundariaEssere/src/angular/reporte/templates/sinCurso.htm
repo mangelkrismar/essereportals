@@ -1,0 +1,68 @@
+<div ng-if="!apps">
+	<div class="row">
+		<div  class="col-sm-12">
+			<div class="jumbotron" style="background-color: white;">
+				<h1>Cargando aplicaciones</h1>
+				<p>Espere...</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div ng-if="apps">
+	<div class="row">
+		<div class="col-sm-12">
+			<h1>Actividades aprobadas sin curso en MDT</h1>
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Fecha, prefijo o nombre" ng-model="search"></input>
+				<span class="input-group-addon btn-danger" ng-click="resetFilters()">Borrar filtros</span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div ng-if="apps" class="col-sm-12">
+			<dir-pagination-controls
+				max-size="5"
+				direction-links="true"
+				boundary-links="true"
+				auto-hide="false"
+				>
+			</dir-pagination-controls>
+			<table class="table table-striped table-bordered table-hover table-condensed small">
+				<thead style="cursor: pointer;" class="bg-primary">
+					<th ng-click="sort('f')">
+						Fecha de aprobación
+						<span ng-show="sortKey=='f'" class="glyphicon" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+					</th>
+					<th ng-click="sort('p')">
+						Prefijo
+						<span ng-show="sortKey=='p'" class="glyphicon" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+					</th>
+					<th ng-click="sort('n')">
+						Nombre
+						<span ng-show="sortKey=='n'" class="glyphicon" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+					</th>
+					<th>
+						Ver
+					</th>
+				</thead>
+				<tbody>
+					<tr dir-paginate="a in apps
+						|orderBy:sortKey:reverse
+						|filter: search
+						|itemsPerPage:20"
+						current-page="pagination.current">
+						<td><a ng-click="filtrarFecha(a.f)" href="">{{a.f}}</a></td>
+						<td><a ng-click="filtrarPrefijo(a.p)" href="">{{a.p}}</a></td>
+						<td>
+							{{a.n}}
+						</td>
+						<td>
+							<a href="https://www.mdt.mx/KrismarApps/src/img/miniatura/{{a.p}}.png" target="_blank"><span class="glyphicon glyphicon-picture"></span></a>
+							<a href="https://www.mdt.mx/KrismarApps/index.php/recurso/cargarApp/{{a.i}}/primaria" target="_blank"><span class="glyphicon glyphicon-share"></span></a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

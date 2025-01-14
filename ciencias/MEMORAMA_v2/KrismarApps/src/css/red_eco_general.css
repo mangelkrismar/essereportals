@@ -1,0 +1,66 @@
+/*
+===============================================================
+
+    DISTRIBUCIÓN DE ESPACIOS DE LAS OPCIONES DE CONFIGURACIÓN
+
+===============================================================
+*/
+.d_contenedorAudioConfig, .d_contenedorTempConfig{
+	width: 100%;
+	height: 50%;
+}
+.d_contenedorCalculadora{
+	display: none;
+}
+/*
+===============================================================
+
+    BCKGRND-COLOR DE LOS ENCABEZADOS DE LAS INTERFACES
+
+===============================================================
+*/
+.d_encabezadoVideoGral, .d_encabezadoTeoriaGral, .d_encabezadoAppGral{
+    background-color: #659248;
+}
+/*
+===============================================================
+
+    BCKGRND-COLOR DE LOS BOTONES DE LAS INTERFACES
+
+===============================================================
+*/
+.d_btnObjetivosGeneral, .d_btnHomeGeneral, .d_comunBtnsHeader, .d_btnRepetiraudio, .d_btnBorrar, .d_btnConfiguracion, .d_btnSiguiente, .d_btnEvaluar, .d_btnReiniciar, .btnPlay, .btnMute, .btnFull, .d_comunBtnsFooterBar, .d_conteNamesBtns, input[type='range'], .d_btnSi, .d_btnNo{
+    background-color: #476236;
+}
+/*
+===============================================================
+
+    BACKGRND-COLOR DE INSTRUCCIONES, OBJETIVOS, ASIDE Y FOOTER Y PRELOADER
+
+===============================================================
+*/
+.d_instruccionesContenido, .d_objetivoContenido, .d_borrarContenido, .d_reinContenido, .d_btnDespliegaMenu, .d_conteBtnsOpc, .d_contenedorOpcMenuConf, .d_contenedorDetallesEvaluacion, .d_btnCronometro, .d_contenedorCrono, .d_plecaBotons,.d_preloader{
+    background-color: #333333;
+}
+
+/*
+===============================================================
+
+    BCKGRND-COLOR DE LOS NOMBRES DE BOTONES DEL FOOTER Y ASIDE
+
+===============================================================
+*/
+.d_conteNamesBtns, .d_plecaNames{
+    background-color: #76984D;
+}
+
+/*
+===============================================================
+
+    BCKGRND-COLOR DE LOS CINTOS DE LOS CUADROS DE DIALOGO
+
+===============================================================
+*/
+.d_instruccionesGeneral, .d_objetivoGeneral, .d_borrarGeneral, .d_reinGeneral, .d_menuConfiguracion, .d_detallesEvaluacion{
+    background-color: #FFCC00;
+}

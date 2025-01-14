@@ -1,0 +1,38 @@
+{
+    "listCategoria": [
+        {
+            "id": 1,
+            "label": "App. Interactiva",
+            "activo": 1,
+            "check": false,
+            "data_extra" : "aplicacion,aplicacionL,aplicacionCL"
+        },
+        {
+            "id": 2,
+            "label": "Teoría",
+            "activo": 1,
+            "check": false,
+            "data_extra" : "lectura"
+        },
+        {
+            "id": 3,
+            "label": "Animación",
+            "activo": 1,
+            "check": false,
+            "data_extra" : "video,videoT"
+        },
+        {
+            "id": 4,
+            "label": "Simulador",
+            "activo": 1,
+            "check": false,
+            "data_extra" : "simuladorCL,simuladorI,simuladorcrk,simuladorLabSol,simuladorLabFuerzas,simuladorLabGeometria,"
+        }, {
+            "id": 5,
+            "label": "Evaluación",
+            "activo": 1,
+            "check": false,
+            "data_extra" : "evaluacionC,evaluacionE,evaluacionP,evaluacionD"
+        }
+    ]
+}

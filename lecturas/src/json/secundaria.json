@@ -1,0 +1,51 @@
+[
+	{
+		"id_aplicacion" : 7566,
+		"nombre" : "La casa donde murió, (1) lectura",
+		"objetivos" : "Identifica las ideas principales de la lectura.||||Reconoce las características del subgénero drama.||||Amplía tu vocabulario.",
+		"prefijo" : "red_esp_7105b1",
+		"categoria" : "lectura"
+	},
+	{
+		"id_aplicacion" : 7567,
+		"nombre" : "La casa donde murió, (2) estructura",
+		"objetivos" : "Identifica el planteamiento, el nudo y el desenlace de un cuento.||||Amplía tu vocabulario. ",
+		"prefijo" : "red_esp_7105b2",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 7568,
+		"nombre" : "La casa donde murió, (3) cronología",
+		"objetivos" : "Ordena cronológicamente los sucesos del cuento.||||Narra los sucesos más importantes de la lectura.||||Amplia tu vocabulario.",
+		"prefijo" : "red_esp_7105b3",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 7569,
+		"nombre" : "La casa donde murió, (4) personajes",
+		"objetivos" : "Identifica la relevancia de los personajes dentro del cuento.||||Explica la importancia de los protagonistas y los motivos por lo que se les considera así.",
+		"prefijo" : "red_esp_7105b4",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 7570,
+		"nombre" : "La casa donde murió, (5) conclusiones",
+		"objetivos" : " Redacta tu conclusión sobre el cuento La casa donde murió.",
+		"prefijo" : "red_esp_7105b5",
+		"categoria" : "lectura"
+	},
+	{
+		"id_aplicacion" : 7571,
+		"nombre" : "La casa donde murió, (6) comprensión",
+		"objetivos" : " Extrae información del texto.||||Identifica las ideas principales del cuento.||||Interpreta y analiza la información del texto.",
+		"prefijo" : "red_esp_7105b6",
+		"categoria" : "evaluacionC"
+	},
+	{
+		"id_aplicacion" : 7572,
+		"nombre" : "La casa donde murió, (7) glosario",
+		"objetivos" : "Explica el significado de algunas palabras del cuento.||||Amplía tu vocabulario.",
+		"prefijo" : "red_esp_7105b7",
+		"categoria" : "app"
+	}
+]

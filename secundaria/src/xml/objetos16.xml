@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<elemento>
+    <!-- ARTE -->
+    <datos textoD="Museo Nacional de Arte contemporáneo (MUAC)" ninosD="mat_1_1" rutaD="http://www.muac.unam.mx/" bole="1"/>
+    <datos textoD="Museo Nacional del Arte (MUNAL)" ninosD="mat_1_1" rutaD="http://www.munal.mx/es" bole="1"/>
+    <datos textoD="Casa Azul, Museo Frida Kahlo" ninosD="mat_1_1" rutaD="http://www.museofridakahlo.org.mx/" bole="1"/>
+    <!--<datos textoD="Museo de Arte Moderno" ninosD="mat_1_1" rutaD="http://www.museoartemoderno.com/" bole="1"/>
+    <datos textoD="Museo del Palacio de Bellas Artes" ninosD="mat_1_1" rutaD="http://museopalaciodebellasartes.gob.mx/" bole="1"/>
+    <datos textoD="Artes de México" ninosD="mat_1_1" rutaD="http://artesdemexico.com/adm/09/index.php" bole="1"/>-->
+
+    <!-- BIBLIOTECA -->
+    <datos textoD="Biblioteca José Vasconcelos " ninosD="mat_1_1" rutaD="http://www.bibliotecavasconcelos.gob.mx/" bole="2"/>
+    <datos textoD="Periódico New York Times " ninosD="mat_1_1" rutaD="http://www.nytimes.com/" bole="2"/>
+    <datos textoD="Biblioteca digital UNESCO" ninosD="mat_1_1" rutaD="https://www.wdl.org/es/" bole="2"/>
+    <!--<datos textoD="Biblioteca Nacional de México " ninosD="mat_1_1" rutaD="http://bnm.unam.mx/" bole="2"/>
+    <datos textoD="Biblioteca Central" ninosD="mat_1_1" rutaD="http://bibliotecacentral.unam.mx/" bole="2"/>
+    <datos textoD="Diarios América " ninosD="mat_1_1" rutaD="http://www.diariosmundo.com/" bole="2"/>
+    <datos textoD="Biblioteca UNAM" ninosD="mat_1_1" rutaD="http://bibliotecas.unam.mx/" bole="2"/>-->
+
+    <!-- CULTURA -->
+    <datos textoD="Museo Nacional de la muerte " ninosD="mat_1_1" rutaD="https://museonacionaldelamuerte.uaa.mx/" bole="3"/>
+    <datos textoD="México desconocido " ninosD="mat_1_1" rutaD="http://www.mexicodesconocido.com.mx/" bole="3"/>
+    <!--<datos textoD="Antiguo colegio de San Ildefonso" ninosD="mat_1_1" rutaD="http://www.sanildefonso.org.mx/" bole="3"/>
+    <datos textoD="Revista de la Universidad Nacional Autónoma de México" ninosD="mat_1_1" rutaD="http://www.revistas.unam.mx/index.php/index/index?ind=I" bole="3"/>-->
+
+    <!-- ECOLOGÍA -->
+    <datos textoD="Revista digital sobre Cultura Ecológica " ninosD="mat_1_1" rutaD="http://www.concienciaeco.com/" bole="4"/>
+
+    <!-- EDUCACIÓN -->
+    <!--<datos textoD="Revista iberoamericana de Educación" ninosD="mat_1_1" rutaD="http://www.rieoei.org/index.php" bole="5"/>-->
+    <datos textoD="Escuela y educación fuera del aula" ninosD="mat_1_1" rutaD="http://www.krismar-educa.com.mx/cursos/upmoodle/articulosI/Escuelaeducacionfueradelaula.pdf" bole="5"/>
+    <datos textoD="La desigualdad en la educación basica" ninosD="mat_1_1" rutaD="http://www.krismar-educa.com.mx/cursos/upmoodle/articulosI/Lasdesigualdadesenlaeducacionbasica.pdf" bole="5"/>
+    <datos textoD="Los grandes problemas del sistema educativo Mexicano" ninosD="mat_1_1" rutaD="http://www.krismar-educa.com.mx/cursos/upmoodle/articulosI/LosgrandesproblemasdelSistemaEducativoMexicano.pdf" bole="5"/>
+    <datos textoD="Medidores y medidoras del aprendizaje " ninosD="mat_1_1" rutaD="http://www.krismar-educa.com.mx/cursos/upmoodle/articulosI/Mediadoresymediadorasdelaprendizaje.pdf" bole="5"/>
+    <datos textoD="Riendose aprende la gente" ninosD="mat_1_1" rutaD="http://www.krismar-educa.com.mx/cursos/upmoodle/articulosI/Riendoseaprendelagente.pdf" bole="5"/>
+
+    <!-- ESTADOS -->
+    <!--<datos textoD="Museo la casa de la Zacatecana" ninosD="mat_1_1" rutaD="http://www.museolazacatecana.com/" bole="6"/>
+    <datos textoD="Museo regional de Yucatán Palacio Cantón" ninosD="mat_1_1" rutaD="http://www.palaciocanton.inah.gob.mx/" bole="6"/>-->
+
+    <!-- HISTORIA -->
+    <!--<datos textoD="Museo Nacional de Antropología (MNA)" ninosD="mat_1_1" rutaD="http://www.mna.inah.gob.mx/index.html" bole="7"/>-->
+    
+    <!--<datos textoD="RAE" ninosD="mat_1_1" rutaD="http://dle.rae.es" bole="8"/>
+	
+    <datos textoD=" - ¿Qué animal emite ese sonido?" ninosD="mat_1_3" descriD="En un extremo hay imágenes de diferentes animales del otro lado hay palabras, el niño debe de relacionar el animal con el sonido que emite." rutaD="http://www.krismar-educa.com.mx/cursos/upmoodle/Paco/paco_leccion6_ej3.php" bole="1" bole="1"/>
+	<datos textoD=" - ¿Qué está haciendo el enanito?" ninosD="mat_1_2" descriD="Se muestra un enanito haciendo alguna actividad, se formulará una pregunta, el niño debe seleccionar una de las 3 posibles respuestas." rutaD="http://www.krismar-educa.com.mx/cursos/upmoodle/Paco/paco_leccion2_ej2.php" bole="1" bole="1"/>
+	<datos textoD=" - ¿Qué animal emite ese sonido?" ninosD="mat_1_1" descriD="En un extremo hay imágenes de diferentes animales del otro lado hay palabras, el niño debe de relacionar el animal con el sonido que emite.3" rutaD="http://www.krismar-educa.com.mx/cursos/upmoodle/Paco/paco_leccion6_ej3.php" bole="1" bole="1"/>-->
+</elemento>

@@ -1,0 +1,610 @@
+@charset "utf-8";
+/*
+==============================================
+CSS TIPOGRAFÍA
+==============================================
+*/
+@font-face {
+	font-family:Verdana;
+	src: url("../font/verdana.ttf") format("truetype");
+}
+html{
+    font-size: 65%;
+}
+/*
+==============================================
+CSS CONTENIDO
+==============================================
+*/
+.d_fondo{
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	position:absolute;
+}
+.d_contenido{
+    width:1200px;
+	height:900px;
+	top:50%;
+    left: 50%;
+    margin-top: -450px;
+    margin-left: -600px;
+	position:absolute;
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-HEIGHT 960px
+==============================================
+*/
+@media screen and (max-height: 960px) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 62%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:1133px;
+	height:850px;
+    margin-left: -566px;
+    margin-top: -425px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-HEIGHT 910px
+==============================================
+*/
+@media screen and (max-height: 910px) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 59%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:1067px;
+	height:800px;
+    margin-left: -533px;
+    margin-top: -400px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-HEIGHT 860px
+==============================================
+*/
+@media screen and (max-height: 860px) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 56%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:1000px;
+	height:750px;
+    margin-left: -500px;
+    margin-top: -375px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-HEIGHT 710px
+==============================================
+*/
+@media screen and (max-height: 710px) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 53%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:933px;
+	height:700px;
+    margin-left: -466px;
+    margin-top: -350px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-HEIGHT 760px
+==============================================
+*/
+@media screen and (max-height: 760px) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 50%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:867px;
+	height:650px;
+    margin-left: -433px;
+    margin-top: -325px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-HEIGHT 710px
+==============================================
+*/
+@media screen and (max-height: 710px) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 47%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:800px;
+	height:600px;
+    margin-left: -400px;
+    margin-top: -300px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-HEIGHT 660px
+==============================================
+*/
+@media screen and (max-height: 660px) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 44%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:733px;
+	height:550px;
+    margin-left: -366px;
+    margin-top: -275px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-HEIGHT 560px
+==============================================
+*/
+@media screen and (max-height: 610px) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 41%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:667px;
+	height:500px;
+    margin-left: -333px;
+    margin-top: -250px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-HEIGHT 560px
+==============================================
+*/
+@media screen and (max-height: 560px) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 38%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:600px;
+	height:450px;
+    margin-left: -300px;
+    margin-top: -225px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-HEIGHT 510px
+==============================================
+*/
+@media screen and (max-height: 510px) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 35%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:533px;
+	height:400px;
+    margin-left: -266px;
+    margin-top: -200px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-HEIGHT 460px       se reduce
+==============================================
+*/
+@media screen and (max-height: 460px) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 4.8px;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:467px;
+	height:350px;
+    margin-left: -233px;
+    margin-top: -175px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-HEIGHT 410px..
+==============================================
+*/
+@media screen and (max-height: 410px) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 3.8px;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:400px;
+	height:300px;
+    margin-left: -200px;
+    margin-top: -150px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-HEIGHT 360px .....
+==============================================
+*/
+@media screen and (max-height: 360px) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 3.2px;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:333px;
+	height:250px;
+    margin-left: -166px;
+    margin-top: -125px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-HEIGHT 310px
+==============================================
+*/
+@media screen and (max-height: 310px) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 2.6px;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:267px;
+	height:200px;
+    margin-left: -133px;
+    margin-top: -100px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 1170px PORTRAIT
+==============================================
+*/
+@media screen and (max-width: 1170px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 58%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:1050px;
+	height:787px;
+    margin-left: -525px;
+    margin-top: -393px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 1120px PORTRAIT
+==============================================
+*/
+@media screen and (max-width: 1120px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 56%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:1000px;
+	height:750px;
+    margin-left: -500px;
+    margin-top: -375px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 1070px PORTRAIT
+==============================================
+*/
+@media screen and (max-width: 1070px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 54%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:950px;
+	height:712px;
+    margin-left: -475px;
+    margin-top: -356px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 1020px PORTRAIT
+==============================================
+*/
+@media screen and (max-width: 1020px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 52%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:900px;
+	height:675px;
+    margin-left: -450px;
+    margin-top: -337px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 970px PORTRAIT
+==============================================
+*/
+@media screen and (max-width: 970px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 50%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:850px;
+	height:637px;
+    margin-left: -425px;
+    margin-top: -318px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 920px PORTRAIT
+==============================================
+*/
+@media screen and (max-width: 920px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 48%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:800px;
+	height:600px;
+    margin-left: -400px;
+    margin-top: -300px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 870px PORTRAIT
+==============================================
+*/
+@media screen and (max-width: 870px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 46%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:750px;
+	height:562px;
+    margin-left: -375px;
+    margin-top: -281px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 820px PORTRAIT
+==============================================
+*/
+@media screen and (max-width: 820px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 44%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:700px;
+	height:525px;
+    margin-left: -350px;
+    margin-top: -262px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 770px PORTRAIT
+==============================================
+*/
+@media screen and (max-width: 770px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 42%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:650px;
+	height:487px;
+    margin-left: -325px;
+    margin-top: -243px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 720px PORTRAIT
+==============================================
+*/
+@media screen and (max-width: 720px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 40%;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:600px;
+	height:450px;
+    margin-left: -300px;
+    margin-top: -225px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 670px PORTRAIT se reduce
+==============================================
+*/
+@media screen and (max-width: 670px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 5.4px;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:550px;
+	height:412px;
+    margin-left: -275px;
+    margin-top: -206px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 550px PORTRAIT
+==============================================
+*/
+@media screen and (max-width: 550px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 5px;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:500px;
+	height:375px;
+    margin-left: -250px;
+    margin-top: -187px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 570px PORTRAIT
+==============================================
+*/
+@media screen and (max-width: 570px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 4.5px;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:450px;
+	height:337px;
+    margin-left: -225px;
+    margin-top: -168px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 520px PORTRAIT 
+==============================================
+*/
+@media screen and (max-width: 520px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 4px;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:400px;
+	height:300px;
+    margin-left: -200px;
+    margin-top: -150px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 470px PORTRAIT 
+==============================================
+*/
+@media screen and (max-width: 470px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 4px;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:400px;
+	height:300px;
+    margin-left: -200px;
+    margin-top: -150px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 450px PORTRAIT
+==============================================
+*/
+@media screen and (max-width: 450px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 3.2px;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:350px;
+	height:262px;
+    margin-left: -175px;
+    margin-top: -131px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 400px PORTRAIT..
+==============================================
+*/
+@media screen and (max-width: 400px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 2.8px;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:300px;
+	height:225px;
+    margin-left: -150px;
+    margin-top: -112px;
+}
+}
+/*
+==============================================
+CSS MEDIA QUERIES MAX-WIDTH 350px PORTRAIT
+==============================================
+*/
+@media screen and (max-width: 350px) and (orientation: portrait) {
+/*TIPOGRAFÍA*/
+html{
+    font-size: 2.3px;
+}
+/*CONTENIDO*/
+.d_contenido{
+    width:250px;
+	height:187px;
+    margin-left: -125px;
+    margin-top: -93px;
+}
+}

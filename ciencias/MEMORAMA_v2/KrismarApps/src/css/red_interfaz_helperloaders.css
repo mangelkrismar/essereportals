@@ -1,0 +1,121 @@
+/*
+==============================================
+CSS TIPOGRAFÍA
+==============================================
+*/
+@font-face{
+    font-family: Verdana;
+    src: url("../font/verdana.ttf");
+}
+/*
+========================================================
+ANIMACIÓN DEL TEXTO "CARGANDO"
+========================================================
+*/
+@-webkit-keyframes ball-pulse-sync {
+  33% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+
+  66% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } 
+}
+
+@keyframes ball-pulse-sync {
+  33% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+
+  66% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+}
+
+.ball-pulse-sync > div:nth-child(0) {
+  -webkit-animation: ball-pulse-sync 0.6s -1.17s infinite ease-in-out;
+          animation: ball-pulse-sync 0.6s -1.17s infinite ease-in-out;}
+.ball-pulse-sync > div:nth-child(1) {
+  -webkit-animation: ball-pulse-sync 0.6s -1.10s infinite ease-in-out;
+          animation: ball-pulse-sync 0.6s -1.10s infinite ease-in-out; }
+.ball-pulse-sync > div:nth-child(2) {
+  -webkit-animation: ball-pulse-sync 0.6s -1.03s infinite ease-in-out;
+          animation: ball-pulse-sync 0.6s -1.03s infinite ease-in-out; }
+.ball-pulse-sync > div:nth-child(3) {
+  -webkit-animation: ball-pulse-sync 0.6s -0.56s infinite ease-in-out;
+          animation: ball-pulse-sync 0.6s -0.56s infinite ease-in-out; }
+.ball-pulse-sync > div:nth-child(4) {
+  -webkit-animation: ball-pulse-sync 0.6s -0.49s infinite ease-in-out;
+          animation: ball-pulse-sync 0.6s -0.49s infinite ease-in-out; }
+.ball-pulse-sync > div:nth-child(5) {
+  -webkit-animation: ball-pulse-sync 0.6s -0.42s infinite ease-in-out;
+          animation: ball-pulse-sync 0.6s -0.42s infinite ease-in-out; }
+.ball-pulse-sync > div:nth-child(6) {
+  -webkit-animation: ball-pulse-sync 0.6s -0.35s infinite ease-in-out;
+          animation: ball-pulse-sync 0.6s -0.35s infinite ease-in-out; }
+.ball-pulse-sync > div:nth-child(7) {
+  -webkit-animation: ball-pulse-sync 0.6s -0.28s infinite ease-in-out;
+          animation: ball-pulse-sync 0.6s -0.28s infinite ease-in-out; }
+.ball-pulse-sync > div:nth-child(8) {
+  -webkit-animation: ball-pulse-sync 0.6s -0.21s infinite ease-in-out;
+          animation: ball-pulse-sync 0.6s -0.21s infinite ease-in-out; }
+.ball-pulse-sync > div:nth-child(9) {
+  -webkit-animation: ball-pulse-sync 0.6s -0.14s infinite ease-in-out;
+          animation: ball-pulse-sync 0.6s -0.14s infinite ease-in-out; }
+.ball-pulse-sync > div:nth-child(10) {
+  -webkit-animation: ball-pulse-sync 0.6s -0.07s infinite ease-in-out;
+          animation: ball-pulse-sync 0.6s -0.07s infinite ease-in-out; }
+.ball-pulse-sync > div:nth-child(11) {
+  -webkit-animation: ball-pulse-sync 0.6s 0s infinite ease-in-out;
+          animation: ball-pulse-sync 0.6s 0s infinite ease-in-out; }
+.ball-pulse-sync > div {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 2px;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  display: inline-block; }
+/*
+========================================================
+ANIMACIÓN DEL CIRCULO d_circled_circleLoader
+========================================================
+*/
+.d_circleLoader{
+	width: 200px;
+	height: 200px;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -100px;
+    position: absolute;
+	border-radius: 50%;
+}
+.d_interfazBox1{
+	width: 80%;
+	height: 80%;
+	top: 10%;
+	left: 10%;
+	position: absolute;
+    fill:#FFFFFF;
+	/*background-image: url(../img/hab_rm_iconkrismar.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;*/
+}
+.d_interfazLetras{
+	width: 100%;
+	position: absolute;
+	bottom: 10%;
+	font-family: Verdana;
+	text-align: center;
+	color: #ffffff;
+}

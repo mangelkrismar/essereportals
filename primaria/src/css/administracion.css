@@ -1,0 +1,25 @@
+
+.p_buscadoricon{
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+.p_buscadoricon, .c_iconleft, .c_iconright, .c_botonbasura, .p_configiconimgregresar{
+    
+    background-size: 400% 100%;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-image: url(../img/sprite_admin.png);
+}
+.p_configiconimgregresar{
+    background-position:33.33%;
+}
+.c_iconleft, .c_iconright {
+    background-position: 66.66%;
+}
+.c_iconleft {
+    transform: rotate(180deg);
+}
+.c_botonbasura{
+    background-position: 100%;
+}

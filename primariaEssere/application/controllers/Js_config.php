@@ -1,0 +1,36 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Js_config extends CI_Controller {
+    /*
+        devuelve diversas variables de control al front del portal
+    */
+	public function index()
+	{
+		// Valores por defecto
+		$js_config = array(
+			'id_curso'              => 0,
+			'base_url'              => $this->config->item('base_url'),
+			'krismar_apps_url'      => $this->config->item('krismar_apps_url'),
+			'event_name'		=> $this->config->item('event_name'),
+			
+			'logged_in'             => FALSE,
+			'username'              => '',
+			
+			'ccdig'                 => FALSE,
+			'ccdig_json_url'        => '',
+			'ccdig_nivel_educativo' => ''
+		);
+		
+		// si el usuario ha iniciado sesion
+		if($this->session->userdata('log_in')){
+			$js_config['logged_in'] = TRUE;
+			$js_config['username'] = $this->session->userdata('nombre');
+		}
+		
+		echo json_encode($js_config);
+	}
+}
+
+/* End of file js_config.php */
+/* Location: ./application/controllers/js_config.php */

@@ -1,0 +1,135 @@
+[
+	{
+		"id_aplicacion" : 7513,
+		"nombre" : "La mosca",
+		"objetivos" : "Retén los datos principales de la lectura.||||Organiza la secuencia de los hechos.||||Diferencia lo verdadero de lo falso.||||Practica la ortografía.",
+		"prefijo" : "red_esp_1911b1",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 7514,
+		"nombre" : "La mosca, (2)",
+		"objetivos" : "Reconoce el significado de las palabras.||||Identifica la escritura correcta de las palabras.||||Amplía tu vocabulario.",
+		"prefijo" : "red_esp_1911b2",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 1927,
+		"nombre" : "La Langosta de mar y su madre",
+		"objetivos" : "Retén los datos principales de la lectura.||||Organiza la secuencia de los hechos.||||Diferencia lo verdadero de lo falso.||||Practica la ortografía.",
+		"prefijo" : "red_esp_1911c",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 1928,
+		"nombre" : "El médico y el paciente que murió",
+		"objetivos" : "Retén los datos principales de la lectura.||||Organiza la secuencia de los hechos.||||Diferencia lo verdadero de lo falso.",
+		"prefijo" : "red_esp_1911d",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 1930,
+		"nombre" : "El caballo viejo",
+		"objetivos" : "Retén los datos principales de la lectura.||||Organiza la secuencia de los hechos.||||Diferencia lo verdadero de lo falso.",
+		"prefijo" : "red_esp_1911e",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 4784,
+		"nombre" : "Blanca y la casita misteriosa",
+		"objetivos" : "Retén los datos principales de la lectura.||||Utiliza el vocablo “bl”||||Organiza la secuencia de los hechos.||||Diferencia lo verdadero de lo falso.||||Identifica la escritura correcta de las palabras.",
+		"prefijo" : "red_esp_3801a",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 4773,
+		"nombre" : "La cabrita sabia ",
+		"objetivos" : "Retén los datos principales de la lectura.||||Utiliza  el vocablo “br”||||Organiza la secuencia de los hechos.||||Diferencia lo verdadero de lo falso.||||Identifica la escritura correcta de las palabras.",
+		"prefijo" : "red_esp_3802a",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 6806,
+		"nombre" : "El colibrí, (1) lectura de comprensión",
+		"objetivos" : "Identifica y recuerda los datos principales de la lectura.||||Organiza la secuencia de los hechos.",
+		"prefijo" : "red_esp_4101p1",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 6807,
+		"nombre" : "El colibrí, (2) lectura de comprensión",
+		"objetivos" : "Identifica la escritura correcta de las palabras.",
+		"prefijo" : "red_esp_4101p2",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 6808,
+		"nombre" : "El conde Olinos, (1) lectura de comprensión",
+		"objetivos" : "Identifica y recuerda los datos principales de la lectura.||||Reconoce la secuencia de los hechos.",
+		"prefijo" : "red_esp_4102p1",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 6809,
+		"nombre" : "El conde Olinos, (2) ortografía",
+		"objetivos" : "Identifica la escritura correcta de las palabras.",
+		"prefijo" : "red_esp_4102p2",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 6953,
+		"nombre" : "El gato con cartas, (1) lectura de comprensión",
+		"objetivos" : "Recuerda los datos principales de la lectura.||||Reconoce la sucesión de los hechos.||||Enlista los personajes principales del texto.",
+		"prefijo" : "red_esp_5104p1",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 6954,
+		"nombre" : "El gato con cartas, (2) ortografía",
+		"objetivos" : "Identifica la escritura correcta de las palabras.",
+		"prefijo" : "red_esp_5104p2",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 6955,
+		"nombre" : "La maceta de albahaca, (1) lectura de comprensión",
+		"objetivos" : "Recuerda los datos principales de la lectura.||||Reconoce la sucesión de los hechos.||||Explica la idea principal de la lectura.||||Enlista los personajes principales del texto.",
+		"prefijo" : "red_esp_5105p1",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 6956,
+		"nombre" : "La maceta de albahaca, (2) ortografía",
+		"objetivos" : "Identifica la escritura correcta de las palabras.",
+		"prefijo" : "red_esp_5105p2",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 7005,
+		"nombre" : "El primer beso, (1) lectura de comprensión",
+		"objetivos" : "Recuerda los datos principales de la lectura.||||Reconoce la sucesión de los hechos.||||Enlista los personajes principales del texto.",
+		"prefijo" : "red_esp_6101p1",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 7006,
+		"nombre" : "El primer beso, (2) ortografía",
+		"objetivos" : "Identifica la escritura correcta de las palabras.",
+		"prefijo" : "red_esp_6101p2",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 7021,
+		"nombre" : "Grafiti: jóvenes pintando el mundo, (1) lectura de comprensión",
+		"objetivos" : "Recuerda los datos principales de la lectura.||||Reconoce la sucesión de los hechos.||||Explica la idea principal de la lectura.",
+		"prefijo" : "red_esp_6105p1",
+		"categoria" : "app"
+	},
+	{
+		"id_aplicacion" : 7022,
+		"nombre" : "Grafiti: jóvenes pintando el mundo, (2) ortografía",
+		"objetivos" : "Identifica la escritura correcta de las palabras.",
+		"prefijo" : "red_esp_6105p2",
+		"categoria" : "app"
+	}
+]

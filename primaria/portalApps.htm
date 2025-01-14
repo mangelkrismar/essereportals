@@ -1,0 +1,203 @@
+<div ng-if="!apps">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="jumbotron" style="background-color: white">
+                <h1>Cargando aplicaciones</h1>
+                <p class="lead">Espere...</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-if="apps&&curso">
+    <!-- Buscador -->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="input-group" style="padding-top: 20px;">
+                <input type="text" class="form-control" placeholder="Buscar" ng-model="filtros.buscador">
+                <span class="input-group-btn">
+                    <button class="btn btn-danger" type="button" ng-click="resetFiltros('all')">Borrar filtros</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- Filtros del curso -->
+    <div class="row" style="padding-top: 20px;">
+        <div class="col-sm-12">
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        {{currentGrado?currentGrado.n:'Grado'}} <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li ng-repeat="grado in grados = (curso)" ng-click="filtrarCurso(grado,'g')" ng-class="{'active':filtroSeleccionado(grado,'g')}"><a href="">{{grado.n}}</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        {{currentMateria?currentMateria.n:'Materia'}} <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li ng-if="currentGrado.materias" ng-repeat="materia in materias = (currentGrado.materias)" ng-click="filtrarCurso(materia,'m')" ng-class="{'active':filtroSeleccionado(materia,'m')}"><a href="">{{materia.n}}</a></li>
+                        <li ng-if="!currentGrado.materias"><a>Selecciona un grado</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        {{currentBloque?currentBloque.n:'Bloque'}} <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li ng-if="currentMateria.bloques" ng-repeat="bloque in bloques = (currentMateria.bloques)" ng-click="filtrarCurso(bloque,'b')" ng-class="{'active':filtroSeleccionado(bloque,'b')}"><a href="">{{bloque.n}}</a></li>
+                        <li ng-if="!currentMateria.bloques"><a>Selecciona una materia</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        {{currentLeccion?currentLeccion:'Lección'}} <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li ng-if="currentBloque.lecciones" ng-repeat="leccion in lecciones = (currentBloque.lecciones)" ng-click="filtrarCurso(leccion,'l')" ng-class="{'active':filtroSeleccionado(leccion,'l')}"><a href="">{{leccion}}</a></li>
+                        <li ng-if="!currentBloque.lecciones"><a>Selecciona un bloque</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Categorias -->
+    <div class="row" style="padding-top: 20px;">
+        <div class="col-sm-12">
+            <div class="btn-group btn-group-justified">
+                <a ng-repeat="categoria in categorias" ng-click="filtrarCurso(categoria,'c')" class="btn btn-default" ng-class="{'btn-primary active':filtroSeleccionado(categoria, 'c')}">{{categoria}}</a>
+            </div>
+        </div>
+    </div>
+    <!-- Ver miniaturas -->
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <div class="form-group"> 
+                <div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" ng-model="verMiniaturas" ng-click="resetPagination();"> Ver miniaturas</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Aplicaciones en tabla -->
+    <div ng-if="!verMiniaturas">
+        <div ng-show="appsFiltradas.length > 0">
+            <!-- Control de paginación -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <dir-pagination-controls
+                        direction-links="true"
+                        boundary-links="true"
+                        auto-hide="false">
+                    </dir-pagination-controls>
+                </div>
+            </div>
+            <!-- Tabla -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <table class="small table table-condensed table-hover table-bordered">
+                        <thead class="bg-primary">
+                            <th>Grado</th>
+                            <th>Materia</th>
+                            <th>Bloque</th>
+                            <th>Lección</th>
+                            <th>Prefijo</th>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Categoría</th>
+                        </thead>
+                        <tbody>
+                            <tr dir-paginate="a in appsFiltradas = (apps
+                                | filter: filtrarGrado
+                                | filter: filtrarMateria
+                                | filter: filtrarBloque
+                                | filter: filtrarLeccion
+                                | filter: filtrarCategoria
+                                | filter: filtros.buscador)
+                                | itemsPerPage: 20"
+                                current-page="pagination.current">
+                                <td>{{a.g}}</td>
+                                <td>{{a.m}}</td>
+                                <td>{{a.b}}</td>
+                                <td>{{a.l}}</td>
+                                <td>{{a.p}}</td>
+                                <td>{{a.i}}</td>
+                                <td>{{a.n}}</td>
+                                <td>{{a.c}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Control de paginación -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <dir-pagination-controls
+                        direction-links="true"
+                        boundary-links="true"
+                        auto-hide="false">
+                    </dir-pagination-controls>
+                </div>
+            </div>
+        </div>
+        <div ng-show="appsFiltradas.length == 0">
+            <div class="jumbotron text-center" style="background-color: white;">
+                <h1>Lo sentimos :(</h1>
+                <p class="lead">No se encontraron aplicaciones relacionadas</p>
+            </div>
+        </div>
+    </div>
+    <!-- Aplicaciones en miniaturas -->
+    <div ng-if="verMiniaturas">
+        <div ng-show="appsFiltradas.length > 0">
+            <!-- Control de paginación -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <dir-pagination-controls
+                        direction-links="true"
+                        boundary-links="true"
+                        auto-hide="false">
+                    </dir-pagination-controls>
+                </div>
+            </div>
+            <!-- Miniaturas -->
+            <div class="row">
+                <div class="col-sm-12 col-md-3 thumbnail" dir-paginate="a in appsFiltradas = (apps
+                    | filter: filtrarGrado
+                    | filter: filtrarMateria
+                    | filter: filtrarBloque
+                    | filter: filtrarLeccion
+                    | filter: filtrarCategoria
+                    | filter: filtros.buscador)
+                    | itemsPerPage: 8"
+                    current-page="pagination.current">
+                    <a href="https://www.mdt.mx/KrismarApps/index.php/recurso/cargarApp/{{a.i}}/primaria" target="_blank">
+                        <img ng-src="https://www.mdt.mx/KrismarApps/src/img/miniatura/{{(a.p.startsWith('fla_')||a.p.startsWith('fls_'))?'flash':a.p}}.png" alt="{{a.n}}" style="width:100%">
+                        <div class="caption small">
+                            <p><kbd>{{a.c}}</kbd>{{a.n}}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Control de paginación -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <dir-pagination-controls
+                        direction-links="true"
+                        boundary-links="true"
+                        auto-hide="false">
+                    </dir-pagination-controls>
+                </div>
+            </div>
+        </div>
+        <div ng-show="appsFiltradas.length == 0">
+            <div class="jumbotron text-center" style="background-color: white;">
+                <h1>Lo sentimos :(</h1>
+                <p class="lead">No se encontraron aplicaciones relacionadas</p>
+            </div>
+        </div>        
+    </div>
+</div>

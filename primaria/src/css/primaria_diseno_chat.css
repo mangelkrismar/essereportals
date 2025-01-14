@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*
+==============================================
+ESTILOS PARA CHAT
+==============================================
+*/
+
+.status-icon{
+	font-family: "Fedra Sans Std" !important;
+	color:#4d4d4d !important;
+}
+
+#lhc_status_container #offline-icon {
+    background: url(../img/p_actividades_iconoffline.png) no-repeat left center !important;
+}
+
+#lhc_status_container {
+	background-color:rgb(218, 235, 241) !important;
+	box-shadow: none !important;
+	padding:5px 5px 5px 5px !important;
+	width:200px !important;
+}
+
+#lhc_status_container .status-icon {
+	background: url(../img/p_actividades_icononline.png) no-repeat left center !important;
+	color: #4d4d4d !important;
+	padding:10px 10px 10px 55px !important;
+	font-size:14px !important;
+}

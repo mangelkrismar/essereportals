@@ -2,48 +2,35 @@
 <footer class="p_footer" style="margin-top: 166px;">   
 	<div class="p_footerin" <?if($this->session->userdata('sina')){?>style="opacity: 0.0;"<?}?>>    
 		<div class="p_footerdatos"> 
-			<a onclick = "insertaLogLink('Locación Google Maps')" href = "https://www.google.com.mx/maps/place/Krismar+Computaci%C3%B3n+Toluca/@19.275963,-99.5790527,17z/data=!3m1!4b1!4m5!3m4!1s0x85cd8a1dbca94065:0x8f322b025b3e280c!8m2!3d19.275963!4d-99.576864" target = "_blank">
-				<div class="p_footerdatosbox1">    
-					<div></div>    
-					<table>               
-						<tr>
-							<td>Av. 20 de Noviembre No. 68 San Salvador Tizatlali C.P. 52172 Metepec, Edo. de México.</td>
-						</tr>          
-					</table>
+			<div class="p_footerdatosbox2" onclick="window.open('https://www.essereeducacion.com','_blank')">    
+				<div><i class="fa-solid fa-globe"></i></div>
+				<div>
+					<div>Conoce más en nuestro sitio web</div>
+					<div>www.essereeducacion.com</div>         
 				</div>
-			</a>
-			<div class="p_footerdatosbox2">
-				<div></div>
-				<table>
-					<tr>
-						<td>(722) 271 5705, 271 6972</td>
-					</tr>
-				</table>
-			</div>               
-			<!--a onclick = "insertaLogLink('Manual')" href = "<?= base_url(); ?>src/pdf/Manual Primaria.pdf" target = "_blank"-->
-				<div style="cursor: default; opacity: 0.5;" class="p_footerdatosbox3">
-					<div></div>
-					<table>
-						<tr>						
-							<td>Manual de usuario</td>							
-						</tr>
-					</table>
-				</div>				
-			<!--/a-->
-			<div class="p_footerdatosbox4">
-				<div></div>
-				<table>
-					<tr>
-						<td><a href="mailto:ventas@krismar.com.mx" style="color:#FFFFFF;">ventas@krismar.com.mx</a><br/><br/><a href="mailto:soporte@krismar.com.mx" style="color:#FFFFFF;">soporte@krismar.com.mx</a></td>
-					</tr>
-				</table>
 			</div>
-			<div class="p_footerdatosboxredes">
-				<div onclick = "insertaLogLink('Facebook'); window.open('https://www.facebook.com/Krismar-Educaci%C3%B3n-547605475386249/')"></div>
-				<div  onclick = "insertaLogLink('Twitter'); window.open('https://twitter.com/KrismarEduca?lang=es')"></div>
-				<div  onclick = "insertaLogLink('Youtube'); window.open('https://www.youtube.com/user/krismareduca')"></div>
-			</div>            
-		</div>            
+			<div class="p_footerdatosbox2">
+				<div><i class="fa-solid fa-phone"></i></div>
+				<div>
+					+52 55 4447 8074       
+				</div>
+			</div>
+			<div class="p_footerdatosbox2" onclick="window.location.href = 'mailto:contacto@essereeducacion.com'">
+				<div><i class="fa-regular fa-envelope"></i></div>
+				<div>
+					contacto@essereeducacion.com       
+				</div>
+			</div>
+			     
+		</div>    
+		<div class="p_footerdatos">
+			<div class="p_footerdatosbox2">Síguenos en:</div>
+			<div class="p_footerdatosbox2 boxredes">
+				<i class="fa-brands fa-facebook" onclick = "window.open('https://www.facebook.com/p/Essere-Educaci%C3%B3n-61551903282356/')"></i>
+				<i class="fa-brands fa-instagram" onclick = "window.open('https://www.instagram.com/essere_educacion/')"></i>
+			</div>
+			<div class="p_footerdatosbox2">@essere_educacion</div>
+		</div>        
 		<div class="p_footerline">
 			<div class="p_footerlinein"></div>            
 		</div>            
@@ -51,7 +38,7 @@
 			<table class="p_footerinfoin">
 				<tr>
 					<td></td>
-					<td>Krismar Computación Toluca, S. de R.L. de C.V.</td>
+					<td>ESSERE Educación: Escuela digital</td>
 				</tr>
 			</table>            
 		</div>        

@@ -1,0 +1,68 @@
+.p_logonovaInter{
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-image: url(../img/LOGO-ESSERE-AQUA.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 0px 6px white) drop-shadow(0px 0px 7px white) drop-shadow(0px 0px 8px white);
+}
+
+.p_logonovasmall{
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-image: url(../img/LOGO-ESSERE-BLANCO.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.p_footerinfoin > tbody > tr > td:nth-child(1){
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/LOGO-ESSERE-BLANCO.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.p_footer {
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+.p_footerin {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .p_footerdatos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.p_footerdatosbox2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.p_footerdatosbox2 div {
+	background: none;
+}
+.p_footerdatosbox2>div:nth-child(1) {
+	font-size: 2.5rem;
+}
+.p_footerdatosbox2 div:nth-child(2) {
+	width: auto;
+}
+.boxredes {
+	font-size:3rem;
+	display: flex;
+	justify-content: space-around;
+}

@@ -529,7 +529,7 @@ function compruebaAcceso(valor){
             muestraCambiarUsuario('Esta acción solo se permitirá una única vez.');
         }else{
             $(".p_emerfrasetxtdias").html('Días restantes: <span class = "diasR">'+valor.msj+'</span>');
-            $("#name_usuario").text("Feria internacional del libro 2024");
+            $("#name_usuario").text(event_name);
             $(".p_emerclose").hide();
             //$(".p_emerbox").addClass("bounceOut");
             $(".p_emerbox").fadeOut(250, function(){
